@@ -11,29 +11,29 @@ namespace mbit_显示类 {
     
     export enum enColor {
 
-        //% blockId="OFF" block="OFF"
+        //% blockId="OFF" block="灭"
         OFF = 0,
-        //% blockId="Red" block="Red"
+        //% blockId="Red" block="红"
         Red,
-        //% blockId="Green" block="Green"
+        //% blockId="Green" block="绿"
         Green,
-        //% blockId="Blue" block="Blue"
+        //% blockId="Blue" block="蓝"
         Blue,
-        //% blockId="White" block="White"
+        //% blockId="White" block="白"
         White,
-        //% blockId="Cyan" block="Cyan"
+        //% blockId="Cyan" block="青"
         Cyan,
-        //% blockId="Pinkish" block="Pinkish"
+        //% blockId="Pinkish" block="品红"
         Pinkish,
-        //% blockId="Yellow" block="Yellow"
+        //% blockId="Yellow" block="黄"
         Yellow,
 
     }
     export enum enLED1 {
         
-        //% blockId="OFF" block="OFF"
+        //% blockId="OFF" block="灭"
         OFF = 0,
-        //% blockId="ON" block="ON"
+        //% blockId="ON" block="亮"
         ON =1
     }
 
