@@ -37,7 +37,7 @@ namespace mbit_显示类 {
         ON =1
     }
 
-    //% blockId=mbit_LED1 block="LED1|pin %pin|value %value"
+    //% blockId=mbit_LED1 block="LED|pin %pin|state %value"
     //% weight=5
     //% blockGap=8
     //% color="#C814B8"
