@@ -1,7 +1,7 @@
 {
     "name": "LAFVIN",
-    "version": "1.0.1",
-    "description": "Extension for LAFVIN m:bit V1.0.1",
+    "version": "1.0.2",
+    "description": "Extension for LAFVIN m:bit V1.0.2",
     "license": "MIT",
     "dependencies": {
         "core": "*",
