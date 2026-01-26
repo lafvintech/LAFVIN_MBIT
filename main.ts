@@ -11,29 +11,29 @@ namespace mbit_显示类 {
     
     export enum enColor {
 
-        //% blockId="OFF" block="灭"
+        //% blockId="OFF" block="Off"
         OFF = 0,
-        //% blockId="Red" block="红"
+        //% blockId="Red" block="Red"
         Red,
-        //% blockId="Green" block="绿"
+        //% blockId="Green" block="Green"
         Green,
-        //% blockId="Blue" block="蓝"
-        Blue,
-        //% blockId="White" block="白"
+        //% blockId="Blue" block="Blue"
+        Blue,   
+        //% blockId="White" block="White"
         White,
-        //% blockId="Cyan" block="青"
+        //% blockId="Cyan" block="Cyan"
         Cyan,
-        //% blockId="Pinkish" block="品红"
+        //% blockId="Pinkish" block="Pinkish"
         Pinkish,
-        //% blockId="Yellow" block="黄"
+        //% blockId="Yellow" block="Yellow"
         Yellow,
 
     }
     export enum enLED1 {
         
-        //% blockId="OFF" block="灭"
+        //% blockId="OFF" block="OFF"
         OFF = 0,
-        //% blockId="ON" block="亮"
+        //% blockId="ON" block="ON"
         ON =1
     }
 
@@ -48,7 +48,7 @@ namespace mbit_显示类 {
 
     }
 
-    //% blockId=mbit_LED2 block="LED2|pin %pin|value %value"
+    //% blockId=mbit_LED2 block="LED|pin %pin|Brightness %value"
     //% weight=4
     //% blockGap=8
     //% color="#C814B8"
@@ -81,7 +81,7 @@ namespace mbit_显示类 {
 
     }
 
-    //% blockId=mbit_RGB block="RGB|pin1 %pin1|pin2 %pin2|pin3 %pin3|value1 %value1|value2 %value2|value3 %value3"
+    //% blockId=mbit_RGB block="RGB|pinR %pin1|pinG %pin2|pinB %pin3|Red %value1|Green %value2|Blue %value3"
     //% weight=2
     //% blockGap=8
     //% color="#C814B8"
@@ -94,7 +94,7 @@ namespace mbit_显示类 {
         pins.analogWritePin(pin3, value3 * 1024 / 256);
 
     }
-    //% blockId=mbit_RGB2 block="RGB|pin1 %pin1|pin2 %pin2|pin3 %pin3|value %value"
+    //% blockId=mbit_RGB2 block="RGB|pinR %pin1|pinG %pin2|pinB %pin3|SHOW %value"
     //% weight=1
     //% blockGap=8
     //% color="#C814B8"
