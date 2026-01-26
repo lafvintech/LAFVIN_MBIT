@@ -160,24 +160,24 @@ namespace mbit_Show {
  ****************************************************************************************************************************************/
 
 //% color="#87CEEB" weight=24 icon="\uf1b6"
-namespace mbit_传感器类 {
+namespace mbit_Sensors {
 
     export enum enVoice {
-        //% blockId="Voice" block="有声音"
+        //% blockId="Voice" block="ON"
         Voice = 0,
-        //% blockId="NoVoice" block="无声音"
+        //% blockId="NoVoice" block="OFF"
         NoVoice = 1
     }
 
     export enum enIR {
-        //% blockId="Get" block="检测到"
+        //% blockId="Get" block="Detected"
         Get = 0,
-        //% blockId="NoVoice" block="未检测"
+        //% blockId="NoVoice" block="Not detected"
         NoGet = 1
     }
     
 
-    //% blockId=mbit_Voice_Sensor block="Voice_Sensor|pin %pin|value %value"
+    //% blockId=mbit_Voice_Sensor block="Voice_Sensor|pin %pin|State %value"
     //% weight=100
     //% blockGap=10
     //% color="#87CEEB"
@@ -202,7 +202,7 @@ namespace mbit_传感器类 {
             control.waitMicros(13);
         }
     }
-    //% blockId=mbit_IR_Sensor block="IR_Sensor|pin %pin| |%value|障碍物"
+    //% blockId=mbit_IR_Sensor block="IR_Sensor|pin %pin| |%value|Obstacles"
     //% weight=100
     //% blockGap=10
     //% color="#87CEEB"
@@ -264,37 +264,37 @@ namespace mbit_传感器类 {
  ****************************************************************************************************************************************/
 
 //% color="#808080" weight=23 icon="\uf11c"
-namespace mbit_输入类 {
+namespace mbit_input {
 
     export enum enRocker {
-        //% blockId="Nostate" block="无"
+        //% blockId="Nostate" block="Nostate"
         Nostate = 0,
-        //% blockId="Up" block="上"
+        //% blockId="Up" block="Up"
         Up,
-        //% blockId="Down" block="下"
+        //% blockId="Down" block="Down"
         Down,
-        //% blockId="Left" block="左"
+        //% blockId="Left" block="Left"
         Left,
-        //% blockId="Right" block="右"
+        //% blockId="Right" block="Right"
         Right,
-        //% blockId="Press" block="按下"
+        //% blockId="Press" block="Press"
         Press
     }
 
     export enum enTouch {
-        //% blockId="NoTouch" block="未触摸"
+        //% blockId="NoTouch" block="Not touched"
         NoTouch = 0,
-        //% blockId="Touch" block="触摸"
+        //% blockId="Touch" block="Touched"
         Touch = 1
     }
     export enum enButton {
-        //% blockId="Press" block="按下"
+        //% blockId="Press" block="Pressed"
         Press = 0,
-        //% blockId="Realse" block="松开"
+        //% blockId="Realse" block="Released"
         Realse = 1
     }
 
-    //% blockId=mbit_TouchPad block="TouchPad|pin %pin|value %value"
+    //% blockId=mbit_TouchPad block="TouchPad|pin %pin|State %value"
     //% weight=100
     //% blockGap=10
     //% color="#808080"
@@ -311,7 +311,7 @@ namespace mbit_输入类 {
 
     }
     
-    //% blockId=mbit_Rocker block="Rocker|VRX %pin1|VRY %pin2|SW %pin3|value %value"
+    //% blockId=mbit_Rocker block="Rocker|VRX %pin1|VRY %pin2|SW %pin3|State %value"
     //% weight=100
     //% blockGap=10
     //% color="#808080"
@@ -354,7 +354,7 @@ namespace mbit_输入类 {
 
     }
 
-    //% blockId=mbit_Button block="Button|pin %pin|value %value"
+    //% blockId=mbit_Button block="Button|pin %pin|State %value"
     //% weight=100
     //% blockGap=10
     //% color="#808080"
@@ -377,16 +377,16 @@ namespace mbit_输入类 {
  ****************************************************************************************************************************************/
 
 //% color="#D2691E" weight=22 icon="\uf001"
-namespace mbit_音乐类 {
+namespace mbit_Music {
     export enum enBuzzer {
 
-        //% blockId="NoBeep" block="不响"
+        //% blockId="NoBeep" block="NoBeep"
         NoBeep = 0,
-        //% blockId="Beep" block="响"
+        //% blockId="Beep" block="Beep"
         Beep
     }
 
-    //% blockId=mbit_Buzzer block="Buzzer|pin %pin|value %value"
+    //% blockId=mbit_Buzzer block="Buzzer|pin %pin|State %value"
     //% weight=100
     //% blockGap=10 
     //% color="#D2691E"
@@ -420,7 +420,7 @@ namespace mbit_电机类 {
 
     }
 
-    //% blockId=mbit_Servo block="Servo|pin %pin|value %value"
+    //% blockId=mbit_Servo block="Servo|pin %pin|Angle %value"
     //% weight=100
     //% blockGap=10
     //% color="#0000CD"
@@ -435,7 +435,7 @@ namespace mbit_电机类 {
 }
 
 //% color="#006400" weight=20 icon="\uf1b9"
-namespace mbit_小车类 {
+namespace mbit_CAR {
 
     const PCA9685_ADD = 0x41
     const MODE1 = 0x00
