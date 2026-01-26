@@ -438,7 +438,7 @@ namespace mbit_Electric Motors {
  ****************************************************************************************************************************************/
 
 //% color="#006400" weight=20 icon="\uf1b9"
-namespace mbit_Smartcar{
+namespace mbit_Smartcar {
 
     const PCA9685_ADD = 0x41
     const MODE1 = 0x00
