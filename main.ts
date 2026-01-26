@@ -12,7 +12,7 @@ namespace mbit_显示类 {
     
     export enum enColor {
 
-        //% blockId="OFF" block="灭"
+        //% blockId="OFF" block="OFF"
         OFF = 0,
         //% blockId="Red" block="红色"
         Red,
