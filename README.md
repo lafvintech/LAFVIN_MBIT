@@ -1,6 +1,6 @@
 # mbit
 
-Extension for LAFVIN  V1.4
+Extension for LAFVIN  V1.0
 
 ## License
 
