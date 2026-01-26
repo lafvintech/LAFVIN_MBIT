@@ -81,7 +81,7 @@ namespace mbit_显示类 {
 
     }
 
-    //% blockId=mbit_RGB block="RGB|pinR %pin1|pinG %pin2|pinB %pin3|Red %value1|Green %value2|Blue %value3"
+    //% blockId=mbit_RGB block="RGB|PinR %pin1|PinG %pin2|PinB %pin3|Red %value1|Green %value2|Blue %value3"
     //% weight=2
     //% blockGap=8
     //% color="#C814B8"
@@ -94,7 +94,7 @@ namespace mbit_显示类 {
         pins.analogWritePin(pin3, value3 * 1024 / 256);
 
     }
-    //% blockId=mbit_RGB2 block="RGB|pinR %pin1|pinG %pin2|pinB %pin3|SHOW %value"
+    //% blockId=mbit_RGB2 block="RGB|PinR %pin1|PinG %pin2|PinB %pin3|SHOW %value"
     //% weight=1
     //% blockGap=8
     //% color="#C814B8"
