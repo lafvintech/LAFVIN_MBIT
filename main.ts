@@ -406,7 +406,7 @@ namespace mbit_Music {
  ****************************************************************************************************************************************/
 
 //% color="#0000CD" weight=21 icon="\uf185"
-namespace mbit_ {
+namespace mbit_Motor {
 
     //% blockId=mbit_Fan block="Fan|pin %pin|speed %value"
     //% weight=100
