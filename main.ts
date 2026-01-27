@@ -773,7 +773,7 @@ namespace mbit_Smartcar {
      * *****************************************************************
      * @param index
      */
-    //% blockId=mbit_RGB_Car_Big2 block="RGB_Car_Searchlights|Select Colors %value"
+    //% blockId=mbit_RGB_Car_Big2 block="RGB_Car_Searchlights|Colors %value"
     //% weight=101
     //% blockGap=10
     //% color="#C814B8"
