@@ -387,6 +387,7 @@ namespace mbit_Smartcar {
                 break;
             }
         }
+    }
     //% blockId=mbit_RGB_Car_Big block="RGB_Car_Searchlights|Red %value1|Green %value2|Blue %value3"
     //% weight=100
     //% blockGap=10
@@ -590,9 +591,5 @@ namespace mbit_Smartcar {
             case CarState.Car_SpinRight: Car_spinright(speed1, speed2); break;
         }
     }
-
-
 }
 
-
-}
