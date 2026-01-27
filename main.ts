@@ -6,65 +6,38 @@ load dependency
 
 
 
-//% color="#C814B8" weight=25 icon="\uf1d4"
 namespace mbit_Show {
     
     export enum enColor {
 
-        //% blockId="OFF" block="Off"
         OFF = 0,
-        //% blockId="Red" block="Red"
         Red,
-        //% blockId="Green" block="Green"
         Green,
-        //% blockId="Blue" block="Blue"
         Blue,   
-        //% blockId="White" block="White"
         White,
-        //% blockId="Cyan" block="Cyan"
         Cyan,
-        //% blockId="Pinkish" block="Pinkish"
         Pinkish,
-        //% blockId="Yellow" block="Yellow"
         Yellow,
 
     }
     export enum enLED1 {
         
-        //% blockId="OFF" block="OFF"
         OFF = 0,
-        //% blockId="ON" block="ON"
         ON =1
     }
 
-    //% blockId=mbit_LED1 block="LED|pin %pin|state %value"
-    //% weight=5
-    //% blockGap=8
-    //% color="#C814B8"
-    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=1
     export function LED1(pin: DigitalPin, value: enLED1): void {
 
         pins.digitalWritePin(pin, value);
 
     }
 
-    //% blockId=mbit_LED2 block="LED|pin %pin|Brightness %value"
-    //% weight=4
-    //% blockGap=8
-    //% color="#C814B8"
-    //% value.min=0 value.max=255
-    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=2
     export function LED2(pin: AnalogPin, value: number): void {
 
         pins.analogWritePin(pin, value * 1024 / 256);
 
     }
 
-    //% blockId=mbit_BreathLED block="BreathLED|pin %pin"
-    //% weight=3
-    //% blockGap=8
-    //% color="#C814B8"
-    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=3
     export function BreathLED(pin: AnalogPin): void {
 
         for (let i: number = 0; i < 1023; i++) {
@@ -81,12 +54,6 @@ namespace mbit_Show {
 
     }
 
-    //% blockId=mbit_RGB block="RGB|PinR %pin1|PinG %pin2|PinB %pin3|Red %value1|Green %value2|Blue %value3"
-    //% weight=2
-    //% blockGap=8
-    //% color="#C814B8"
-    //% value1.min=0 value1.max=255 value2.min=0 value2.max=255 value3.min=0 value3.max=255
-    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function RGB(pin1: AnalogPin, pin2: AnalogPin, pin3: AnalogPin, value1: number, value2: number, value3: number): void {
 
         pins.analogWritePin(pin1, value1 * 1024 / 256);
@@ -94,11 +61,6 @@ namespace mbit_Show {
         pins.analogWritePin(pin3, value3 * 1024 / 256);
 
     }
-    //% blockId=mbit_RGB2 block="RGB|PinR %pin1|PinG %pin2|PinB %pin3|SHOW %value"
-    //% weight=1
-    //% blockGap=8
-    //% color="#C814B8"
-    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function RGB2(pin1: DigitalPin, pin2: DigitalPin, pin3: DigitalPin, value: enColor): void {
 
         switch (value) {
@@ -159,29 +121,19 @@ namespace mbit_Show {
  *  传感器类 ***************************************************************************************************************************** 
  ****************************************************************************************************************************************/
 
-//% color="#87CEEB" weight=24 icon="\uf1b6"
 namespace mbit_Sensors {
 
     export enum enVoice {
-        //% blockId="Voice" block="ON"
         Voice = 0,
-        //% blockId="NoVoice" block="OFF"
         NoVoice = 1
     }
 
     export enum enIR {
-        //% blockId="Get" block="Detected"
         Get = 0,
-        //% blockId="NoVoice" block="Not detected"
         NoGet = 1
     }
     
 
-    //% blockId=mbit_Voice_Sensor block="Voice_Sensor|pin %pin|State %value"
-    //% weight=100
-    //% blockGap=10
-    //% color="#87CEEB"
-    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function Voice_Sensor(pin: DigitalPin, value: enVoice): boolean {
 
         pins.setPull(pin, PinPullMode.PullUp);
@@ -202,11 +154,6 @@ namespace mbit_Sensors {
             control.waitMicros(13);
         }
     }
-    //% blockId=mbit_IR_Sensor block="IR_Sensor|pin %pin| |%value|Obstacles"
-    //% weight=100
-    //% blockGap=10
-    //% color="#87CEEB"
-    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function IR_Sensor(pin: DigitalPin, value: enIR): boolean {
 
         pins.setPull(pin, PinPullMode.PullUp);
@@ -220,11 +167,6 @@ namespace mbit_Sensors {
 
     }
 
-    //% blockId=mbit_IR_Send block="IR_Send|pin %pin"
-    //% weight=100
-    //% blockGap=10
-    //% color="#87CEEB"
-    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function IR_Send(pin: DigitalPin): void {
 
         
@@ -232,11 +174,6 @@ namespace mbit_Sensors {
 
     }
    
-    //% blockId=mbit_ultrasonic block="Ultrasonic|Trig %Trig|Echo %Echo"
-    //% color="#87CEEB"
-    //% weight=100
-    //% blockGap=10
-    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function Ultrasonic(Trig: DigitalPin, Echo: DigitalPin): number {
 
         // send pulse
