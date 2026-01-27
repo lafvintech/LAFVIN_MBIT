@@ -522,16 +522,6 @@ namespace mbit_Smartcar {
         Black = 1
     }
     
-    
-    export enum enAvoidState {
-        //% blockId="OBSTACLE" block="Obstacle"
-        OBSTACLE = 0,
-        //% blockId="NOOBSTACLE" block="No obstacle"
-        NOOBSTACLE = 1
-
-    }
-
-    
     export enum enServo {
         
         S1 = 1,
