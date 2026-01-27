@@ -860,7 +860,7 @@ namespace mbit_Smartcar {
     export function RGB_Car_Program(): neopixel.Strip {
          
         if (!yahStrip) {
-            yahStrip = neopixel.create(DigitalPin.P16, 3, NeoPixelMode.RGB);
+            yahStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB);
         }
         return yahStrip;  
     }
