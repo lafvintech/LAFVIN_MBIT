@@ -936,7 +936,7 @@ namespace mbit_Smartcar {
 
         switch (direct) {
             case enPos.LeftState: {
-                if (pins.analogReadPin(AnalogPin.P2) < 500) {
+                if (pins.digitalReadPin(DigitalPin.P12) < 1) {
                     if (value == enLineState.White) {
                         temp = true;
                     }
@@ -952,7 +952,7 @@ namespace mbit_Smartcar {
             }
 
             case enPos.RightState: {
-                if (pins.analogReadPin(AnalogPin.P1) < 500) {
+                if (pins.digitalReadPin(DigitalPin.P13) < 1) {
                     if (value == enLineState.White) {
                         temp = true;
                     }
