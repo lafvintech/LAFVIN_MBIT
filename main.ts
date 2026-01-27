@@ -934,50 +934,6 @@ namespace mbit_Smartcar {
         setPwm(num + 2, 0, pwm);
 
     }
-
-/*  //% blockId=mbit_Avoid_Sensor block="Avoid_Sensor|State %value"
-    //% weight=95
-    //% blockGap=10
-    //% color="#006400"
-    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=12
-    export function Avoid_Sensor(value: enAvoidState): boolean {
-
-        let temp: boolean = false;
-        pins.setPull(DigitalPin.P9, PinPullMode.PullUp)
-        pins.digitalWritePin(DigitalPin.P9, 0);
-        control.waitMicros(100);
-        switch (value) {
-            case enAvoidState.OBSTACLE: {
-                serial.writeNumber(pins.analogReadPin(AnalogPin.P3))
-                if (pins.analogReadPin(AnalogPin.P3) < 800) {
-                
-                    temp = true;
-                    setPwm(8, 0, 0);
-                }
-                else {                 
-                    temp = false;
-                    setPwm(8, 0, 4095);
-                }
-                break;
-            }
-
-            case enAvoidState.NOOBSTACLE: {
-                if (pins.analogReadPin(AnalogPin.P3) > 800) {
-
-                    temp = true;
-                    setPwm(8, 0, 4095);
-                }
-                else {
-                    temp = false;
-                    setPwm(8, 0, 0);
-                }
-                break;
-            }
-        }
-        pins.digitalWritePin(DigitalPin.P9, 1);
-        return temp;
-
-    } */
     
     //% blockId=mbit_Line_Sensor block="Line_Sensor|direct %direct|Detection %value"
     //% weight=94
