@@ -838,6 +838,7 @@ namespace mbit_Smartcar {
         }
     }
 
+    /*
     //% blockId=makerbit_infrared_ir_button_pressed
     //% block="IR button"
     //% weight=70
@@ -883,6 +884,7 @@ namespace mbit_Smartcar {
             return false;
         }
     }
+    */
 
     //% blockId=makerbit_infrared_button_code
     //% button.fieldEditor="gridpicker"
