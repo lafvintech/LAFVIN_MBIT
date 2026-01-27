@@ -598,27 +598,23 @@ namespace mbit_Smartcar {
     export const enum IrButton {
         //% block="any"
         Any = -1,
-        Power = 0x0,
-        Up = 128,
-        Left = 32,
-        Right = 96,
-        Down = 144,
-        Light = 64,
-        BEEP = 160,
-        Plus = 48,
-        Minus = 112,
-        TLeft = 16,
-        TRight = 80,
-        NUM0 = 176,
-        NUM1 = 8,
-        NUM2 = 136,
-        NUM3 = 72,
-        NUM4 = 40,
-        NUM5 = 168,
-        NUM6 = 104,
-        NUM7 = 24,
-        NUM8 = 152,
-        NUM9 = 88
+        Up = 0x62,
+        LEFT = 0x22,
+        RIGHT = 0xc2,
+        NUM3 = 0xb0,
+        OK = 0x02,
+        NUM2 = 0x98,
+        Down = 0xa8,
+        NUM1 = 0x68,
+        NUM4 = 0x30,
+        NUM5 = 0x18,
+        NUM6 = 0x7a,
+        NUM7 = 0x10,
+        NUM8 = 0x38,
+        NUM9 = 0x5a,
+        STAR = 0x42,
+        NUM0 = 0x4a,
+        GRID = 0x52
     }
 
     export const enum IrButtonAction {
@@ -1041,7 +1037,7 @@ namespace mbit_Smartcar {
 
         const queues: Executor[] = [];
 
-        export function schedule(
+        export function schedule(    
             func: () => void,
             type: Thread,
             mode: Mode,
