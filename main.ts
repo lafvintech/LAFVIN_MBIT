@@ -856,7 +856,7 @@ namespace mbit_Smartcar {
 
     }
 
-    //% blockId=mbit_RGB_Car_Program block="RGB_Car_Atmospheric lighting"
+    //% blockId=mbit_RGB_Car_Program block="Atmospheric light strip"
     //% weight=99
     //% blockGap=10
     //% color="#C814B8"
