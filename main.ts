@@ -939,7 +939,7 @@ namespace mbit_Smartcar {
     //% weight=95
     //% blockGap=10
     //% color="#006400"
-    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=12 */
+    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=12
     export function Avoid_Sensor(value: enAvoidState): boolean {
 
         let temp: boolean = false;
@@ -977,7 +977,8 @@ namespace mbit_Smartcar {
         pins.digitalWritePin(DigitalPin.P9, 1);
         return temp;
 
-    }
+    } */
+    
     //% blockId=mbit_Line_Sensor block="Line_Sensor|direct %direct|Detection %value"
     //% weight=94
     //% blockGap=10
