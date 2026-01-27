@@ -26,7 +26,6 @@
   "mbit_Smartcar.RGB_Car_Program|block": "七彩流水灯",
   "mbit_Smartcar.Music_Car|block": "小车音乐播放|%index",
   "mbit_Smartcar.Line_Sensor|block": "巡线传感器|位置 %direct|检测到 %value",
-  /*"mbit_Smartcar.Avoid_Sensor|block": "避障传感器|检测到 %value", */
   "mbit_Smartcar.Servo_Car|block": "小车舵机|编号 %num|角度 %value",
   "mbit_Smartcar.CarCtrl|block": "小车控制|%index",
   "mbit_Smartcar.CarCtrlSpeed|block": "小车控制|%index|速度 %speed",
