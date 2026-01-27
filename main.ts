@@ -935,11 +935,11 @@ namespace mbit_Smartcar {
 
     }
 
-    //% blockId=mbit_Avoid_Sensor block="Avoid_Sensor|State %value"
+/*  //% blockId=mbit_Avoid_Sensor block="Avoid_Sensor|State %value"
     //% weight=95
     //% blockGap=10
     //% color="#006400"
-    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=12
+    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=12 */
     export function Avoid_Sensor(value: enAvoidState): boolean {
 
         let temp: boolean = false;
