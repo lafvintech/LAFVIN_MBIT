@@ -1,5 +1,6 @@
 {
 
+ /* 
   "mbit_Show.LED1|block": "LED灯|引脚 %pin|状态 %value",
   "mbit_Show.LED2|block": "LED灯|引脚 %pin|亮度 %value",
   "mbit_Show.BreathLED|block": "呼吸灯|引脚 %pin",
@@ -18,7 +19,8 @@
   "mbit_Music.Buzzer|block": "有源蜂鸣器|引脚 %pin|值 %value",
 
   "mbit_Motor.Fan|block": "风扇|引脚 %pin|速度 %value",
-  "mbit_Motor.Servo|block": "舵机|引脚 %pin|角度 %value",
+  "mbit_Motor.Servo|block": "舵机|引脚 %pin|角度 %value", 
+  */
 
   "mbit_Smartcar.RGB_Car_Big|block": "小车RGB探照灯|红色 %value1|绿色 %value2|蓝色 %value3",
   "mbit_Smartcar.RGB_Car_Big2|block": "小车RGB探照灯|选择车灯颜色 %value",
