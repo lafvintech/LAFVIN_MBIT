@@ -200,42 +200,26 @@ namespace mbit_Sensors {
  *  输入类 *****************************************************************************************************************************
  ****************************************************************************************************************************************/
 
-//% color="#808080" weight=23 icon="\uf11c"
 namespace mbit_input {
 
     export enum enRocker {
-        //% blockId="Nostate" block="Nostate"
         Nostate = 0,
-        //% blockId="Up" block="Up"
         Up,
-        //% blockId="Down" block="Down"
         Down,
-        //% blockId="Left" block="Left"
         Left,
-        //% blockId="Right" block="Right"
         Right,
-        //% blockId="Press" block="Press"
         Press
     }
 
     export enum enTouch {
-        //% blockId="NoTouch" block="Not touched"
         NoTouch = 0,
-        //% blockId="Touch" block="Touched"
         Touch = 1
     }
     export enum enButton {
-        //% blockId="Press" block="Pressed"
         Press = 0,
-        //% blockId="Realse" block="Released"
         Realse = 1
     }
 
-    //% blockId=mbit_TouchPad block="TouchPad|pin %pin|State %value"
-    //% weight=100
-    //% blockGap=10
-    //% color="#808080"
-    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=5
     export function TouchPad(pin: DigitalPin, value: enTouch): boolean {
 
         pins.setPull(pin, PinPullMode.PullUp);
@@ -248,10 +232,6 @@ namespace mbit_input {
 
     }
     
-    //% blockId=mbit_Rocker block="Rocker|VRX %pin1|VRY %pin2|SW %pin3|State %value"
-    //% weight=100
-    //% blockGap=10
-    //% color="#808080"
     export function Rocker(pin1: AnalogPin, pin2: AnalogPin, pin3: DigitalPin, value: enRocker): boolean {
 
         pins.setPull(pin3, PinPullMode.PullUp);
@@ -291,11 +271,6 @@ namespace mbit_input {
 
     }
 
-    //% blockId=mbit_Button block="Button|pin %pin|State %value"
-    //% weight=100
-    //% blockGap=10
-    //% color="#808080"
-    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=5
     export function Button(pin: DigitalPin, value: enButton): boolean {
 
         pins.setPull(pin, PinPullMode.PullUp);
@@ -313,22 +288,13 @@ namespace mbit_input {
  *    音乐类 *****************************************************************************************************************************
  ****************************************************************************************************************************************/
 
-//% color="#D2691E" weight=22 icon="\uf001"
 namespace mbit_Music {
     export enum enBuzzer {
 
-        //% blockId="NoBeep" block="NoBeep"
         NoBeep = 0,
-        //% blockId="Beep" block="Beep"
         Beep
     }
 
-    //% blockId=mbit_Buzzer block="Buzzer|pin %pin|State %value"
-    //% weight=100
-    //% blockGap=10 
-    //% color="#D2691E"
-    //% value.min=0 value.max=1
-    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=8
     export function Buzzer(pin: DigitalPin, value: enBuzzer): void {
 
         pins.setPull(pin, PinPullMode.PullNone);
@@ -342,27 +308,14 @@ namespace mbit_Music {
  *    电机类 *****************************************************************************************************************************
  ****************************************************************************************************************************************/
 
-//% color="#0000CD" weight=21 icon="\uf185"
 namespace mbit_Motor {
 
-    //% blockId=mbit_Fan block="Fan|pin %pin|speed %value"
-    //% weight=100
-    //% blockGap=10
-    //% color="#0000CD"
-    //% value.min=0 value.max=1023
-    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=9
     export function Fan(pin: AnalogPin, value: number): void {
 
         pins.analogWritePin(pin, value);
 
     }
 
-    //% blockId=mbit_Servo block="Servo|pin %pin|angle %value"
-    //% weight=100
-    //% blockGap=10
-    //% color="#0000CD"
-    //% value.min=0 value.max=180
-    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=9
     export function Servo(pin: AnalogPin, value: number): void {
 
         pins.servoWritePin(pin, value);
