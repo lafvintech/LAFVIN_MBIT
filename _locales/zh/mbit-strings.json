@@ -1,27 +1,5 @@
 {
 
- /* 
-  "mbit_Show.LED1|block": "LED灯|引脚 %pin|状态 %value",
-  "mbit_Show.LED2|block": "LED灯|引脚 %pin|亮度 %value",
-  "mbit_Show.BreathLED|block": "呼吸灯|引脚 %pin",
-  "mbit_Show.RGB|block": "RGB七彩灯|引脚R %pin1|引脚G %pin2|引脚B %pin3|红色 %value1|绿色 %value2|蓝色 %value3",
-  "mbit_Show.RGB2|block": "RGB七彩灯|引脚R %pin1|引脚G %pin2|引脚B %pin3|显示 %value",
-
-  "mbit_input.TouchPad|block": "触摸开关|引脚 %pin|返回 %value",
-  "mbit_input.Rocker|block": "遥杆|VRX %pin1|VRY %pin2|SW %pin3|返回 %value",
-  "mbit_input.Button|block": "按键|引脚 %pin|返回 %value",
-
-  "mbit_Sensors.Voice_Sensor|block": "声音传感器|引脚 %pin|返回 %value",
-  "mbit_Sensors.IR_Sensor|block": "红外传感器|引脚 %pin|  |%value|障碍物",
-  "mbit_Sensors.IR_Send|block": "红外发射|引脚 %pin",
-  "mbit_Sensors.Ultrasonic|block": "超声波|发射管脚 %Trig|接收管脚 %Echo",
-
-  "mbit_Music.Buzzer|block": "有源蜂鸣器|引脚 %pin|值 %value",
-
-  "mbit_Motor.Fan|block": "风扇|引脚 %pin|速度 %value",
-  "mbit_Motor.Servo|block": "舵机|引脚 %pin|角度 %value", 
-  */
-
   "mbit_Smartcar.RGB_Car_Big|block": "小车RGB探照灯|红色 %value1|绿色 %value2|蓝色 %value3",
   "mbit_Smartcar.RGB_Car_Big2|block": "小车RGB探照灯|选择车灯颜色 %value",
   "mbit_Smartcar.Ultrasonic_Car|block": "超声波返回（cm）",
