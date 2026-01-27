@@ -1096,8 +1096,6 @@ namespace mbit_Smartcar {
         }
     }
 
-}
-
     /**
      * Well known colors for a NeoPixel strip
      */
