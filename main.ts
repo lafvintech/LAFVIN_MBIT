@@ -432,7 +432,7 @@ namespace LA_MBitCar {
     //% blockId=mbit_Music_Car block="Music|%index"
     //% weight=97
     //% blockGap=15
-    //% color="#f5550c"
+    //% color="#ff4b03"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function Music_Car(index: enMusic): void {
         switch (index) {
@@ -461,7 +461,7 @@ namespace LA_MBitCar {
     //% blockId=mbit_Servo_Car block="Servo|num %num|Angle %value"
     //% weight=96
     //% blockGap=15
-    //% color="#006400"
+    //% color="#b9e203"
     //% num.min=1 num.max=3 value.min=0 value.max=180
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=9
     export function Servo_Car(num: enServo, value: number): void {
@@ -476,7 +476,7 @@ namespace LA_MBitCar {
     //% blockId=mbit_Line_Sensor block="Line_Sensor|direct %direct|Detection %value"
     //% weight=91
     //% blockGap=15
-    //% color="#096ef1"
+    //% color="#d606d6"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=12
     export function Line_Sensor(direct: enPos, value: enLineState): boolean {
 
@@ -761,6 +761,7 @@ namespace LA_MBitCar {
     //% pin.fieldEditor="gridpicker"
     //% pin.fieldOptions.tooltips="false"
     //% weight=94
+    //% color="#05b63a"
     //% blockGap=15
     export function connectIrReceiver(
         pin: DigitalPin
@@ -795,6 +796,7 @@ namespace LA_MBitCar {
     //% block="On IR button | %button | %action"
     //% button.fieldEditor="gridpicker"
     //% button.fieldOptions.tooltips="false"
+    //% color="#05b63a"
     //% weight=93
     //% blockGap=15
     export function onIrButton(
@@ -864,6 +866,7 @@ namespace LA_MBitCar {
     //% button.fieldOptions.columns=3
     //% button.fieldOptions.tooltips="false"
     //% block="IR button code %button"
+    //% color="#05b63a"
     //% weight=92
     //% blockGap=15
     export function irButtonCode(button: IrButton): number {
@@ -1057,7 +1060,7 @@ namespace LA_MBitCar {
     //% blockId=mbit_sonar_ping block="Ping trig %trig|echo %echo|unit %unit"
      //% weight=95
     //% blockGap=15
-    //% color="#8a8994"
+    //% color="#0a051a"
     export function ping(trig: DigitalPin, echo: DigitalPin, unit: PingUnit, maxCmDistance = 500): number {
         // send pulse
         pins.setPull(trig, PinPullMode.PullNone);
