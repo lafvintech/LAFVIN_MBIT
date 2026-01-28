@@ -432,7 +432,7 @@ namespace LA_MBitCar {
     //% blockId=mbit_Music_Car block="Music_Car|%index"
     //% weight=97
     //% blockGap=15
-    //% color="#f5550c"
+    //% color="#ff3c00"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function Music_Car(index: enMusic): void {
         switch (index) {
@@ -461,7 +461,7 @@ namespace LA_MBitCar {
     //% blockId=mbit_Servo_Car block="Servo_Car|num %num|Angle %value"
     //% weight=96
     //% blockGap=15
-    //% color="#006400"
+    //% color="#d80692"
     //% num.min=1 num.max=3 value.min=0 value.max=180
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=9
     export function Servo_Car(num: enServo, value: number): void {
@@ -476,7 +476,7 @@ namespace LA_MBitCar {
     //% blockId=mbit_Line_Sensor block="Line_Sensor|direct %direct|Detection %value"
     //% weight=91
     //% blockGap=15
-    //% color="#096ef1"
+    //% color="#08f59a"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=12
     export function Line_Sensor(direct: enPos, value: enLineState): boolean {
 
@@ -1057,7 +1057,7 @@ namespace LA_MBitCar {
     //% blockId=mbit_sonar_ping block="ping trig %trig|echo %echo|unit %unit"
      //% weight=95
     //% blockGap=15
-    //% color="#8a8994"
+    //% color="#000000"
     export function ping(trig: DigitalPin, echo: DigitalPin, unit: PingUnit, maxCmDistance = 500): number {
         // send pulse
         pins.setPull(trig, PinPullMode.PullNone);
