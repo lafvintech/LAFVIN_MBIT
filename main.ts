@@ -569,7 +569,7 @@ namespace LA_MBitCar {
         }
     }
  
-    // MakerBit 红外功能（合并到 mbit_Smartcar）
+    // 红外功能
     export const enum IrButton {
         //% block="any"
         Any = -1,
