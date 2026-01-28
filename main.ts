@@ -1052,6 +1052,9 @@ namespace mbit_Smartcar {
      * @param maxCmDistance maximum distance in centimeters (default is 500)
      */
     //% blockId=mbit_sonar_ping block="ping trig %trig|echo %echo|unit %unit"
+     //% weight=91
+    //% blockGap=10
+    //% color="#8a8994"
     export function ping(trig: DigitalPin, echo: DigitalPin, unit: PingUnit, maxCmDistance = 500): number {
         // send pulse
         pins.setPull(trig, PinPullMode.PullNone);
