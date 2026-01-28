@@ -38,21 +38,21 @@ namespace LA_MBitCar {
 
     export enum enColor {
 
-        //% blockId="OFF" block="Off"
+        //% blockId="LA_MBitCar_OFF" block="Off"
         OFF = 0,
-        //% blockId="Red" block="Red"
+        //% blockId="LA_MBitCar_Red" block="Red"
         Red,
-        //% blockId="Green" block="Green"
+        //% blockId="LA_MBitCar_Green" block="Green"
         Green,
-        //% blockId="Blue" block="Blue"
+        //% blockId="LA_MBitCar_Blue" block="Blue"
         Blue,   
-        //% blockId="White" block="White"
+        //% blockId="LA_MBitCar_White" block="White"
         White,
-        //% blockId="Cyan" block="Cyan"
+        //% blockId="LA_MBitCar_Cyan" block="Cyan"
         Cyan,
-        //% blockId="Pinkish" block="Pinkish"
+        //% blockId="LA_MBitCar_Pinkish" block="Pinkish"
         Pinkish,
-        //% blockId="Yellow" block="Yellow"
+        //% blockId="LA_MBitCar_Yellow" block="Yellow"
         Yellow,
 
     }
@@ -82,16 +82,16 @@ namespace LA_MBitCar {
     }
     export enum enPos {
 
-        //% blockId="LeftState" block="LeftState"
+        //% blockId="LA_MBitCar_LeftState" block="LeftState"
         LeftState = 0,
-        //% blockId="RightState" block="RightState"
+        //% blockId="LA_MBitCar_RightState" block="RightState"
         RightState = 1
     }
 
     export enum enLineState {
-        //% blockId="White" block="White"
+        //% blockId="LA_MBitCar_Line_White" block="White"
         White = 0,
-        //% blockId="Black" block="Black"
+        //% blockId="LA_MBitCar_Line_Black" block="Black"
         Black = 1
     }
     
