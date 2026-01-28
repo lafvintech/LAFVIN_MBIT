@@ -570,7 +570,6 @@ namespace LA_MBitCar {
     }
  
     // Infrared remote control
-
     export const enum IrButton {
         //% block="any"
         Any = -1,
@@ -758,7 +757,7 @@ namespace LA_MBitCar {
     }
 
     //% blockId="makerbit_infrared_connect_receiver"
-    //% block="Connect IR receiver at pin %pin"
+    //% block="connect IR receiver at pin %pin"
     //% pin.fieldEditor="gridpicker"
     //% pin.fieldOptions.tooltips="false"
     //% color="#07c740bb"
@@ -794,7 +793,7 @@ namespace LA_MBitCar {
     }
 
     //% blockId=makerbit_infrared_on_ir_button
-    //% block="On IR button | %button | %action"
+    //% block="on IR button | %button | %action"
     //% button.fieldEditor="gridpicker"
     //% button.fieldOptions.tooltips="false"
     //% weight=93
@@ -860,7 +859,6 @@ namespace LA_MBitCar {
             return false;
         }
     }
-    
     */
 
     //% blockId=makerbit_infrared_button_code
@@ -1041,9 +1039,8 @@ namespace LA_MBitCar {
             }
         }
     }
-    
-    
-    // Sonar 
+
+    // Sonar / Ping utilities （合并到 mbit_Smartcar）
     export enum PingUnit {
         //% block="μs"
         MicroSeconds,
@@ -1052,8 +1049,6 @@ namespace LA_MBitCar {
         //% block="inches"
         Inches
     }
-    
-
 
     /**
      * Send a ping and get the echo time (in microseconds) as a result
@@ -1063,7 +1058,7 @@ namespace LA_MBitCar {
      * @param maxCmDistance maximum distance in centimeters (default is 500)
      */
     //% blockId=mbit_sonar_ping block="ping trig %trig|echo %echo|unit %unit"
-    //% weight=95
+     //% weight=95
     //% blockGap=15
     //% color="#000000"
     export function ping(trig: DigitalPin, echo: DigitalPin, unit: PingUnit, maxCmDistance = 500): number {
@@ -1142,7 +1137,7 @@ namespace LA_MBitCar {
             _matrixChain: number;
             _matrixRotation: number;
 
-            //% blockId="neopixel_set_strip_color" block="%strip|ColorShow %rgb=neopixel_colors"
+            //% blockId="neopixel_set_strip_color" block="%strip|show color %rgb=neopixel_colors"
             //% weight=85 blockGap=15
             //% parts="neopixel"
             showColor(rgb: number) {
@@ -1151,7 +1146,7 @@ namespace LA_MBitCar {
                 this.show();
             }
 
-            //% blockId="neopixel_set_strip_rainbow" block="%strip|Show Rainbow from %startHue|to %endHue"
+            //% blockId="neopixel_set_strip_rainbow" block="%strip|show rainbow from %startHue|to %endHue"
             //% weight=85 blockGap=15
             //% parts="neopixel"
             showRainbow(startHue: number = 1, endHue: number = 360) {
@@ -1208,7 +1203,7 @@ namespace LA_MBitCar {
             }
 
             //% weight=84 blockGap=15
-            //% blockId=neopixel_show_bar_graph block="%strip|Show Bargraph of %value|up to %high"
+            //% blockId=neopixel_show_bar_graph block="%strip|show bar graph of %value|up to %high"
             //% icon="\uf080"
             //% parts="neopixel"
             showBarGraph(value: number, high: number): void {
@@ -1239,7 +1234,7 @@ namespace LA_MBitCar {
                 this.show();
             }
 
-            //% blockId="neopixel_set_pixel_color" block="%strip|Set pixel color at %pixeloffset|to %rgb=neopixel_colors"
+            //% blockId="neopixel_set_pixel_color" block="%strip|set pixel color at %pixeloffset|to %rgb=neopixel_colors"
             //% blockGap=15
             //% weight=80
             //% parts="neopixel" advanced=true
@@ -1247,7 +1242,7 @@ namespace LA_MBitCar {
                 this.setPixelRGB(pixeloffset >> 0, rgb >> 0);
             }
 
-            //% blockId=neopixel_set_matrix_width block="%strip|Set matrix width %width|rotation %rotation|chain %chain"
+            //% blockId=neopixel_set_matrix_width block="%strip|set matrix width %width|rotation %rotation|chain %chain"
             //% blockGap=15
             //% weight=5
             //% parts="neopixel" advanced=true
@@ -1257,7 +1252,7 @@ namespace LA_MBitCar {
                 this._matrixChain = chain >> 0;
             }
 
-            //% blockId="neopixel_set_matrix_color" block="%strip|Set matrix color at x %x|y %y|to %rgb=neopixel_colors"
+            //% blockId="neopixel_set_matrix_color" block="%strip|set matrix color at x %x|y %y|to %rgb=neopixel_colors"
             //% weight=15 //% blockGap=15
             //% parts="neopixel" advanced=true
             setMatrixColor(x: number, y: number, rgb: number) {
@@ -1284,7 +1279,7 @@ namespace LA_MBitCar {
                 this.setPixelColor(i, rgb);
             }
 
-            //% blockId="neopixel_set_pixel_white" block="%strip|Set pixel white LED at %pixeloffset|to %white"
+            //% blockId="neopixel_set_pixel_white" block="%strip|set pixel white LED at %pixeloffset|to %white"
             //% blockGap=15
             //% weight=80
             //% parts="neopixel" advanced=true
@@ -1315,14 +1310,14 @@ namespace LA_MBitCar {
                 return this._length;
             }
 
-            //% blockId="neopixel_set_brightness" block="%strip|Set brightness %brightness" blockGap=8
+            //% blockId="neopixel_set_brightness" block="%strip|set brightness %brightness" blockGap=8
             //% weight=59
             //% parts="neopixel" advanced=true
             setBrightness(brightness: number): void {
                 this.brightness = brightness & 0xff;
             }
 
-            //% blockId="neopixel_each_brightness" block="%strip|Ease brightness" blockGap=15
+            //% blockId="neopixel_each_brightness" block="%strip|ease brightness" blockGap=15
             //% weight=58
             //% parts="neopixel" advanced=true
             easeBrightness(): void {
@@ -1348,7 +1343,7 @@ namespace LA_MBitCar {
             }
 
             //% weight=86 blockGap=15
-            //% blockId="neopixel_range" block="%strip|Range from %start|with %length|leds"
+            //% blockId="neopixel_range" block="%strip|range from %start|with %length|leds"
             //% parts="neopixel"
             //% blockSetVariable=range
             range(start: number, length: number): Strip {
@@ -1365,7 +1360,7 @@ namespace LA_MBitCar {
                 return strip;
             }
 
-            //% blockId="neopixel_shift" block="%strip|Shift pixels by %offset" blockGap=15
+            //% blockId="neopixel_shift" block="%strip|shift pixels by %offset" blockGap=15
             //% weight=40
             //% parts="neopixel"
             shift(offset: number = 1): void {
@@ -1374,7 +1369,7 @@ namespace LA_MBitCar {
                 this.buf.shift(-offset * stride, this.start * stride, this._length * stride)
             }
 
-            //% blockId="neopixel_rotate" block="%strip|Rotate pixels by %offset" blockGap=15
+            //% blockId="neopixel_rotate" block="%strip|rotate pixels by %offset" blockGap=15
             //% weight=39
             //% parts="neopixel"
             rotate(offset: number = 1): void {
@@ -1391,7 +1386,7 @@ namespace LA_MBitCar {
                 pins.digitalWritePin(this.pin, 0);
             }
 
-            //% weight=9 blockId=neopixel_power block="%strip|Power (mA)"
+            //% weight=9 blockId=neopixel_power block="%strip|power (mA)"
             //% advanced=true
             //% blockGap=15
             power(): number {
@@ -1509,7 +1504,7 @@ namespace LA_MBitCar {
         }
 
         //% weight=1 blockGap=15
-        //% blockId="neopixel_rgb" block="Red %red|Green %green|Blue %blue"
+        //% blockId="neopixel_rgb" block="red %red|green %green|blue %blue"
         //% advanced=true
         export function rgb(red: number, green: number, blue: number): number {
             return packRGB(red, green, blue);
