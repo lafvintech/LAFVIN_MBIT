@@ -333,7 +333,7 @@ namespace mbit_Smartcar {
      * @param index
      */
     //% blockId=mbit_RGB_Car_Big2 block="RGB_Car_Searchlights|Colors %value"
-    //% weight=92
+    //% weight=89
     //% blockGap=10
     //% color="#e61919"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
@@ -391,7 +391,7 @@ namespace mbit_Smartcar {
         }
     }
     //% blockId=mbit_RGB_Car_Big block="RGB_Car_Searchlights|Red %value1|Green %value2|Blue %value3"
-    //% weight=93
+    //% weight=88
     //% blockGap=10
     //% color="#e61919"
     //% value1.min=0 value1.max=255 value2.min=0 value2.max=255 value3.min=0 value3.max=255
@@ -416,7 +416,7 @@ namespace mbit_Smartcar {
     }
 
     //% blockId=mbit_RGB_Car_Program block="Atmospheric light strip"
-    //% weight=94
+    //% weight=90
     //% blockGap=10
     //% color="#e61919"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
@@ -474,7 +474,7 @@ namespace mbit_Smartcar {
     }
     
     //% blockId=mbit_Line_Sensor block="Line_Sensor|direct %direct|Detection %value"
-    //% weight=95
+    //% weight=91
     //% blockGap=10
     //% color="#096ef1"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=12
@@ -760,7 +760,7 @@ namespace mbit_Smartcar {
     //% block="connect IR receiver at pin %pin"
     //% pin.fieldEditor="gridpicker"
     //% pin.fieldOptions.tooltips="false"
-    //% weight=90
+    //% weight=94
     export function connectIrReceiver(
         pin: DigitalPin
     ): void {
@@ -794,7 +794,7 @@ namespace mbit_Smartcar {
     //% block="on IR button | %button | %action"
     //% button.fieldEditor="gridpicker"
     //% button.fieldOptions.tooltips="false"
-    //% weight=50
+    //% weight=93
     export function onIrButton(
         button: IrButton,
         action: IrButtonAction,
@@ -862,7 +862,7 @@ namespace mbit_Smartcar {
     //% button.fieldOptions.columns=3
     //% button.fieldOptions.tooltips="false"
     //% block="IR button code %button"
-    //% weight=60
+    //% weight=92
     export function irButtonCode(button: IrButton): number {
         basic.pause(0);
         return button as number;
@@ -1052,7 +1052,7 @@ namespace mbit_Smartcar {
      * @param maxCmDistance maximum distance in centimeters (default is 500)
      */
     //% blockId=mbit_sonar_ping block="ping trig %trig|echo %echo|unit %unit"
-     //% weight=91
+     //% weight=95
     //% blockGap=10
     //% color="#8a8994"
     export function ping(trig: DigitalPin, echo: DigitalPin, unit: PingUnit, maxCmDistance = 500): number {
