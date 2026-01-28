@@ -332,7 +332,7 @@ namespace LA_MBitCar {
      * *****************************************************************
      * @param index
      */
-    //% blockId=mbit_RGB_Car_Big2 block="RGB_Car_Searchlights|Colors %value"
+    //% blockId=mbit_RGB_Car_Big2 block="Searchlights|Colors %value"
     //% weight=89
     //% blockGap=15
     //% color="#e61919"
@@ -390,7 +390,7 @@ namespace LA_MBitCar {
             }
         }
     }
-    //% blockId=mbit_RGB_Car_Big block="RGB_Car_Searchlights|Red %value1|Green %value2|Blue %value3"
+    //% blockId=mbit_RGB_Car_Big block="Searchlights|Red %value1|Green %value2|Blue %value3"
     //% weight=88
     //% blockGap=15
     //% color="#e61919"
