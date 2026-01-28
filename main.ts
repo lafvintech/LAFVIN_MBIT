@@ -418,7 +418,7 @@ namespace mbit_Smartcar {
     //% blockId=mbit_RGB_Car_Program block="Atmospheric light strip"
     //% weight=99
     //% blockGap=10
-    //% color="#C814B8"
+    //% color="#e61919"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function RGB_Car_Program(): neopixel.Strip {
          
@@ -432,7 +432,7 @@ namespace mbit_Smartcar {
     //% blockId=mbit_Music_Car block="Music_Car|%index"
     //% weight=97
     //% blockGap=10
-    //% color="#006400"
+    //% color="#d4f713"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function Music_Car(index: enMusic): void {
         switch (index) {
@@ -461,7 +461,7 @@ namespace mbit_Smartcar {
     //% blockId=mbit_Servo_Car block="Servo_Car|num %num|Angle %value"
     //% weight=96
     //% blockGap=10
-    //% color="#006400"
+    //% color="#2908df"
     //% num.min=1 num.max=3 value.min=0 value.max=180
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=9
     export function Servo_Car(num: enServo, value: number): void {
@@ -521,7 +521,7 @@ namespace mbit_Smartcar {
     //% blockId=mbit_CarCtrl block="CarCtrl|%index"
     //% weight=93
     //% blockGap=10
-    //% color="#006400"
+    //% color="#096ef1"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=10
     export function CarCtrl(index: CarState): void {
         switch (index) {
@@ -538,7 +538,7 @@ namespace mbit_Smartcar {
     //% weight=92
     //% blockGap=10
     //% speed.min=0 speed.max=255
-    //% color="#006400"
+    //% color="#096ef1"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=10
     export function CarCtrlSpeed(index: CarState, speed: number): void {
         switch (index) {
@@ -555,7 +555,7 @@ namespace mbit_Smartcar {
     //% weight=91
     //% blockGap=10
     //% speed1.min=0 speed1.max=255 speed2.min=0 speed2.max=255
-    //% color="#006400"
+    //% color="#096ef1"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=10
     export function CarCtrlSpeed2(index: CarState, speed1: number, speed2: number): void {
         switch (index) {
