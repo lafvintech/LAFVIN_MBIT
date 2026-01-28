@@ -461,7 +461,7 @@ namespace mbit_Smartcar {
     //% blockId=mbit_Servo_Car block="Servo_Car|num %num|Angle %value"
     //% weight=96
     //% blockGap=10
-    //% color="#2908df"
+    //% color="#006400"
     //% num.min=1 num.max=3 value.min=0 value.max=180
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=9
     export function Servo_Car(num: enServo, value: number): void {
@@ -476,7 +476,7 @@ namespace mbit_Smartcar {
     //% blockId=mbit_Line_Sensor block="Line_Sensor|direct %direct|Detection %value"
     //% weight=94
     //% blockGap=10
-    //% color="#006400"
+    //% color="#096ef1"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=12
     export function Line_Sensor(direct: enPos, value: enLineState): boolean {
 
@@ -521,7 +521,7 @@ namespace mbit_Smartcar {
     //% blockId=mbit_CarCtrl block="CarCtrl|%index"
     //% weight=93
     //% blockGap=10
-    //% color="#096ef1"
+    //% color="#2908df"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=10
     export function CarCtrl(index: CarState): void {
         switch (index) {
@@ -538,7 +538,7 @@ namespace mbit_Smartcar {
     //% weight=92
     //% blockGap=10
     //% speed.min=0 speed.max=255
-    //% color="#096ef1"
+    //% color="#2908df"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=10
     export function CarCtrlSpeed(index: CarState, speed: number): void {
         switch (index) {
