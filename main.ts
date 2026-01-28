@@ -335,7 +335,7 @@ namespace mbit_Smartcar {
     //% blockId=mbit_RGB_Car_Big2 block="RGB_Car_Searchlights|Colors %value"
     //% weight=101
     //% blockGap=10
-    //% color="#C814B8"
+    //% color="#e61919"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function RGB_Car_Big2(value: enColor): void {
 
@@ -393,7 +393,7 @@ namespace mbit_Smartcar {
     //% blockId=mbit_RGB_Car_Big block="RGB_Car_Searchlights|Red %value1|Green %value2|Blue %value3"
     //% weight=100
     //% blockGap=10
-    //% color="#C814B8"
+    //% color="#e61919"
     //% value1.min=0 value1.max=255 value2.min=0 value2.max=255 value3.min=0 value3.max=255
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function RGB_Car_Big(value1: number, value2: number, value3: number): void {
@@ -432,7 +432,7 @@ namespace mbit_Smartcar {
     //% blockId=mbit_Music_Car block="Music_Car|%index"
     //% weight=97
     //% blockGap=10
-    //% color="#d4f713"
+    //% color="#f5550c"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function Music_Car(index: enMusic): void {
         switch (index) {
