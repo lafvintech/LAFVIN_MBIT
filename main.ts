@@ -476,7 +476,7 @@ namespace LA_MBitCar {
     //% blockId=mbit_Line_Sensor block="Line_Sensor|direct %direct|Detection %value"
     //% weight=91
     //% blockGap=15
-    //% color="#08f59a"
+    //% color="#eeff03bb"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=12
     export function Line_Sensor(direct: enPos, value: enLineState): boolean {
 
@@ -760,6 +760,7 @@ namespace LA_MBitCar {
     //% block="connect IR receiver at pin %pin"
     //% pin.fieldEditor="gridpicker"
     //% pin.fieldOptions.tooltips="false"
+    //% color="#07c740bb"
     //% weight=94
     //% blockGap=15
     export function connectIrReceiver(
@@ -796,6 +797,7 @@ namespace LA_MBitCar {
     //% button.fieldEditor="gridpicker"
     //% button.fieldOptions.tooltips="false"
     //% weight=93
+    //% color="#07c740bb"
     //% blockGap=15
     export function onIrButton(
         button: IrButton,
@@ -865,6 +867,7 @@ namespace LA_MBitCar {
     //% button.fieldOptions.tooltips="false"
     //% block="IR button code %button"
     //% weight=92
+    //% color="#07c740bb"
     //% blockGap=15
     export function irButtonCode(button: IrButton): number {
         basic.pause(0);
