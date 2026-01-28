@@ -474,7 +474,7 @@ namespace mbit_Smartcar {
     }
     
     //% blockId=mbit_Line_Sensor block="Line_Sensor|direct %direct|Detection %value"
-    //% weight=94
+    //% weight=95
     //% blockGap=10
     //% color="#096ef1"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=12
@@ -519,7 +519,7 @@ namespace mbit_Smartcar {
 
     }
     //% blockId=mbit_CarCtrl block="CarCtrl|%index"
-    //% weight=93
+    //% weight=100
     //% blockGap=10
     //% color="#2908df"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=10
@@ -535,7 +535,7 @@ namespace mbit_Smartcar {
         }
     }
     //% blockId=mbit_CarCtrlSpeed block="CarCtrl|%index|speed %speed"
-    //% weight=92
+    //% weight=99
     //% blockGap=10
     //% speed.min=0 speed.max=255
     //% color="#2908df"
@@ -552,10 +552,10 @@ namespace mbit_Smartcar {
         }
     }
     //% blockId=mbit_CarCtrlSpeed2 block="CarCtrl|%index|Lmotor %speed1|Rmotor %speed2"
-    //% weight=91
+    //% weight=98
     //% blockGap=10
     //% speed1.min=0 speed1.max=255 speed2.min=0 speed2.max=255
-    //% color="#096ef1"
+    //% color="#2908df"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=10
     export function CarCtrlSpeed2(index: CarState, speed1: number, speed2: number): void {
         switch (index) {
