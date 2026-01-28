@@ -332,7 +332,7 @@ namespace LA_MBitCar {
      * *****************************************************************
      * @param index
      */
-    //% blockId=mbit_RGB_Car_Big2 block="Searchlights|Colors %value"
+    //% blockId=mbit_RGB_Car_Big2 block="RGB_Car_Searchlights|Colors %value"
     //% weight=89
     //% blockGap=15
     //% color="#e61919"
@@ -390,7 +390,7 @@ namespace LA_MBitCar {
             }
         }
     }
-    //% blockId=mbit_RGB_Car_Big block="Searchlights|Red %value1|Green %value2|Blue %value3"
+    //% blockId=mbit_RGB_Car_Big block="RGB_Car_Searchlights|Red %value1|Green %value2|Blue %value3"
     //% weight=88
     //% blockGap=15
     //% color="#e61919"
@@ -415,7 +415,7 @@ namespace LA_MBitCar {
 
     }
 
-    //% blockId=mbit_RGB_Car_Program block="RGB Light"
+    //% blockId=mbit_RGB_Car_Program block="Atmospheric light strip"
     //% weight=90
     //% blockGap=15
     //% color="#e61919"
@@ -429,7 +429,7 @@ namespace LA_MBitCar {
     }
 
 
-    //% blockId=mbit_Music_Car block="Music|%index"
+    //% blockId=mbit_Music_Car block="Music_Car|%index"
     //% weight=97
     //% blockGap=15
     //% color="#ff3c00"
@@ -458,7 +458,7 @@ namespace LA_MBitCar {
             case enMusic.power_down: music.beginMelody(music.builtInMelody(Melodies.PowerDown), MelodyOptions.Once); break;
         }
     }
-    //% blockId=mbit_Servo_Car block="Servo|num %num|Angle %value"
+    //% blockId=mbit_Servo_Car block="Servo_Car|num %num|Angle %value"
     //% weight=96
     //% blockGap=15
     //% color="#d80692"
@@ -518,7 +518,7 @@ namespace LA_MBitCar {
         return temp;
 
     }
-    //% blockId=mbit_CarCtrl block="Car_Ctrl|%index"
+    //% blockId=mbit_CarCtrl block="CarCtrl|%index"
     //% weight=100
     //% blockGap=15
     //% color="#2908df"
@@ -534,7 +534,7 @@ namespace LA_MBitCar {
             case CarState.Car_SpinRight: Car_spinright(255, 255); break;
         }
     }
-    //% blockId=mbit_CarCtrlSpeed block="Car_Ctrl|%index|speed %speed"
+    //% blockId=mbit_CarCtrlSpeed block="CarCtrl|%index|speed %speed"
     //% weight=99
     //% blockGap=15
     //% speed.min=0 speed.max=255
@@ -551,7 +551,7 @@ namespace LA_MBitCar {
             case CarState.Car_SpinRight: Car_spinright(speed, speed); break;
         }
     }
-    //% blockId=mbit_CarCtrlSpeed2 block="Car_Ctrl|%index|Lmotor %speed1|Rmotor %speed2"
+    //% blockId=mbit_CarCtrlSpeed2 block="CarCtrl|%index|Lmotor %speed1|Rmotor %speed2"
     //% weight=98
     //% blockGap=15
     //% speed1.min=0 speed1.max=255 speed2.min=0 speed2.max=255
@@ -569,7 +569,7 @@ namespace LA_MBitCar {
         }
     }
  
-    // Infrared remote control
+    // MakerBit 红外功能（合并到 mbit_Smartcar）
     export const enum IrButton {
         //% block="any"
         Any = -1,
