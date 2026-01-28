@@ -1,13 +1,13 @@
 {
 
-  "mbit_Smartcar.RGB_Car_Big|block": "小车RGB探照灯|红色 %value1|绿色 %value2|蓝色 %value3",
-  "mbit_Smartcar.RGB_Car_Big2|block": "小车RGB探照灯|选择车灯颜色 %value",
-  "mbit_Smartcar.Ultrasonic_Car|block": "超声波返回（cm）",
-  "mbit_Smartcar.RGB_Car_Program|block": "七彩流水灯",
-  "mbit_Smartcar.Music_Car|block": "小车音乐播放|%index",
-  "mbit_Smartcar.Line_Sensor|block": "巡线传感器|位置 %direct|检测到 %value",
-  "mbit_Smartcar.Servo_Car|block": "小车舵机|编号 %num|角度 %value",
-  "mbit_Smartcar.CarCtrl|block": "小车控制|%index",
-  "mbit_Smartcar.CarCtrlSpeed|block": "小车控制|%index|速度 %speed",
-  "mbit_Smartcar.CarCtrlSpeed2|block": "小车控制|%index|左电机速度 %speed1|右电机速度 %speed2"
+  "LA_MBitCar.RGB_Car_Big|block": "小车RGB探照灯|红色 %value1|绿色 %value2|蓝色 %value3",
+  "LA_MBitCar.RGB_Car_Big2|block": "小车RGB探照灯|选择车灯颜色 %value",
+  "LA_MBitCar.Ultrasonic_Car|block": "超声波返回（cm）",
+  "LA_MBitCar.RGB_Car_Program|block": "七彩流水灯",
+  "LA_MBitCar.Music_Car|block": "小车音乐播放|%index",
+  "LA_MBitCar.Line_Sensor|block": "巡线传感器|位置 %direct|检测到 %value",
+  "LA_MBitCar.Servo_Car|block": "小车舵机|编号 %num|角度 %value",
+  "LA_MBitCar.CarCtrl|block": "小车控制|%index",
+  "LA_MBitCar.CarCtrlSpeed|block": "小车控制|%index|速度 %speed",
+  "LA_MBitCar.CarCtrlSpeed2|block": "小车控制|%index|左电机速度 %speed1|右电机速度 %speed2"
 }

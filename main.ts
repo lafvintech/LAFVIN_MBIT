@@ -12,7 +12,7 @@ load dependency
  ****************************************************************************************************************************************/
 
 //% color="#430fbb" weight=25 icon="\uf2db"
-namespace mbit_Smartcar {
+namespace LA_MBitCar {
 
     const PCA9685_ADD = 0x41
     const MODE1 = 0x00
