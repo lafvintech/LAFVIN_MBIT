@@ -1336,7 +1336,7 @@ namespace mbit_Smartcar {
                 }
             }
 
-            //% weight=89
+            //% weight=86
             //% blockId="neopixel_range" block="%strip|range from %start|with %length|leds"
             //% parts="neopixel"
             //% blockSetVariable=range
@@ -1478,7 +1478,7 @@ namespace mbit_Smartcar {
         }
 
         //% blockId="neopixel_create" block="NeoPixel at pin %pin|with %numleds|leds as %mode"
-        //% weight=90 blockGap=8
+        //% weight=87 blockGap=8
         //% parts="neopixel"
         //% trackArgs=0,2
         //% blockSetVariable=strip
