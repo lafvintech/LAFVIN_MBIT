@@ -861,6 +861,7 @@ namespace LA_MBitCar {
         }
     }
     
+    */
 
     //% blockId=makerbit_infrared_button_code
     //% button.fieldEditor="gridpicker"
@@ -1040,7 +1041,7 @@ namespace LA_MBitCar {
             }
         }
     }
-    */
+    
     
     // Sonar 
     export enum PingUnit {
