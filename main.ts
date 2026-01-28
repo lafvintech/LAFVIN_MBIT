@@ -391,7 +391,7 @@ namespace mbit_Smartcar {
         }
     }
     //% blockId=mbit_RGB_Car_Big block="RGB_Car_Searchlights|Red %value1|Green %value2|Blue %value3"
-    //% weight=94
+    //% weight=93
     //% blockGap=10
     //% color="#e61919"
     //% value1.min=0 value1.max=255 value2.min=0 value2.max=255 value3.min=0 value3.max=255
@@ -416,7 +416,7 @@ namespace mbit_Smartcar {
     }
 
     //% blockId=mbit_RGB_Car_Program block="Atmospheric light strip"
-    //% weight=93
+    //% weight=94
     //% blockGap=10
     //% color="#e61919"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
