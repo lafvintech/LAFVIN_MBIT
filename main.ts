@@ -12,7 +12,7 @@ load dependency
  ****************************************************************************************************************************************/
 
 //% color="#430fbb" weight=25 icon="\uf2db"
-namespace LA_M {
+namespace LA_MBitCar {
 
     const PCA9685_ADD = 0x41
     const MODE1 = 0x00
@@ -332,7 +332,7 @@ namespace LA_M {
      * *****************************************************************
      * @param index
      */
-    //% blockId=mbit_RGB_Car_Big2 block="Searchlights|Colors %value"
+    //% blockId=mbit_RGB_Car_Big2 block="RGB_Car_Searchlights|Colors %value"
     //% weight=89
     //% blockGap=15
     //% color="#e61919"
@@ -390,7 +390,7 @@ namespace LA_M {
             }
         }
     }
-    //% blockId=mbit_RGB_Car_Big block="Searchlights|Red %value1|Green %value2|Blue %value3"
+    //% blockId=mbit_RGB_Car_Big block="RGB_Car_Searchlights|Red %value1|Green %value2|Blue %value3"
     //% weight=88
     //% blockGap=15
     //% color="#e61919"
@@ -760,7 +760,6 @@ namespace LA_M {
     //% block="connect IR receiver at pin %pin"
     //% pin.fieldEditor="gridpicker"
     //% pin.fieldOptions.tooltips="false"
-    //% color="#07c740bb"
     //% weight=94
     //% blockGap=15
     export function connectIrReceiver(
@@ -797,7 +796,6 @@ namespace LA_M {
     //% button.fieldEditor="gridpicker"
     //% button.fieldOptions.tooltips="false"
     //% weight=93
-    //% color="#07c740bb"
     //% blockGap=15
     export function onIrButton(
         button: IrButton,
@@ -867,7 +865,7 @@ namespace LA_M {
     //% button.fieldOptions.tooltips="false"
     //% block="IR button code %button"
     //% weight=92
-    //% color="#07c740bb"
+    //% color="#eeff03bb"
     //% blockGap=15
     export function irButtonCode(button: IrButton): number {
         basic.pause(0);
