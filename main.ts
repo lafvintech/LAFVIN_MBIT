@@ -334,7 +334,7 @@ namespace mbit_Smartcar {
      */
     //% blockId=mbit_RGB_Car_Big2 block="RGB_Car_Searchlights|Colors %value"
     //% weight=89
-    //% blockGap=10
+    //% blockGap=15
     //% color="#e61919"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function RGB_Car_Big2(value: enColor): void {
@@ -392,7 +392,7 @@ namespace mbit_Smartcar {
     }
     //% blockId=mbit_RGB_Car_Big block="RGB_Car_Searchlights|Red %value1|Green %value2|Blue %value3"
     //% weight=88
-    //% blockGap=10
+    //% blockGap=15
     //% color="#e61919"
     //% value1.min=0 value1.max=255 value2.min=0 value2.max=255 value3.min=0 value3.max=255
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
@@ -417,7 +417,7 @@ namespace mbit_Smartcar {
 
     //% blockId=mbit_RGB_Car_Program block="Atmospheric light strip"
     //% weight=90
-    //% blockGap=10
+    //% blockGap=15
     //% color="#e61919"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function RGB_Car_Program(): neopixel.Strip {
@@ -431,7 +431,7 @@ namespace mbit_Smartcar {
 
     //% blockId=mbit_Music_Car block="Music_Car|%index"
     //% weight=97
-    //% blockGap=10
+    //% blockGap=15
     //% color="#f5550c"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function Music_Car(index: enMusic): void {
@@ -460,7 +460,7 @@ namespace mbit_Smartcar {
     }
     //% blockId=mbit_Servo_Car block="Servo_Car|num %num|Angle %value"
     //% weight=96
-    //% blockGap=10
+    //% blockGap=15
     //% color="#006400"
     //% num.min=1 num.max=3 value.min=0 value.max=180
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=9
@@ -475,7 +475,7 @@ namespace mbit_Smartcar {
     
     //% blockId=mbit_Line_Sensor block="Line_Sensor|direct %direct|Detection %value"
     //% weight=91
-    //% blockGap=10
+    //% blockGap=15
     //% color="#096ef1"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=12
     export function Line_Sensor(direct: enPos, value: enLineState): boolean {
@@ -520,7 +520,7 @@ namespace mbit_Smartcar {
     }
     //% blockId=mbit_CarCtrl block="CarCtrl|%index"
     //% weight=100
-    //% blockGap=10
+    //% blockGap=15
     //% color="#2908df"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=10
     export function CarCtrl(index: CarState): void {
@@ -536,7 +536,7 @@ namespace mbit_Smartcar {
     }
     //% blockId=mbit_CarCtrlSpeed block="CarCtrl|%index|speed %speed"
     //% weight=99
-    //% blockGap=10
+    //% blockGap=15
     //% speed.min=0 speed.max=255
     //% color="#2908df"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=10
@@ -553,7 +553,7 @@ namespace mbit_Smartcar {
     }
     //% blockId=mbit_CarCtrlSpeed2 block="CarCtrl|%index|Lmotor %speed1|Rmotor %speed2"
     //% weight=98
-    //% blockGap=10
+    //% blockGap=15
     //% speed1.min=0 speed1.max=255 speed2.min=0 speed2.max=255
     //% color="#2908df"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=10
@@ -761,6 +761,7 @@ namespace mbit_Smartcar {
     //% pin.fieldEditor="gridpicker"
     //% pin.fieldOptions.tooltips="false"
     //% weight=94
+    //% blockGap=15
     export function connectIrReceiver(
         pin: DigitalPin
     ): void {
@@ -795,6 +796,7 @@ namespace mbit_Smartcar {
     //% button.fieldEditor="gridpicker"
     //% button.fieldOptions.tooltips="false"
     //% weight=93
+    //% blockGap=15
     export function onIrButton(
         button: IrButton,
         action: IrButtonAction,
@@ -863,6 +865,7 @@ namespace mbit_Smartcar {
     //% button.fieldOptions.tooltips="false"
     //% block="IR button code %button"
     //% weight=92
+    //% blockGap=15
     export function irButtonCode(button: IrButton): number {
         basic.pause(0);
         return button as number;
@@ -1053,7 +1056,7 @@ namespace mbit_Smartcar {
      */
     //% blockId=mbit_sonar_ping block="ping trig %trig|echo %echo|unit %unit"
      //% weight=95
-    //% blockGap=10
+    //% blockGap=15
     //% color="#8a8994"
     export function ping(trig: DigitalPin, echo: DigitalPin, unit: PingUnit, maxCmDistance = 500): number {
         // send pulse
@@ -1132,7 +1135,7 @@ namespace mbit_Smartcar {
             _matrixRotation: number;
 
             //% blockId="neopixel_set_strip_color" block="%strip|show color %rgb=neopixel_colors"
-            //% weight=85 blockGap=8
+            //% weight=85 blockGap=15
             //% parts="neopixel"
             showColor(rgb: number) {
                 rgb = rgb >> 0;
@@ -1141,7 +1144,7 @@ namespace mbit_Smartcar {
             }
 
             //% blockId="neopixel_set_strip_rainbow" block="%strip|show rainbow from %startHue|to %endHue"
-            //% weight=85 blockGap=8
+            //% weight=85 blockGap=15
             //% parts="neopixel"
             showRainbow(startHue: number = 1, endHue: number = 360) {
                 if (this._length <= 0) return;
@@ -1196,7 +1199,7 @@ namespace mbit_Smartcar {
                 this.show();
             }
 
-            //% weight=84
+            //% weight=84 blockGap=15
             //% blockId=neopixel_show_bar_graph block="%strip|show bar graph of %value|up to %high"
             //% icon="\uf080"
             //% parts="neopixel"
@@ -1229,7 +1232,7 @@ namespace mbit_Smartcar {
             }
 
             //% blockId="neopixel_set_pixel_color" block="%strip|set pixel color at %pixeloffset|to %rgb=neopixel_colors"
-            //% blockGap=8
+            //% blockGap=15
             //% weight=80
             //% parts="neopixel" advanced=true
             setPixelColor(pixeloffset: number, rgb: number): void {
@@ -1237,7 +1240,7 @@ namespace mbit_Smartcar {
             }
 
             //% blockId=neopixel_set_matrix_width block="%strip|set matrix width %width|rotation %rotation|chain %chain"
-            //% blockGap=8
+            //% blockGap=15
             //% weight=5
             //% parts="neopixel" advanced=true
             setMatrixWidth(width: number, rotation: number, chain: number) {
@@ -1247,7 +1250,7 @@ namespace mbit_Smartcar {
             }
 
             //% blockId="neopixel_set_matrix_color" block="%strip|set matrix color at x %x|y %y|to %rgb=neopixel_colors"
-            //% weight=4
+            //% weight=15 //% blockGap=15
             //% parts="neopixel" advanced=true
             setMatrixColor(x: number, y: number, rgb: number) {
                 if (this._matrixWidth <= 0) return; // not a matrix, ignore
@@ -1274,7 +1277,7 @@ namespace mbit_Smartcar {
             }
 
             //% blockId="neopixel_set_pixel_white" block="%strip|set pixel white LED at %pixeloffset|to %white"
-            //% blockGap=8
+            //% blockGap=15
             //% weight=80
             //% parts="neopixel" advanced=true
             setPixelWhiteLED(pixeloffset: number, white: number): void {
@@ -1283,14 +1286,14 @@ namespace mbit_Smartcar {
                 }
             }
 
-            //% blockId="neopixel_show" block="%strip|show" blockGap=8
+            //% blockId="neopixel_show" block="%strip|show" blockGap=15
             //% weight=79
             //% parts="neopixel"
             show() {
                 sendBuffer(this.buf, this.pin);
             }
 
-            //% blockId="neopixel_clear" block="%strip|clear"
+            //% blockId="neopixel_clear" block="%strip|clear" blockGap=15
             //% weight=76
             //% parts="neopixel"
             clear(): void {
@@ -1298,7 +1301,7 @@ namespace mbit_Smartcar {
                 this.buf.fill(0, this.start * stride, this._length * stride);
             }
 
-            //% blockId="neopixel_length" block="%strip|length" blockGap=8
+            //% blockId="neopixel_length" block="%strip|length" blockGap=15
             //% weight=60 advanced=true
             length() {
                 return this._length;
@@ -1311,7 +1314,7 @@ namespace mbit_Smartcar {
                 this.brightness = brightness & 0xff;
             }
 
-            //% blockId="neopixel_each_brightness" block="%strip|ease brightness" blockGap=8
+            //% blockId="neopixel_each_brightness" block="%strip|ease brightness" blockGap=15
             //% weight=58
             //% parts="neopixel" advanced=true
             easeBrightness(): void {
@@ -1336,7 +1339,7 @@ namespace mbit_Smartcar {
                 }
             }
 
-            //% weight=86
+            //% weight=86 blockGap=15
             //% blockId="neopixel_range" block="%strip|range from %start|with %length|leds"
             //% parts="neopixel"
             //% blockSetVariable=range
@@ -1354,7 +1357,7 @@ namespace mbit_Smartcar {
                 return strip;
             }
 
-            //% blockId="neopixel_shift" block="%strip|shift pixels by %offset" blockGap=8
+            //% blockId="neopixel_shift" block="%strip|shift pixels by %offset" blockGap=15
             //% weight=40
             //% parts="neopixel"
             shift(offset: number = 1): void {
@@ -1363,7 +1366,7 @@ namespace mbit_Smartcar {
                 this.buf.shift(-offset * stride, this.start * stride, this._length * stride)
             }
 
-            //% blockId="neopixel_rotate" block="%strip|rotate pixels by %offset" blockGap=8
+            //% blockId="neopixel_rotate" block="%strip|rotate pixels by %offset" blockGap=15
             //% weight=39
             //% parts="neopixel"
             rotate(offset: number = 1): void {
@@ -1372,7 +1375,8 @@ namespace mbit_Smartcar {
                 this.buf.rotate(-offset * stride, this.start * stride, this._length * stride)
             }
 
-            //% weight=10
+            //% weight=10 
+            //% blockGap=15
             //% parts="neopixel" advanced=true
             setPin(pin: DigitalPin): void {
                 this.pin = pin;
@@ -1381,6 +1385,7 @@ namespace mbit_Smartcar {
 
             //% weight=9 blockId=neopixel_power block="%strip|power (mA)"
             //% advanced=true
+            //% blockGap=15
             power(): number {
                 const stride = this._mode === NeoPixelMode.RGBW ? 4 : 3;
                 const end = this.start + this._length;
@@ -1478,7 +1483,7 @@ namespace mbit_Smartcar {
         }
 
         //% blockId="neopixel_create" block="NeoPixel at pin %pin|with %numleds|leds as %mode"
-        //% weight=87 blockGap=8
+        //% weight=87 blockGap=15
         //% parts="neopixel"
         //% trackArgs=0,2
         //% blockSetVariable=strip
@@ -1495,14 +1500,14 @@ namespace mbit_Smartcar {
             return strip;
         }
 
-        //% weight=1
+        //% weight=1 blockGap=15
         //% blockId="neopixel_rgb" block="red %red|green %green|blue %blue"
         //% advanced=true
         export function rgb(red: number, green: number, blue: number): number {
             return packRGB(red, green, blue);
         }
 
-        //% weight=2 blockGap=8
+        //% weight=2 blockGap=15
         //% blockId="neopixel_colors" block="%color"
         //% advanced=true
         export function colors(color: NeoPixelColors): number {
@@ -1525,7 +1530,8 @@ namespace mbit_Smartcar {
             return b;
         }
 
-        //% blockId=neopixelHSL block="hue %h|saturation %s|luminosity %l"
+        //% blockId=neopixelHSL block="hue %h|saturation %s|luminosity %l" 
+        //% blockGap=15
         export function hsl(h: number, s: number, l: number): number {
             h = Math.round(h);
             s = Math.round(s);
