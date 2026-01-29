@@ -1042,12 +1042,8 @@ namespace LA_MBitCar {
 
     // Sonar / Ping utilities （合并到 mbit_Smartcar）
     export enum PingUnit {
-        //% block="μs"
-        MicroSeconds,
         //% block="cm"
         Centimeters,
-        //% block="inches"
-        Inches
     }
 
     /**
