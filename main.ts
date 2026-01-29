@@ -415,7 +415,7 @@ namespace LA_MBitCar {
 
     }
 
-    //% blockId=mbit_RGB_Car_Program block="RGB WS2812 Strip"
+    //% blockId=mbit_RGB_Car_Program block="RGB Strip"
     //% weight=88
     //% blockGap=15
     //% color="#e61919"
