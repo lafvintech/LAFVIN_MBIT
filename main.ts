@@ -1043,7 +1043,7 @@ namespace LA_MBitCar {
     // Sonar / Ping utilities （合并到 mbit_Smartcar）
     export enum PingUnit {
         //% block="cm"
-        Centimeters,
+        Centimeters
     }
 
     /**
@@ -1053,11 +1053,15 @@ namespace LA_MBitCar {
      * @param unit desired conversion unit
      * @param maxCmDistance maximum distance in centimeters (default is 500)
      */
-    //% blockId=mbit_sonar_ping block="Ping trig %trig|echo %echo|unit %unit"
+    //% blockId=mbit_sonar_ping block="ultrasonic return distance(cm)"
      //% weight=95
     //% blockGap=15
     //% color="#0a051a"
     export function ping(trig: DigitalPin, echo: DigitalPin, unit: PingUnit, maxCmDistance = 500): number {
+        // force pins and unit to fixed values: Trig=P14, Echo=P15, unit=Centimeters
+        trig = DigitalPin.P14;
+        echo = DigitalPin.P15;
+
         // send pulse
         pins.setPull(trig, PinPullMode.PullNone);
         pins.digitalWritePin(trig, 0);
@@ -1066,14 +1070,9 @@ namespace LA_MBitCar {
         control.waitMicros(10);
         pins.digitalWritePin(trig, 0);
 
-        // read pulse
+        // read pulse and always return centimeters
         const d = pins.pulseIn(echo, PulseValue.High, maxCmDistance * 58);
-
-        switch (unit) {
-            case PingUnit.Centimeters: return Math.idiv(d, 58);
-            case PingUnit.Inches: return Math.idiv(d, 148);
-            default: return d;
-        }
+        return Math.idiv(d, 58);
     }
 
     /**
