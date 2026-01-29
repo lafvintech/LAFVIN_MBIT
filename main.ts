@@ -333,9 +333,9 @@ namespace LA_MBitCar {
      * @param index
      */
     //% blockId=mbit_RGB_Car_Big2 block="Searchlights|Colors %value"
-    //% weight=89
+    //% weight=90
     //% blockGap=15
-    //% color="#e61919"
+    //% color="#19c7e6"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function RGB_Car_Big2(value: enColor): void {
 
@@ -391,9 +391,9 @@ namespace LA_MBitCar {
         }
     }
     //% blockId=mbit_RGB_Car_Big block="Searchlights|Red %value1|Green %value2|Blue %value3"
-    //% weight=88
+    //% weight=89
     //% blockGap=15
-    //% color="#e61919"
+    //% color="#19c7e6"
     //% value1.min=0 value1.max=255 value2.min=0 value2.max=255 value3.min=0 value3.max=255
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
     export function RGB_Car_Big(value1: number, value2: number, value3: number): void {
@@ -415,8 +415,8 @@ namespace LA_MBitCar {
 
     }
 
-    //% blockId=mbit_RGB_Car_Program block="RGB Light"
-    //% weight=90
+    //% blockId=mbit_RGB_Car_Program block="RGB WS2812 Strip"
+    //% weight=88
     //% blockGap=15
     //% color="#e61919"
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
