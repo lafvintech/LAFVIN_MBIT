@@ -1112,7 +1112,9 @@ namespace LA_MBitCar {
     /**
      * Functions to operate NeoPixel strips.
      */
-    export namespace neopixel {
+}
+
+export namespace neopixel {
         //% shim=sendBufferAsm
         function sendBuffer(buf: Buffer, pin: DigitalPin) {
         }
@@ -1568,4 +1570,3 @@ namespace LA_MBitCar {
             Shortest
         }
     }
-}
