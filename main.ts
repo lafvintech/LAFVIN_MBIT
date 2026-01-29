@@ -1057,12 +1057,8 @@ namespace LA_MBitCar {
      //% weight=95
     //% blockGap=15
     //% color="#0a051a"
-    export function ping(trig: DigitalPin, echo: DigitalPin, unit: PingUnit, maxCmDistance = 500): number {
-        // force pins and unit to fixed values: Trig=P14, Echo=P15, unit=Centimeters
-        trig = DigitalPin.P14;
-        echo = DigitalPin.P15;
-
-        // send pulse
+    export function ping(trig: DigitalPin = DigitalPin.P14, echo: DigitalPin = DigitalPin.P15, unit: PingUnit = PingUnit.Centimeters, maxCmDistance = 500): number {
+        // send pulse (Trig fixed to P14, Echo fixed to P15 by defaults)
         pins.setPull(trig, PinPullMode.PullNone);
         pins.digitalWritePin(trig, 0);
         control.waitMicros(2);
