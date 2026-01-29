@@ -415,7 +415,7 @@ namespace LA_MBitCar {
 
     }
 
-    //% blockId=mbit_RGB_Car_Program block="RGBWS2812 Strip"
+    //% blockId=mbit_RGB_Car_Program block="RGB Lights"
     //% weight=88
     //% blockGap=15
     //% color="#e61919"
@@ -525,13 +525,13 @@ namespace LA_MBitCar {
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=10
     export function CarCtrl(index: CarState): void {
         switch (index) {
-            case CarState.Car_Run: Car_run(100, 100); break;
-            case CarState.Car_Back: Car_back(100, 100); break;
-            case CarState.Car_Left: Car_left(0, 100); break;
-            case CarState.Car_Right: Car_right(100, 0); break;
+            case CarState.Car_Run: Car_run(255, 255); break;
+            case CarState.Car_Back: Car_back(255, 255); break;
+            case CarState.Car_Left: Car_left(0, 255); break;
+            case CarState.Car_Right: Car_right(255, 0); break;
             case CarState.Car_Stop: Car_stop(); break;
-            case CarState.Car_SpinLeft: Car_spinleft(100, 100); break;
-            case CarState.Car_SpinRight: Car_spinright(100, 100); break;
+            case CarState.Car_SpinLeft: Car_spinleft(255, 255); break;
+            case CarState.Car_SpinRight: Car_spinright(255, 255); break;
         }
     }
     //% blockId=mbit_CarCtrlSpeed block="Car_Ctrl|%index|speed %speed"
