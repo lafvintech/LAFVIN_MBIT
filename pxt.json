@@ -1,0 +1,20 @@
+{
+    "name": "LAFVIN",
+    "version": "1.0.1",
+    "description": "Extension for LAFVIN  V1.0.1",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*",
+        "neopixel": "github:lzty634158/pxt-neopixel"
+    },
+    "files": [
+        "README.md",
+        "main.ts",
+        "_locales/zh/mbit-strings.json"
+
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true
+}
