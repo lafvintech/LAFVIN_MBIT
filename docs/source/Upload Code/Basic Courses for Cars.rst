@@ -1,7 +1,7 @@
-.. __ESP32 DEVKIT V1_Blink:
+.. __Basic Courses for Cars:
 
-ESP32 DEVKIT V1_Blink
-========================
+Basic Courses for Cars
+========================   
 
 ①Start Arduino IDE, open the code in File->Open...->Breakout Board for ESP32 ESP32S3>Sketch>ESP32_Sketch_ESP32_Blink>Sketch_ESP32_Blink
 

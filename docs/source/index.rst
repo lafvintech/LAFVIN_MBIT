@@ -6,6 +6,7 @@ LAFVIN Micro:bit Smart Car Kit
 
    about this kit
    Assembly/board Assembly
-   Appendix/arduino ide
-   Upload Code/upload Code
+   Appendix/How to download The Code
+   Upload Code/Programming Examples
    pinout
+   Frequently Asked Questions

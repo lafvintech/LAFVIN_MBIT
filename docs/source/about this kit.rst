@@ -6,7 +6,7 @@ About_this_kit
 Preface
 -------------------------------
 
-We first need to understand what an ESP32 / ESP32-S3 breakout board is. The illustration below shows an ESP32 / ESP32-S3 breakout board.
+This is a modular Micro:bit smart car designed for maker education, supporting MakeCode programming and meeting the learning needs of all stages from beginner to competition.
 
 .. figure:: ./Tutorial/img/正面.jpg
    :align: center
@@ -22,6 +22,11 @@ The hardware interfaces :
 .. figure:: ./Tutorial/img/区域功能.jpg
    :align: center
    :width: 70%
+
+.. figure:: ./Tutorial/img/区域功能.jpg
+   :align: center
+   :width: 70%
+
 Note
 -------------------------------
 
@@ -32,7 +37,7 @@ Note
 5. During use, if the pin is NC, the corresponding LED indicator will light up or go out randomly.
 6. If you find that some LEDs are not controlled, please first check whether the pin is an input pin. The LED indicator can only indicate the status of the output.
 
-Safety and Precautions :
+Product Parameters :
 -------------------------------
 Please follow the following safety precautions when using or storing this product:
 
@@ -54,7 +59,7 @@ ESP32-Breakout Board*1
 
    .. image:: /Tutorial/img/组件.jpg
 
-Compatible motherboards
+DEMO Video
 -------------------------------
 
 .. role:: red

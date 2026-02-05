@@ -1,9 +1,9 @@
-.. __board_Assembly:
+.. __Car_Assembly:
 
-Board_Assembly
-====================
+Car_Assembly
+==================== 
 
-ESP32 DEVKIT_V1 Board
+Assembly
 -------------------------------
 
 Please pay attention to the position of the antenna and ensure that the ESP32 DEVKT V1 / ESP32_S3 is correctly inserted onto the base board
@@ -14,16 +14,7 @@ ESP32 DEVKIT_V1 Board / ESP32_S3 is not on the packaging list
    
  *ESP32 DEVKIT V1 Board after Assembly*
 
-Note: The S terminal of the breakout board directly connects to the pins of the ESP32 DEVKI TV1 board.
-
-ESP32_S3 Board
-------------------------------- 
-
-   .. image:: /Tutorial/img/S3主控.jpg
-   
-   *ESP32_S3 Board after Assembly*
-
-Note: The S terminal of the breakout board directly connects to the  pins of the ESP32_S3 board.
+Note: The S terminal of the breakout board directly connects to the pins of the ESP32 DEVKIT V1 board.
 
 POWER
 -------------------------------
