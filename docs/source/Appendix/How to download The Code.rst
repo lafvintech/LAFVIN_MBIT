@@ -66,3 +66,6 @@ If you choose to program the car yourself, the blocks that come with MakeCode ma
 
 .. image:: /Tutorial/img/导入库成功.jpg
     :width: 800
+
+.. tip:: If you use the programming example links or Hex files we provide, the extensions will be added automatically.
+   
