@@ -6,15 +6,10 @@ Pinout
 .. role:: red
    :class: red
 
-:red:`ESP32 DEVKIT_V1_Board`
+:red:`MicroBit pin definition diagram`
 -------------------------------
 
-   .. image:: /Tutorial/img/ESP32_引脚.png
-
-:red:`ESP32_S3 Board`
--------------------------------
-
-   .. image:: /Tutorial/img/ESP32_S3引脚.png
+   .. image:: /Tutorial/img/引脚定义.png
 
 .. raw:: html
 
@@ -27,3 +22,5 @@ Pinout
      padding: 8px;
    }
    </style>
+
+For detailed information, please refer to `the Micro:bit official website hardware introduction <https://tech.microbit.org/hardware/schematic/> `and `the micro:bit developer community<https://tech.microbit.org/>`.
