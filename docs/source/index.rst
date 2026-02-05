@@ -1,4 +1,4 @@
-LAFVIN ESP32-Breakout Board 
+LAFVIN Micro:bit Smart Car Kit 
 ========================================
 
 .. toctree::
