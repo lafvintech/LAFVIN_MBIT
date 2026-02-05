@@ -15,6 +15,7 @@ Download online via MakeCode
 Connect your micro:bit drive to your computer via USB, click the computer icon, and drag and drop the prepared .hex file directly into the micro:bit drive.
 Download `code files <https://makecode.microbit.org/>`_
 
+
 .. image:: /Tutorial/img/USB连接电脑.jpg
     :width: 800
 
@@ -31,6 +32,7 @@ Download `code files <https://makecode.microbit.org/>`_
     :width: 800
 
 
+
 What is MakeCode?
 ^^^^^^^^
 
@@ -39,13 +41,16 @@ MakeCode is a free graphical programming platform developed by Microsoft. It tea
 How to use MakeCode
 ^^^^^^^^
 1. Connect the micro:bit to your computer via USB, click the computer icon, and then click the URL on the micro:bit drive to access the programming interface.
-   
+
+
 .. image:: /Tutorial/img/USB连接电脑.jpg
     :width: 800
 
 
+
 .. image:: /Tutorial/img/选择磁盘内网址.jpg
     :width: 800
+
 
 
 1. Open the MakeCode programming interface for micro:bit: `https://makecode.microbit.org/ <https://makecode.microbit.org/>`_
@@ -65,20 +70,25 @@ If you choose to program the car yourself, the blocks that come with MakeCode ma
    To import the LAFVIN Micro:bit Smart Car Kit Library, please enter the following URL: `https://github.com/lafvintech/LAFVIN_MBIT.git <https://github.com/lafvintech/LAFVIN_MBIT.git>`_
 3. Click to expand the library: LAFVIN, and you can use the blocks in this library to program the car.
 
+
 .. image:: /Tutorial/img/点击拓展.jpg
     :width: 800
+
 
 
 .. image:: /Tutorial/img/搜索库.jpg
     :width: 800
 
 
+
 .. image:: /Tutorial/img/导入库.jpg
     :width: 800
 
 
+
 .. image:: /Tutorial/img/导入库成功.jpg
     :width: 800
+
 
 
 .. tip:: If you use the programming example links or Hex files we provide, the extensions will be added automatically.
