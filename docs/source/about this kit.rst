@@ -48,16 +48,27 @@ Componen List
 -------------------------------
 
 MicroBit vehicle body (excluding motherboard) x1
+
 Directional wheel x1
+
 Vehicle wheel x2
+
 Cross axle x2
+
 Triple AAA battery box x1
+
 HC-SR04 ultrasonic module x1
+
 Metal shovel x1
+
 Servo mounting plate x1
+
 SG90 servo bag x1
+
 Metal bearing x1
+
 Screw kit x1
+
 Line guide map x1
 
    .. image:: /Tutorial/img/组件清单.jpg
