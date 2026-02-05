@@ -23,4 +23,6 @@ Pinout
    }
    </style>
 
+Different versions of Microbit motherboards have some differences.
+
 For detailed information, please refer to `the Micro:bit official website hardware introduction <https://tech.microbit.org/hardware/schematic/> `and `the micro:bit developer community<https://tech.microbit.org/>`.
