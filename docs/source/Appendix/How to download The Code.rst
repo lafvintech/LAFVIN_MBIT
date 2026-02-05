@@ -42,22 +42,19 @@ How to use MakeCode
 ^^^^^^^^
 1. Connect the micro:bit to your computer via USB, click the computer icon, and then click the URL on the micro:bit drive to access the programming interface.
 
+.. figure:: ./Tutorial/img/USB连接电脑.jpg
+   :align: center
+   :width: 70%
 
-.. image:: /Tutorial/img/USB连接电脑.jpg
-    :width: 800
-
-
-
-.. image:: /Tutorial/img/选择磁盘内网址.jpg
-    :width: 800
-
-
+.. figure:: ./Tutorial/img/选择磁盘内网址.jpg
+   :align: center
+   :width: 70%
 
 1. Open the MakeCode programming interface for micro:bit: `https://makecode.microbit.org/ <https://makecode.microbit.org/>`_
 
-.. image:: /Tutorial/img/MakeCode首页.jpg
-    :width: 800
-
+.. figure:: ./Tutorial/img/MakeCode首页.jpg
+   :align: center
+   :width: 70%
 
 
 Import makecode graphical library
@@ -70,26 +67,21 @@ If you choose to program the car yourself, the blocks that come with MakeCode ma
    To import the LAFVIN Micro:bit Smart Car Kit Library, please enter the following URL: `https://github.com/lafvintech/LAFVIN_MBIT.git <https://github.com/lafvintech/LAFVIN_MBIT.git>`_
 3. Click to expand the library: LAFVIN, and you can use the blocks in this library to program the car.
 
+.. figure:: ./Tutorial/img/点击扩展.jpg
+   :align: center
+   :width: 70%
 
-.. image:: /Tutorial/img/点击拓展.jpg
-    :width: 800
+.. figure:: ./Tutorial/img/搜索库.jpg
+   :align: center
+   :width: 70%
 
+.. figure:: ./Tutorial/img/导入库.jpg
+   :align: center
+   :width: 70%
 
-
-.. image:: /Tutorial/img/搜索库.jpg
-    :width: 800
-
-
-
-.. image:: /Tutorial/img/导入库.jpg
-    :width: 800
-
-
-
-.. image:: /Tutorial/img/导入库成功.jpg
-    :width: 800
-
-
+.. figure:: ./Tutorial/img/导入库成功.jpg
+   :align: center
+   :width: 70%
 
 .. tip:: If you use the programming example links or Hex files we provide, the extensions will be added automatically.
 
