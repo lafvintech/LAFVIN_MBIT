@@ -14,6 +14,7 @@ Download online via MakeCode
 
 Connect your micro:bit drive to your computer via USB, click the computer icon, and drag and drop the prepared .hex file directly into the micro:bit drive.
 Download `code files <https://makecode.microbit.org/>`_
+
 .. image:: /Tutorial/img/USB连接电脑.jpg
     :width: 800
 
@@ -68,4 +69,4 @@ If you choose to program the car yourself, the blocks that come with MakeCode ma
     :width: 800
 
 .. tip:: If you use the programming example links or Hex files we provide, the extensions will be added automatically.
-   
+
