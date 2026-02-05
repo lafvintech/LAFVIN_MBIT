@@ -49,7 +49,7 @@ instructions to copy the **Arduino IDE.app** to the **Applications** folder, you
     :width: 800
 
 Import extension library
-"""""""
+^^^^^^^^
 
 For the tutorial on installing the Arduino IDE 2.0 on a Linux system, please 
 refer `Linux-Install Arduino IDE <https://docs.arduino.cc/software/ide-v2/tutori
