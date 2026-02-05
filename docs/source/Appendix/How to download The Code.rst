@@ -40,12 +40,17 @@ How to use MakeCode
 ^^^^^^^^
 1. Connect the micro:bit to your computer via USB, click the computer icon, and then click the URL on the micro:bit drive to access the programming interface.
    
-.. image:: /Tutorial/img/Install_Arduino_IDE_6.png
+.. image:: /Tutorial/img/USB连接电脑.jpg
     :width: 800
 
-2. Open the MakeCode programming interface for micro:bit: `https://makecode.microbit.org/ <https://makecode.microbit.org/>`_
 
-.. image:: /Tutorial/img/Install_Arduino_IDE_6.png
+.. image:: /Tutorial/img/选择磁盘内网址.jpg
+    :width: 800
+
+
+1. Open the MakeCode programming interface for micro:bit: `https://makecode.microbit.org/ <https://makecode.microbit.org/>`_
+
+.. image:: /Tutorial/img/MakeCode首页.jpg
     :width: 800
 
 
