@@ -18,14 +18,18 @@ Download `code files <https://makecode.microbit.org/>`_
 .. image:: /Tutorial/img/USB连接电脑.jpg
     :width: 800
 
+
 .. image:: /Tutorial/img/打开磁盘.jpg
     :width: 800
+
 
 .. image:: /Tutorial/img/复制hex文件.jpg
     :width: 800
 
+
 .. image:: /Tutorial/img/拖拽进磁盘.jpg
     :width: 800
+
 
 What is MakeCode?
 ^^^^^^^^
@@ -59,14 +63,18 @@ If you choose to program the car yourself, the blocks that come with MakeCode ma
 .. image:: /Tutorial/img/点击拓展.jpg
     :width: 800
 
+
 .. image:: /Tutorial/img/搜索库.jpg
     :width: 800
+
 
 .. image:: /Tutorial/img/导入库.jpg
     :width: 800
 
+
 .. image:: /Tutorial/img/导入库成功.jpg
     :width: 800
+
 
 .. tip:: If you use the programming example links or Hex files we provide, the extensions will be added automatically.
 
