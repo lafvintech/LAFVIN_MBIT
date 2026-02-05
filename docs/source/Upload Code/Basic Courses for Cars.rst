@@ -3,27 +3,27 @@
 Basic Courses for Cars
 ========================   
 
-1. motor control module
+1. Motor Control
 --------------
 
 
-2. motor control module
+2. Music Car
 --------------
 
 
-3. motor control module
+3. Seven-Color Searchlight
 --------------
 
 
-4. motor control module
+4. RGB Running Light
 --------------
 
 
-5. motor control module
+5. RGB Breathing Light
 --------------
 
 
-6. motor control module
+6. Light Tracking
 --------------
 
 
