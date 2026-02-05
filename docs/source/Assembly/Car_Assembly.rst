@@ -6,25 +6,20 @@ Car_Assembly
 Assembly
 -------------------------------
 
-Please pay attention to the position of the antenna and ensure that the ESP32 DEVKT V1 / ESP32_S3 is correctly inserted onto the base board
+Illustrated version
 
-   .. image:: /Tutorial/img/安装对比1.jpg
-ESP32 DEVKIT_V1 Board / ESP32_S3 is not on the packaging list
-   .. image:: /Tutorial/img/32主控.jpg
+   .. image:: /Tutorial/img/图文安装步骤.jpg
+
+Video version
+
+.. raw:: html
    
- *ESP32 DEVKIT V1 Board after Assembly*
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/vfllj_hsUwg" title="LAFVIN ESP32 Breakout Board" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Note: The S terminal of the breakout board directly connects to the pins of the ESP32 DEVKIT V1 board.
 
 POWER
 -------------------------------
 
-ESP32 DEVKIT_V1 and ESP32_S3 needs 5v power supply. In this tutorial, we need connect ESP32 to computer via USB cable to power it and program it. However, during the operation of the breakout board, we strongly recommend powering it with an external power supply.
+Power supply voltage: 3.5V~5V DC (3 AAA dry cell batteries or 3.6V~3.7V lithium battery)
 
-   .. image:: /Tutorial/img/32供电.png
-
-   .. image:: /Tutorial/img/S3供电.jpg
-
-   .. image:: /Tutorial/img/推荐外部电源.jpg
-
-   .. image:: /Tutorial/img/供电.jpg
+The Micro-USB cable is only used for powering the motherboard and is insufficient to power the entire vehicle and its peripherals.
