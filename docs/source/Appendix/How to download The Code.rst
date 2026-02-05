@@ -20,7 +20,8 @@ MakeCode is a free graphical programming platform developed by Microsoft. It tea
 How to use MakeCode
 ^^^^^^^^
 1. Connect the micro:bit to your computer via USB, click the computer icon, and then click the URL on the micro:bit drive to access the programming interface.
-   .. image:: /Tutorial/img/盘内网址.png
+   
+ .. image:: /Tutorial/img/盘内网址.png
     :width: 800
 
 2. Open the MakeCode programming interface for micro:bit: `https://makecode.microbit.org/ <https://makecode.microbit.org/>`_
