@@ -27,31 +27,31 @@ Basic Courses for Cars
 --------------
 
 
-7. motor control module
+7. Line Tracking
 --------------
 
 
-8. motor control module
+8. Ultrasonic Ranging
 --------------
 
 
-9. motor control module
+9. Ultrasonic Obstacle Avoidance
 --------------
 
 
-10. motor control module
+10. Ultrasonic Following
 --------------
 
 
-11. motor control module
+11. Servo Drive
 --------------
 
 
-12. motor control module
+12. Integrated Demo_V1
 --------------
 
 
-13. motor control module
+13. Infrared Remote Control
 --------------
 
  
