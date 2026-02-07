@@ -53,6 +53,21 @@ makecode图形化程序截图:
    :width: 80%
 
 
+.. figure:: ./img/集成演示V1C6.png
+   :align: center
+   :width: 80%
+
+
+.. figure:: ./img/集成演示V1C7.png
+   :align: center
+   :width: 80%
+
+
+.. figure:: ./img/集成演示V1C8.png
+   :align: center
+   :width: 80%
+
+
 13. Infrared Remote Control
 --------------
 效果：小车前部可选装了一个红外接收模块，可以通过编程控制小车接收红外遥控器的信号，并根据不同的按键来控制小车的行驶方向和速度，实现遥控的效果。（同样综合了前面的部分教程）
