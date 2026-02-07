@@ -66,13 +66,13 @@ makecode图形化程序截图:
 
 .. figure:: ./img/RGB跑马灯C1.png
    :align: center
-   :width: 80%
+   :width: 70%
 .. figure:: ./img/RGB跑马灯C2.png
    :align: center
-   :width: 80%
+   :width: 70%
 .. figure:: ./img/RGB跑马灯C3.png
    :align: center
-   :width: 80%
+   :width: 70%
 
 5. RGB Breathing Light
 --------------
