@@ -8,7 +8,7 @@ Basic Courses for Cars
 效果：可以控制小车前进、后退、左转、右转、左旋转、右旋转、停止等动作，并且可以设置小车的速度。
 效果展示：
 
-.. figure:: ./Tutorial/img/电机控制G.gif
+.. figure:: Tutorial/img/电机控制G.gif
    :align: center
    :width: 70%
 
@@ -18,7 +18,6 @@ makecode图形化程序截图:
 .. figure:: ./Tutorial/img/电机控制C.png
    :align: center
    :width: 70%
-
 
 1. Music Car
 --------------
