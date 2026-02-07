@@ -194,6 +194,18 @@ makecode图形化程序截图:
 makecode程序链接:
 makecode图形化程序截图:
 
+.. figure:: ./img/集成演示V1C1.png
+   :align: center
+   :width: 80%
+.. figure:: ./img/集成演示V1C2.png
+   :align: center
+   :width: 80%
+.. figure:: ./img/集成演示V1C3.png
+   :align: center
+   :width: 80%
+.. figure:: ./img/集成演示V1C4.png
+   :align: center
+   :width: 80%
 .. figure:: ./img/集成演示V1C.png
    :align: center
    :width: 80%
