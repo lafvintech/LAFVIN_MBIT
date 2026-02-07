@@ -32,21 +32,26 @@ makecode图形化程序截图:
    :align: center
    :width: 80%
 
+
 .. figure:: ./img/集成演示V1C2.png
    :align: center
    :width: 80%
+
 
 .. figure:: ./img/集成演示V1C3.png
    :align: center
    :width: 80%
 
+
 .. figure:: ./img/集成演示V1C4.png
    :align: center
    :width: 80%
    
+
 .. figure:: ./img/集成演示V1C5.png
    :align: center
    :width: 80%
+
 
 13. Infrared Remote Control
 --------------
