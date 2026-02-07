@@ -3,10 +3,10 @@
 Frequently Asked Questions
 ====================
 
-.. admonition:: Q. 为什么基本代码在装上铲子后效果不尽如意？
+.. admonition:: Q. Why does the code not seem to work as well as expected after attaching the shovel?
    :class: note
 
-   **A.** 装铲子会占用超声波和I2C接口的空间，则此处接口失效，无法使用超声波和I2C相关的功能，且重量变重，小车车速也就下降，需要自行调整代码中的速度参数以适应新的负载情况。
+   **A.** Installing the shovel will take up space for the ultrasonic and I2C interfaces, making it impossible to use ultrasonic and I2C related functions, and it will also increase the weight. You will need to adjust the speed parameters in the code to adapt to the new load conditions.
 
 ----
 
