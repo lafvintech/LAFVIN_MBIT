@@ -25,34 +25,34 @@ Frequently Asked Questions
 ----
 
 .. admonition:: Q. 综合程序不能用于V2版本吗？
-   :class: important
+   :class: danger
 
    **A.** 可以的，只不过V2主板功能强大的同时所需要的供电要求就更高了，如果使用综合程序时小车无法正常运行，建议更换更大容量的电池，或者调整程序中的功能模块，减少对电力的需求。
 
 ----
 
 .. admonition:: Q. 巡线功能不太稳定，是什么原因？
-   :class: danger
+   :class: note
 
    **A.** 不同环境需要通过小车上蓝色的电位器来调整巡线传感器的灵敏度，建议在不同的环境下进行适当的调整，以获得更稳定的巡线效果。
 
 ----
 
 .. admonition:: Q. 超声波测距不准确，是什么原因？
-   :class: caution
+   :class: tip
 
    **A.** 超声波测距受环境因素影响较大，且对供电要求高，请保证电池电量足够，且在使用不同版本的MicroBit主板时测得数据的精确度也会有所不同，但可以通过代码调试达到一样的效果。
 
 ----
 
 .. admonition:: Q. 课程中使用的makecode程序链接失效了怎么办？
-   :class: attention
+   :class: warning
 
    **A.** 可能是链接过期了，建议重新搜索相关课程的makecode程序。
 
 ----
 
 .. admonition:: Q. 拓展库不能正常使用？
-   :class: hint
+   :class: danger
 
    **A.** 可能你没有正确安装拓展库，或者以前安装过的拓展库版本过旧了，可点击"JavaScript"，左侧有个资源管理器，点开找到LAFVIN_MBIT的拓展库，点击刷新图标即可进行刷新。
