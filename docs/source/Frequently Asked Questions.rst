@@ -10,45 +10,39 @@ Frequently Asked Questions
 
 ----
 
-.. admonition:: Q. MicroBit V1.5和V2版本的代码是否通用？
+.. admonition:: Q. Are the codes for MicroBit V1.5 and V2 versions compatible?
    :class: tip
 
-   **A.** 基本通用，但存在部分差异，具体可参考官方文档中的说明。
+   **A.** It's generally compatible, but there may be some differences in performance. Please refer to Micro:bit's official documentation for details.
 
 ----
 
-.. admonition:: Q. 课程中使用的makecode程序链接失效了怎么办？
+.. admonition:: Q. What should I do if the makecode program link used in the course is broken?
    :class: warning
 
-   **A.** 可能是链接过期了，建议重新搜索相关课程的makecode程序，或者联系我方客服获取最新的链接。
+   **A.** The link may have expired. We suggest you search for the makecode program for the relevant course again, or contact our customer service to get the latest link.
 
 ----
 
-.. admonition:: Q. 综合程序不能用于V2版本吗？
+.. admonition:: Q. Can't the Integrated Demo_V1 be used for version V2?
    :class: danger
 
-   **A.** 可以的，只不过V2主板功能强大的同时所需要的供电要求就更高了，如果使用综合程序时小车无法正常运行，建议更换更大容量的电池，或者调整程序中的功能模块，减少对电力的需求。
+   **A.** Yes, it's possible. However, the V2 motherboard is more powerful, which means it requires more power. If the car cannot run properly when using the integrated program, it is recommended to replace it with a larger capacity battery or adjust the functional modules in the program to reduce the power demand.
 
 ----
 
-.. admonition:: Q. 巡线功能不太稳定，是什么原因？
+.. admonition:: Q. Why is the line-following function unstable?
    :class: note
 
-   **A.** 不同环境需要通过小车上蓝色的电位器来调整巡线传感器的灵敏度，建议在不同的环境下进行适当的调整，以获得更稳定的巡线效果。
+   **A.** The sensitivity of the line-following sensor needs to be adjusted using the blue potentiometer on the vehicle to suit different environments. It is recommended to make appropriate adjustments in different environments to obtain a more stable line-following effect.
 
 ----
 
-.. admonition:: Q. 超声波测距不准确，是什么原因？
+.. admonition:: Q. What causes inaccurate ultrasonic ranging?
    :class: tip
 
-   **A.** 超声波测距受环境因素影响较大，且对供电要求高，请保证电池电量足够，且在使用不同版本的MicroBit主板时测得数据的精确度也会有所不同，但可以通过代码调试达到一样的效果。
+   **A.** Ultrasonic ranging is greatly affected by environmental factors and has high power requirements. Please ensure that the battery has sufficient power. Also, the accuracy of the measured data will vary when using different versions of MicroBit motherboards, but the same effect can be achieved through code debugging.
 
-----
-
-.. admonition:: Q. 课程中使用的makecode程序链接失效了怎么办？
-   :class: warning
-
-   **A.** 可能是链接过期了，建议重新搜索相关课程的makecode程序。
 
 ----
 
