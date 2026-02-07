@@ -46,7 +46,7 @@ Frequently Asked Questions
 
 ----
 
-.. admonition:: Q. 拓展库不能正常使用？
+.. admonition:: Q. Is the extension library not working properly?
    :class: danger
 
-   **A.** 可能你没有正确安装拓展库，或者以前安装过的拓展库版本过旧了，可点击"JavaScript"，左侧有个资源管理器，点开找到LAFVIN_MBIT的拓展库，点击刷新图标即可进行刷新。
+   **A.** You may not have installed the extension library correctly, or the version of the extension library you installed before is too old. You can click "JavaScript", there is a file explorer on the left, open it and find the LAFVIN_MBIT extension library, and click the refresh icon to refresh it.
