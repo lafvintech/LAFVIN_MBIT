@@ -15,7 +15,7 @@ Basic Courses for Cars
 makecode程序链接:
 makecode图形化程序截图:
 
-.. figure:: ./Tutorial/img/电机控制C.png
+.. figure:: Tutorial/img/电机控制C.png
    :align: center
    :width: 70%
 
