@@ -24,16 +24,16 @@ makecode图形化程序截图:
 效果：小车可以播放设置好的音乐。
 效果展示：
 
-.. figure:: ./Tutorial/img/音乐小车G.gif
+.. figure:: ./img/音乐小车G.gif
    :align: center
    :width: 70%
 
 makecode程序链接:
 makecode图形化程序截图:
 
-.. figure:: ./Tutorial/img/音乐小车C.jpg
+.. figure:: ./img/音乐小车C.png
    :align: center
-   :width: 70%
+   :width: 80%
 
 1. Seven-Color Searchlight
 --------------
