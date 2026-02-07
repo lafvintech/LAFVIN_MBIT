@@ -17,7 +17,7 @@ makecode图形化程序截图:
 
 .. figure:: ./img/电机控制C.png
    :align: center
-   :width: 70%
+   :width: 80%
 
 1. Music Car
 --------------
