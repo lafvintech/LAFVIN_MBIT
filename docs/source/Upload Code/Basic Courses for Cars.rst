@@ -51,6 +51,7 @@ makecode图形化程序截图:
    :align: center
    :width: 80%
 
+
 1. RGB Running Light
 --------------
 效果：小车底部安装了四个WS2812灯，可以通过编程控制灯的颜色和闪烁方式,实现跑马灯依次变换颜色。
@@ -63,7 +64,10 @@ makecode图形化程序截图:
 makecode程序链接:
 makecode图形化程序截图:
 
-.. figure:: ./img/RGB跑马灯C.png
+.. figure:: ./img/RGB跑马灯C1.png
+   :align: center
+   :width: 80%
+.. figure:: ./img/RGB跑马灯C2.png
    :align: center
    :width: 80%
 
