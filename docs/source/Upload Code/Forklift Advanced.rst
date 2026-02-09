@@ -75,6 +75,14 @@ makecode图形化程序截图:
 makecode程序链接:
 makecode图形化程序截图:
 
-.. figure:: ./img/红外遥控C.png
+.. figure:: ./img/红外遥控C1.png
+   :align: center
+   :width: 85%
+
+.. figure:: ./img/红外遥控C2.png
+   :align: center
+   :width: 85%
+
+.. figure:: ./img/红外遥控C3.png
    :align: center
    :width: 85%
