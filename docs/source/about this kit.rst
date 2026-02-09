@@ -48,9 +48,6 @@ Componen List
 -------------------------------
 
 
-Package Contents
-----------------
-
 .. list-table::
    :header-rows: 1
    :widths: 10 50
