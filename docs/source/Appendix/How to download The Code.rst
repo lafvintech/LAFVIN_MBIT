@@ -6,31 +6,29 @@ How to download The Code
 Drag and drop the .hex file directly onto the MicroBit motherboard.
 -------------------------------
 
+Connect your micro:bit drive to your computer via USB, click the computer icon, and drag and drop the prepared .hex file directly into the micro:bit drive.
+Download `code files <https://makecode.microbit.org/>`_
+
+.. figure:: ./img/USB连接电脑.jpg
+   :align: center
+   :width: 70%
+
+.. figure:: ./img/打开磁盘.jpg
+   :align: center
+   :width: 70%
+
+.. figure:: ./img/复制hex文件.jpg
+   :align: center
+   :width: 70%
+
+.. figure:: ./img/拖拽进磁盘.jpg
+   :align: center
+   :width: 70%
 
 
 
 Download online via MakeCode
 --------------
-
-Connect your micro:bit drive to your computer via USB, click the computer icon, and drag and drop the prepared .hex file directly into the micro:bit drive.
-Download `code files <https://makecode.microbit.org/>`_
-
-.. figure:: ./Tutorial/img/USB连接电脑.jpg
-   :align: center
-   :width: 70%
-
-.. figure:: ./Tutorial/img/打开磁盘.jpg
-   :align: center
-   :width: 70%
-
-.. figure:: ./Tutorial/img/复制hex文件.jpg
-   :align: center
-   :width: 70%
-
-.. figure:: ./Tutorial/img/拖拽进磁盘.jpg
-   :align: center
-   :width: 70%
-
 
 
 What is MakeCode?
@@ -42,19 +40,20 @@ How to use MakeCode
 ^^^^^^^^
 1. Connect the micro:bit to your computer via USB, click the computer icon, and then click the URL on the micro:bit drive to access the programming interface.
 
-.. figure:: ./Tutorial/img/USB连接电脑.jpg
+.. figure:: ./img/USB连接电脑.jpg
    :align: center
-   :width: 70%
+   :width: 85%
 
-.. figure:: ./Tutorial/img/选择磁盘内网址.jpg
+.. figure:: ./img/选择磁盘内网址.jpg
    :align: center
-   :width: 70%
+   :width: 85%
 
 1. Open the MakeCode programming interface for micro:bit: `https://makecode.microbit.org/ <https://makecode.microbit.org/>`_
 
 .. figure:: ./img/MakeCode首页.png
    :align: center
-   :width: 70%
+   :width: 85%
+
 
 
 Import makecode graphical library
@@ -67,21 +66,21 @@ If you choose to program the car yourself, the blocks that come with MakeCode ma
    To import the LAFVIN Micro:bit Smart Car Kit Library, please enter the following URL: `https://github.com/lafvintech/LAFVIN_MBIT.git <https://github.com/lafvintech/LAFVIN_MBIT.git>`_
 3. Click to expand the library: LAFVIN, and you can use the blocks in this library to program the car.
 
-.. figure:: ./Tutorial/img/点击扩展.jpg
+.. figure:: ./img/点击扩展.jpg
    :align: center
-   :width: 70%
+   :width: 85%
 
-.. figure:: ./Tutorial/img/搜索库.jpg
+.. figure:: ./img/搜索库.jpg
    :align: center
-   :width: 70%
+   :width: 85%
 
-.. figure:: ./Tutorial/img/导入库.jpg
+.. figure:: ./img/导入库.jpg
    :align: center
-   :width: 70%
+   :width: 85%
 
-.. figure:: ./Tutorial/img/导入库成功.jpg
+.. figure:: ./img/导入库成功.jpg
    :align: center
-   :width: 70%
+   :width: 85%
 
 .. tip:: If you use the programming example links or Hex files we provide, the extensions will be added automatically.
 
