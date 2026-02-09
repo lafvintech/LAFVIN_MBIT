@@ -7,7 +7,7 @@ Drag and drop the .hex file directly onto the MicroBit motherboard.
 -------------------------------
 
 Connect your micro:bit drive to your computer via USB, click the computer icon, and drag and drop the prepared .hex file directly into the micro:bit drive.
-Download `code files <https://github.com/lafvintech/LAFVIN_MBIT.git/>`_
+Download `code files <https://github.com/lafvintech/LAFVIN_MBIT/archive/refs/heads/HexFile.zip>`_
 
 
 .. figure:: ./img/查看磁盘.png
