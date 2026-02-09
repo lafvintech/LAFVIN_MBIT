@@ -48,9 +48,12 @@ Componen List
 -------------------------------
 
 
-.. list-table:: Package Contents
+Package Contents
+----------------
+
+.. list-table::
    :header-rows: 1
-   :widths: 5 40
+   :widths: 10 50
 
    * - Qty
      - Item
