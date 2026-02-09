@@ -49,7 +49,7 @@ Effect demonstration:
    :align: center
    :width: 80%
 
-makecode program link:
+makecode program link: `https://makecode.microbit.org/S48161-29282-53225-53062 <https://makecode.microbit.org/S48161-29282-53225-53062/>`_
 
 Screenshot of makecode graphical interface:
 
@@ -68,7 +68,8 @@ Effect demonstration:
    :align: center
    :width: 80%
 
-makecode program link:
+makecode program link: `https://makecode.microbit.org/S23470-56019-18472-86312 <https://makecode.microbit.org/S23470-56019-18472-86312/>`_
+
 
 Screenshot of makecode graphical interface:
 
@@ -82,7 +83,7 @@ Screenshot of makecode graphical interface:
    :align: center
    :width: 100%
 
-5. RGB Breathing Light
+1. RGB Breathing Light
 --------------
 Effect: Four WS2812 lights are installed at the bottom of the car. The color and flashing mode of the lights can be controlled by programming to achieve a breathing light effect.
 
@@ -92,7 +93,7 @@ Effect demonstration:
    :align: center
    :width: 80%
 
-makecode program link:
+makecode program link: `https://makecode.microbit.org/S42098-98692-58148-98413 <https://makecode.microbit.org/S42098-98692-58148-98413/>`_
 
 Screenshot of makecode graphical interface:
 
@@ -110,7 +111,8 @@ Effect demonstration:
    :align: center
    :width: 80%
 
-makecode program link:
+makecode program link: `https://makecode.microbit.org/S14523-36545-26778-18250 <https://makecode.microbit.org/S14523-36545-26778-18250/>`_
+
 
 Screenshot of makecode graphical interface:
 
@@ -128,7 +130,8 @@ Effect demonstration:
    :align: center
    :width: 80%
 
-makecode program link:
+makecode program link: `https://makecode.microbit.org/S92999-43627-24768-03841 <https://makecode.microbit.org/S92999-43627-24768-03841/>`_
+
 
 Screenshot of makecode graphical interface:
 
@@ -146,7 +149,8 @@ Effect demonstration:
    :align: center
    :width: 80%
 
-makecode program link:
+makecode program link: `https://makecode.microbit.org/S98856-20868-77452-43719 <https://makecode.microbit.org/S98856-20868-77452-43719/>`_
+
 
 Screenshot of makecode graphical interface:
 
@@ -164,7 +168,8 @@ Effect demonstration:
    :align: center
    :width: 80%
 
-makecode program link:
+makecode program link: `https://makecode.microbit.org/S20248-94240-76314-39688 <https://makecode.microbit.org/S20248-94240-76314-39688/>`_
+
 
 Screenshot of makecode graphical interface:
 
@@ -182,7 +187,8 @@ Effect demonstration:
    :align: center
    :width: 80%
 
-makecode program link:
+makecode program link: `https://makecode.microbit.org/S30884-31518-90039-02970 <https://makecode.microbit.org/S30884-31518-90039-02970/>`_
+
 
 Screenshot of makecode graphical interface:
 
@@ -200,7 +206,8 @@ Effect demonstration:
    :align: center
    :width: 80%
 
-makecode program link:
+makecode program link: `https://makecode.microbit.org/S43067-53664-12051-64290 <https://makecode.microbit.org/S43067-53664-12051-64290/>`_
+
 
 Screenshot of makecode graphical interface:
 

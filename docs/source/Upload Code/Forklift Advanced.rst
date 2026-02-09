@@ -26,7 +26,8 @@ Effect demonstration:
    :align: center
    :width: 85%
 
-makecode program link:
+makecode program link: `https://makecode.microbit.org/S81815-15231-85946-91749 <https://makecode.microbit.org/S81815-15231-85946-91749/>`_
+
 
 Screenshot of makecode graphical interface:
 
@@ -75,7 +76,8 @@ Effect demonstration:
    :align: center
    :width: 85%
 
-makecode program link:
+makecode program link: `https://makecode.microbit.org/S97076-50786-20847-48807 <https://makecode.microbit.org/S97076-50786-20847-48807/>`_
+
 
 Screenshot of makecode graphical interface:
 
