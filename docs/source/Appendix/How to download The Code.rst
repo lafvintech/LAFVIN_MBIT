@@ -12,15 +12,15 @@ Download `code files <https://github.com/lafvintech/LAFVIN_MBIT/archive/refs/hea
 
 .. figure:: ./img/查看磁盘.png
    :align: center
-   :width: 70%
+   :width: 85%
 
 .. figure:: ./img/复制hex文件.png
    :align: center
-   :width: 70%
+   :width: 85%
 
 .. figure:: ./img/拖拽进磁盘.png
    :align: center
-   :width: 70%
+   :width: 85%
 
 
 
@@ -45,7 +45,7 @@ How to use MakeCode
    :align: center
    :width: 85%
 
-1. Open the MakeCode programming interface for micro:bit: `https://makecode.microbit.org/ <https://makecode.microbit.org/>`_
+2. Open the MakeCode programming interface for micro:bit: `https://makecode.microbit.org/ <https://makecode.microbit.org/>`_
 
 .. figure:: ./img/MakeCode首页.png
    :align: center

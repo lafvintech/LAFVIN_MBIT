@@ -83,7 +83,7 @@ Screenshot of makecode graphical interface:
    :align: center
    :width: 100%
 
-1. RGB Breathing Light
+5. RGB Breathing Light
 --------------
 Effect: Four WS2812 lights are installed at the bottom of the car. The color and flashing mode of the lights can be controlled by programming to achieve a breathing light effect.
 
