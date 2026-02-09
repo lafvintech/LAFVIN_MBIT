@@ -5,7 +5,7 @@ Basic Courses for Cars
 
 1. Motor Control
 --------------
-效果：可以控制小车前进、后退、左转、右转、左旋转、右旋转、停止等动作，并且可以设置小车的速度。
+Effects: It can control the car to move forward, backward, turn left, turn right, rotate left and right, stop, etc., and the speed of the car can be set.
 效果展示：
 
 .. figure:: ./img/电机控制G.gif
@@ -21,7 +21,7 @@ makecode图形化程序截图:
 
 2. Music Car
 --------------
-效果：小车可以播放设置好的音乐。
+Effect: The car can play pre-set music.
 效果展示：
 
 .. figure:: ./img/音乐小车G.gif
@@ -37,7 +37,7 @@ makecode图形化程序截图:
 
 3. Seven-Color Searchlight
 --------------
-效果：小车上安装了左右两个七彩探照灯，可以通过编程控制灯的颜色和闪烁方式。
+Effect: The car is equipped with two colorful spotlights on the left and right sides, and the color and flashing pattern of the lights can be controlled by programming.
 效果展示：
 
 .. figure:: ./img/七彩探照灯G.gif
@@ -54,7 +54,7 @@ makecode图形化程序截图:
 
 4. RGB Running Light
 --------------
-效果：小车底部安装了四个WS2812灯，可以通过编程控制灯的颜色和闪烁方式,实现跑马灯依次变换颜色。
+Effect: Four WS2812 lights are installed at the bottom of the car. The color and flashing mode of the lights can be controlled by programming to realize the sequential color change of the marquee.
 效果展示：
 
 .. figure:: ./img/RGB跑马灯G.gif
@@ -76,7 +76,7 @@ makecode图形化程序截图:
 
 5. RGB Breathing Light
 --------------
-效果：小车底部安装了四个WS2812灯，可以通过编程控制灯的颜色和闪烁方式,实现呼吸灯效果。
+Effect: Four WS2812 lights are installed at the bottom of the car. The color and flashing mode of the lights can be controlled by programming to achieve a breathing light effect.
 效果展示：
 
 .. figure:: ./img/RGB呼吸灯G.gif
@@ -92,7 +92,7 @@ makecode图形化程序截图:
 
 6. Light Tracking
 --------------
-效果：MicroBit自带环境光传感器，可以通过编程控制小车根据光线的强弱来调整行驶速度，实现追光的效果。
+Effect: MicroBit comes with an ambient light sensor, which can be programmed to control the car to adjust its speed according to the intensity of light, thus achieving a light-chasing effect.
 效果展示：
 
 .. figure:: ./img/追光G.gif
@@ -108,7 +108,7 @@ makecode图形化程序截图:
 
 7. Line Tracking
 --------------
-效果：小车底部安装了两个红外线传感器，可以通过编程控制小车根据地面上的黑线来调整行驶方向，实现循迹的效果。
+Effect: Two infrared sensors are installed on the bottom of the car. The car can be programmed to adjust its direction of travel according to the black lines on the ground, thus achieving the effect of tracking.
 效果展示：
 
 .. figure:: ./img/巡线G.gif
@@ -124,7 +124,7 @@ makecode图形化程序截图:
 
 8. Ultrasonic Ranging
 --------------
-效果：小车前部可选装了一个超声波传感器，可以通过编程控制小车测量与前方障碍物的距离，并显示在MicroBit的LED屏幕上。
+Effect: An optional ultrasonic sensor is installed at the front of the car, which can be programmed to measure the distance to obstacles in front and display the result on MicroBit's LED screen.
 效果展示：
 
 .. figure:: ./img/超声波测距G.gif
@@ -139,7 +139,7 @@ makecode图形化程序截图:
 
 9. Ultrasonic Obstacle Avoidance
 --------------
-效果：小车前部可选装了一个超声波传感器，可以通过编程控制小车测量与前方障碍物的距离，并根据距离来调整行驶方向，实现避障的效果。
+Effect: An ultrasonic sensor can be optionally installed at the front of the car. The car can be programmed to measure the distance to obstacles in front and adjust its direction of travel according to the distance to achieve obstacle avoidance.
 效果展示：
 
 .. figure:: ./img/超声波避障G.gif
@@ -155,7 +155,7 @@ makecode图形化程序截图:
 
 10. Ultrasonic Following
 --------------
-效果：小车前部可选装了一个超声波传感器，可以通过编程控制小车测量与前方障碍物的距离，并根据距离来调整行驶速度，实现跟随的效果。
+Effect: An ultrasonic sensor can be optionally installed at the front of the car. It can be programmed to measure the distance to obstacles in front of it and adjust the driving speed according to the distance to achieve a following effect.
 效果展示：
 
 .. figure:: ./img/超声波跟随G.gif
@@ -171,7 +171,7 @@ makecode图形化程序截图:
 
 11. Servo Drive
 --------------
-效果：小车上留有舵机接口，接上舵机可以通过编程控制舵机的转动角度，实现一些特殊的动作。
+Effect: The car has a servo interface. By connecting a servo, the rotation angle of the servo can be controlled through programming to achieve some special actions.
 效果展示：
 
 .. figure:: ./img/舵机驱动G.gif
