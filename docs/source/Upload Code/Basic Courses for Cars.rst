@@ -15,7 +15,7 @@ Effects: It can control the car to move forward, backward, turn left, turn right
 
 makecode程序链接:
 
-makecode图形化程序截图:
+Screenshot of makecode graphical interface:
 
 .. figure:: ./img/电机控制C.png
    :align: center
@@ -33,7 +33,7 @@ Effect: The car can play pre-set music.
 
 makecode程序链接:
 
-makecode图形化程序截图:
+Screenshot of makecode graphical interface:
 
 .. figure:: ./img/音乐小车C.png
    :align: center
@@ -51,7 +51,7 @@ Effect: The car is equipped with two colorful spotlights on the left and right s
 
 makecode程序链接:
 
-makecode图形化程序截图:
+Screenshot of makecode graphical interface:
 
 .. figure:: ./img/七彩探照灯C.png
    :align: center
@@ -70,7 +70,7 @@ Effect: Four WS2812 lights are installed at the bottom of the car. The color and
 
 makecode程序链接:
 
-makecode图形化程序截图:
+Screenshot of makecode graphical interface:
 
 .. figure:: ./img/RGB跑马灯C1.png
    :align: center
@@ -93,7 +93,7 @@ Effect: Four WS2812 lights are installed at the bottom of the car. The color and
 
 makecode程序链接:
 
-makecode图形化程序截图:
+Screenshot of makecode graphical interface:
 
 .. figure:: ./img/RGB呼吸灯C.png
    :align: center
@@ -111,7 +111,7 @@ Effect: MicroBit comes with an ambient light sensor, which can be programmed to 
 
 makecode程序链接:
 
-makecode图形化程序截图:
+Screenshot of makecode graphical interface:
 
 .. figure:: ./img/追光C.png
    :align: center
@@ -129,7 +129,7 @@ Effect: Two infrared sensors are installed on the bottom of the car. The car can
 
 makecode程序链接:
 
-makecode图形化程序截图:
+Screenshot of makecode graphical interface:
 
 .. figure:: ./img/巡线C.png
    :align: center
@@ -147,7 +147,7 @@ Effect: An optional ultrasonic sensor is installed at the front of the car, whic
 
 makecode程序链接:
 
-makecode图形化程序截图:
+Screenshot of makecode graphical interface:
 
 .. figure:: ./img/超声波测距C.png
    :align: center
@@ -165,7 +165,7 @@ Effect: An ultrasonic sensor can be optionally installed at the front of the car
 
 makecode程序链接:
 
-makecode图形化程序截图:
+Screenshot of makecode graphical interface:
 
 .. figure:: ./img/超声波避障C.png
    :align: center
@@ -183,7 +183,7 @@ Effect: An ultrasonic sensor can be optionally installed at the front of the car
 
 makecode程序链接:
 
-makecode图形化程序截图:
+Screenshot of makecode graphical interface:
 
 .. figure:: ./img/超声波跟随C.png
    :align: center
@@ -201,11 +201,11 @@ Effect: The car has a servo interface. By connecting a servo, the rotation angle
 
 makecode程序链接:
 
-makecode图形化程序截图:
+Screenshot of makecode graphical interface:
 
 .. figure:: ./img/舵机驱动C.png
    :align: center
    :width: 80%
 
 
-tips:以上课程实际同样适配于进阶叉车，但由于叉车安装空间和重量和供电需要原因，需要自行调整，或者结合其他的传感器和模块来实现更丰富的演示,接下来就请自行发挥聪明才智打造属于自己的炫酷效果。
+.. tip:: The above courses are also applicable to advanced forklifts, but due to limitations in forklift installation space, weight, and power supply, adjustments will be necessary. Alternatively, you can combine them with other sensors and modules to achieve richer demonstrations. Now, feel free to use your creativity to create your own cool effects.

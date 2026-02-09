@@ -28,7 +28,7 @@ Effect: Based on our previous lessons, the vehicle utilizes various sensors and 
 
 makecode程序链接:
 
-makecode图形化程序截图:
+Screenshot of makecode graphical interface:
 
 .. figure:: ./img/集成演示V1C1.png
    :align: center
@@ -77,7 +77,7 @@ Effect: An optional infrared receiver module is installed at the front of the ca
 
 makecode程序链接:
 
-makecode图形化程序截图:
+Screenshot of makecode graphical interface:
 
 .. figure:: ./img/红外遥控C1.png
    :align: center
