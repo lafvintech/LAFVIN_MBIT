@@ -86,19 +86,19 @@ If you choose to program the car yourself, the blocks that come with MakeCode ma
    To import the LAFVIN Micro:bit Smart Car Kit Library, please enter the following URL: `https://github.com/lafvintech/LAFVIN_MBIT.git <https://github.com/lafvintech/LAFVIN_MBIT.git>`_
 3. Click to expand the library: LAFVIN, and you can use the blocks in this library to program the car.
 
-.. figure:: ./img/点击扩展.jpg
+.. figure:: ./img/导入拓展.png
    :align: center
    :width: 85%
 
-.. figure:: ./img/搜索库.jpg
+.. figure:: ./img/搜索拓展.png
    :align: center
    :width: 85%
 
-.. figure:: ./img/导入库.jpg
+.. figure:: ./img/添加拓展.png
    :align: center
    :width: 85%
 
-.. figure:: ./img/导入库成功.jpg
+.. figure:: ./img/导入成功.png
    :align: center
    :width: 85%
 
