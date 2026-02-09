@@ -47,22 +47,36 @@ Please follow the following safety precautions when using or storing this produc
 Componen List
 -------------------------------
 
-=====  =============================================
-Qty    Item
-=====  =============================================
-x1     MicroBit vehicle body (excluding motherboard)
-x1     Directional wheel
-x2     Vehicle wheel
-x2     Cross axle
-x1     Triple AAA battery box
-x1     HC-SR04 ultrasonic module
-x1     Metal shovel
-x1     Servo mounting plate
-x1     SG90 servo bag
-x1     Metal bearing
-x1     Screw kit
-x1     Line guide map
-=====  =============================================
+.. list-table:: 组件清单
+   :header-rows: 1
+   :widths: 10 40
+
+   * - Qty
+     - Item
+   * - x1
+     - MicroBit vehicle body (excluding motherboard)
+   * - x1
+     - Directional wheel
+   * - x2
+     - Vehicle wheel
+   * - x2
+     - Cross axle
+   * - x1
+     - Triple AAA battery box
+   * - x1
+     - HC-SR04 ultrasonic module
+   * - x1
+     - Metal shovel
+   * - x1
+     - Servo mounting plate
+   * - x1
+     - SG90 servo bag
+   * - x1
+     - Metal bearing
+   * - x1
+     - Screw kit
+   * - x1
+     - Line guide map
 
 
    .. image:: /Tutorial/img/组件清单.png
