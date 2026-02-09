@@ -110,6 +110,17 @@ If you choose to program the car yourself, the blocks that come with MakeCode ma
    :align: center
    :width: 100%
 
+If you find any errors in the imported extensions, you can do the following:
+
+.. figure:: ./img/刷新1.png
+   :align: center
+   :width: 100%
+
+.. figure:: ./img/刷新2.png
+   :align: center
+   :width: 100%
+
+Refresh the page to match the version in the GitHub repository and then reopen your browser.
 
 .. tip:: If you use the programming example links or Hex files we provide, the extensions will be added automatically.
 
