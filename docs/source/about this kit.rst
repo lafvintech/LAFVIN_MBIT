@@ -47,7 +47,7 @@ Please follow the following safety precautions when using or storing this produc
 Componen List
 -------------------------------
 
-.. list-table:: 组件清单
+.. list-table:: Componen List
    :header-rows: 1
    :widths: 10 40
 
@@ -80,7 +80,7 @@ Componen List
 
 
 .. tip:: Micro:Bit motherboard and battery need to be prepared by yourself.
-   
+
 .. image:: /Tutorial/img/组件清单.png
 
 DEMO Video
