@@ -9,19 +9,16 @@ Drag and drop the .hex file directly onto the MicroBit motherboard.
 Connect your micro:bit drive to your computer via USB, click the computer icon, and drag and drop the prepared .hex file directly into the micro:bit drive.
 Download `code files <https://makecode.microbit.org/>`_
 
-.. figure:: ./img/USB连接电脑.jpg
+
+.. figure:: ./img/查看磁盘.png
    :align: center
    :width: 70%
 
-.. figure:: ./img/打开磁盘.jpg
+.. figure:: ./img/复制hex文件.png
    :align: center
    :width: 70%
 
-.. figure:: ./img/复制hex文件.jpg
-   :align: center
-   :width: 70%
-
-.. figure:: ./img/拖拽进磁盘.jpg
+.. figure:: ./img/拖拽进磁盘.png
    :align: center
    :width: 70%
 
@@ -40,15 +37,15 @@ How to use MakeCode
 ^^^^^^^^
 1. Connect the micro:bit to your computer via USB, click the computer icon, and then click the URL on the micro:bit drive to access the programming interface.
 
-.. figure:: ./img/USB连接电脑.jpg
+.. figure:: ./img/查看磁盘.png
    :align: center
    :width: 85%
 
-.. figure:: ./img/选择磁盘内网址.jpg
+.. figure:: ./img/打开网址.png
    :align: center
    :width: 85%
 
-2. Open the MakeCode programming interface for micro:bit: `https://makecode.microbit.org/ <https://makecode.microbit.org/>`_
+1. Open the MakeCode programming interface for micro:bit: `https://makecode.microbit.org/ <https://makecode.microbit.org/>`_
 
 .. figure:: ./img/MakeCode首页.png
    :align: center
