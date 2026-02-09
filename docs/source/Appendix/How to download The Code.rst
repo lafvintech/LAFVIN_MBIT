@@ -52,7 +52,7 @@ How to use MakeCode
 
 1. Open the MakeCode programming interface for micro:bit: `https://makecode.microbit.org/ <https://makecode.microbit.org/>`_
 
-.. figure:: ./Tutorial/img/MakeCode首页.png
+.. figure:: ./img/MakeCode首页.png
    :align: center
    :width: 70%
 
