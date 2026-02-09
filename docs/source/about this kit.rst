@@ -79,7 +79,7 @@ Componen List
      - Line guide map
 
 
-   .. image:: /Tutorial/img/组件清单.png
+.. image:: /Tutorial/img/组件清单.png
 
 DEMO Video
 -------------------------------
