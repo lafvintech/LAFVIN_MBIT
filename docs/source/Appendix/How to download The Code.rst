@@ -48,13 +48,33 @@ How to use MakeCode
    :align: center
    :width: 85%
 
-1. Open the MakeCode programming interface for micro:bit: `https://makecode.microbit.org/ <https://makecode.microbit.org/>`_
+2. Open the MakeCode programming interface for micro:bit: `https://makecode.microbit.org/ <https://makecode.microbit.org/>`_
 
 .. figure:: ./img/MakeCode首页.png
    :align: center
    :width: 85%
 
+3. Click "New Project" to create a new project, and you can start programming the car.
 
+.. figure:: ./img/新建项目.png
+   :align: center
+   :width: 85%
+
+.. figure:: ./img/项目命名.png
+   :align: center
+   :width: 85%
+
+4. The interface allows you to switch between different programming languages, and the blocks you've already written will be converted into the corresponding programming language.
+
+.. figure:: ./img/编程语言切换.png
+   :align: center
+   :width: 85%
+
+5. After writing the code, click the "Download" button to download the .hex file, and then drag and drop it into the micro:bit drive.If device pairing has been performed, online downloading is also possible.
+   
+.. figure:: ./img/点击下载.png
+   :align: center
+   :width: 85%
 
 Import makecode graphical library
 ^^^^^^^^
