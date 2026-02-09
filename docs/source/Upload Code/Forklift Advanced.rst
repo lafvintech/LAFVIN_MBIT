@@ -23,44 +23,44 @@ Installation video:
 
 .. figure:: ./img/集成演示V1G.gif
    :align: center
-   :width: 80%
+   :width: 85%
 
 makecode程序链接:
 makecode图形化程序截图:
 
 .. figure:: ./img/集成演示V1C1.png
    :align: center
-   :width: 80%
+   :width: 85%
 
 
 .. figure:: ./img/集成演示V1C2.png
    :align: center
-   :width: 80%
+   :width: 85%
 
 
 .. figure:: ./img/集成演示V1C3.png
    :align: center
-   :width: 80%
+   :width: 85%
 
 
 .. figure:: ./img/集成演示V1C4.png
    :align: center
-   :width: 80%
+   :width: 85%
    
 
 .. figure:: ./img/集成演示V1C5.png
    :align: center
-   :width: 80%
+   :width: 85%
 
 
 .. figure:: ./img/集成演示V1C6.png
    :align: center
-   :width: 80%
+   :width: 85%
 
 
 .. figure:: ./img/集成演示V1C7.png
    :align: center
-   :width: 80%
+   :width: 85%
 
 
 1.  Infrared Remote Control
@@ -70,11 +70,11 @@ makecode图形化程序截图:
 
 .. figure:: ./img/红外遥控G.gif
    :align: center
-   :width: 80%
+   :width: 85%
 
 makecode程序链接:
 makecode图形化程序截图:
 
 .. figure:: ./img/红外遥控C.png
    :align: center
-   :width: 80%
+   :width: 85%
