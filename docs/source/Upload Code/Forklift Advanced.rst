@@ -18,7 +18,7 @@ Installation video:
 
 12. Integrated Demo_V1
 --------------
-效果：小车以我们之前学过的课程为基础，综合运用各种传感器和控制方法，实现一个集成的演示程序，可以展示小车的多种功能。（带自定义音乐教学）
+Effect: Based on our previous lessons, the vehicle utilizes various sensors and control methods to create an integrated demonstration program that showcases the vehicle's multiple functions. (Includes customizable music for instruction)
 效果展示：
 
 .. figure:: ./img/集成演示V1G.gif
@@ -65,7 +65,7 @@ makecode图形化程序截图:
 
 13.  Infrared Remote Control
 --------------
-效果：小车前部可选装了一个红外接收模块，可以通过编程控制小车接收红外遥控器的信号，并根据不同的按键来控制小车的行驶方向和速度，实现遥控的效果。（同样综合了前面的部分教程）
+Effect: An optional infrared receiver module is installed at the front of the car. This allows the car to receive signals from an infrared remote control via programming, and different buttons can be pressed to control the car's direction and speed, achieving a remote control effect. (This also incorporates elements from previous tutorials.)
 效果展示：
 
 .. figure:: ./img/红外遥控G.gif
