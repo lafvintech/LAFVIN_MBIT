@@ -88,19 +88,28 @@ If you choose to program the car yourself, the blocks that come with MakeCode ma
 
 .. figure:: ./img/导入拓展.png
    :align: center
-   :width: 85%
+   :width: 100%
 
 .. figure:: ./img/搜索拓展.png
    :align: center
-   :width: 85%
+   :width: 100%
 
 .. figure:: ./img/添加拓展.png
    :align: center
-   :width: 85%
+   :width: 100%
 
 .. figure:: ./img/导入成功.png
    :align: center
-   :width: 85%
+   :width: 100%
+
+.. figure:: ./img/查看拓展.png
+   :align: center
+   :width: 100%
+
+.. figure:: ./img/查看NEO.png
+   :align: center
+   :width: 100%
+
 
 .. tip:: If you use the programming example links or Hex files we provide, the extensions will be added automatically.
 
