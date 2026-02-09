@@ -47,6 +47,7 @@ Please follow the following safety precautions when using or storing this produc
 Componen List
 -------------------------------
 
+
 .. list-table:: Package Contents
    :header-rows: 1
    :widths: 5 40
@@ -77,6 +78,7 @@ Componen List
      - Screw kit
    * - x1
      - Line guide map
+
 
    .. image:: /Tutorial/img/组件清单.png
 
