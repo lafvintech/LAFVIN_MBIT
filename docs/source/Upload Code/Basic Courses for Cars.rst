@@ -13,7 +13,7 @@ Effect demonstration:
    :align: center
    :width: 80%
 
-makecode program link: `https://makecode.microbit.org/S95796-94350-74983-15795<https://makecode.microbit.org/S95796-94350-74983-15795>`_
+makecode program link: `https://makecode.microbit.org/S95796-94350-74983-15795<https://makecode.microbit.org/S95796-94350-74983-15795/>`_
 
 Screenshot of makecode graphical interface:
 
