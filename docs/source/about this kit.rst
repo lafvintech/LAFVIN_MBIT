@@ -47,7 +47,6 @@ Please follow the following safety precautions when using or storing this produc
 Componen List
 -------------------------------
 
-
 .. list-table::
    :header-rows: 1
    :widths: 10 50
