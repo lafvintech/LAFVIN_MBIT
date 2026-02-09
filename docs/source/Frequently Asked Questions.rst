@@ -41,12 +41,20 @@ Frequently Asked Questions
 .. admonition:: Q. What causes inaccurate ultrasonic ranging?
    :class: tip
 
-   **A.** Ultrasonic ranging is greatly affected by environmental factors and has high power requirements. Please ensure that the battery has sufficient power. Also, the accuracy of the measured data will vary when using different versions of MicroBit motherboards, but the same effect can be achieved through code debugging.
+   **A.** Ultrasonic ranging is significantly affected by environmental factors, typically with an error of 1-3 cm, and it requires high voltage. Please ensure the battery is fully charged. Furthermore, the accuracy of measurement data may vary depending on the version of the MicroBit motherboard used, but the same result can be achieved through code debugging.
 
 
 ----
 
 .. admonition:: Q. Is the extension library not working properly?
-   :class: danger
+   :class: warning
 
    **A.** You may not have installed the extension library correctly, or the version of the extension library you installed before is too old. You can click "JavaScript", there is a file explorer on the left, open it and find the LAFVIN_MBIT extension library, and click the refresh icon to refresh it.
+
+
+----
+
+.. admonition:: Q. There's no response after uploading the code, or it seems like the previous code is still being retained?
+   :class: danger
+
+   **A.** Re-upload + Replug + Brief Reboot + Reset.
