@@ -19,6 +19,7 @@ Installation video:
 12. Integrated Demo_V1
 --------------
 Effect: Based on our previous lessons, the vehicle utilizes various sensors and control methods to create an integrated demonstration program that showcases the vehicle's multiple functions. (Includes customizable music for instruction)
+
 效果展示：
 
 .. figure:: ./img/集成演示V1G.gif
@@ -26,6 +27,7 @@ Effect: Based on our previous lessons, the vehicle utilizes various sensors and 
    :width: 85%
 
 makecode程序链接:
+
 makecode图形化程序截图:
 
 .. figure:: ./img/集成演示V1C1.png
@@ -66,6 +68,7 @@ makecode图形化程序截图:
 13.  Infrared Remote Control
 --------------
 Effect: An optional infrared receiver module is installed at the front of the car. This allows the car to receive signals from an infrared remote control via programming, and different buttons can be pressed to control the car's direction and speed, achieving a remote control effect. (This also incorporates elements from previous tutorials.)
+
 效果展示：
 
 .. figure:: ./img/红外遥控G.gif
@@ -73,6 +76,7 @@ Effect: An optional infrared receiver module is installed at the front of the ca
    :width: 85%
 
 makecode程序链接:
+
 makecode图形化程序截图:
 
 .. figure:: ./img/红外遥控C1.png
