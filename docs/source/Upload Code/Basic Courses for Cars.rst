@@ -9,9 +9,11 @@ Effects: It can control the car to move forward, backward, turn left, turn right
 
 Effect demonstration:
 
-.. figure:: ./img/电机控制G.gif
-   :align: center
-   :width: 80%
+.. raw:: html
+
+   <video controls style="width: 80%; display: block; margin: 0 auto;">
+     <source src="./img/电机控制G.mp4" type="video/mp4">
+   </video>
 
 makecode program link: `https://makecode.microbit.org/S95796-94350-74983-15795 <https://makecode.microbit.org/S95796-94350-74983-15795/>`_
 
@@ -27,9 +29,11 @@ Effect: The car can play pre-set music.
 
 Effect demonstration:
 
-.. figure:: ./img/音乐小车G.gif
-   :align: center
-   :width: 80%
+.. raw:: html
+
+   <video controls style="width: 80%; display: block; margin: 0 auto;">
+     <source src="./img/音乐小车G.mp4" type="video/mp4">
+   </video>
 
 makecode program link: `https://makecode.microbit.org/S93528-06251-15177-28056 <https://makecode.microbit.org/S93528-06251-15177-28056/>`_
 
@@ -45,9 +49,11 @@ Effect: The car is equipped with two colorful spotlights on the left and right s
 
 Effect demonstration:
 
-.. figure:: ./img/七彩探照灯G.gif
-   :align: center
-   :width: 80%
+.. raw:: html
+
+   <video controls style="width: 80%; display: block; margin: 0 auto;">
+     <source src="./img/七彩探照灯G.mp4" type="video/mp4">
+   </video>
 
 makecode program link: `https://makecode.microbit.org/S48161-29282-53225-53062 <https://makecode.microbit.org/S48161-29282-53225-53062/>`_
 
@@ -64,9 +70,11 @@ Effect: Four WS2812 lights are installed at the bottom of the car. The color and
 
 Effect demonstration:
 
-.. figure:: ./img/RGB跑马灯G.gif
-   :align: center
-   :width: 80%
+.. raw:: html
+
+   <video controls style="width: 80%; display: block; margin: 0 auto;">
+     <source src="./img/RGB跑马灯G.mp4" type="video/mp4">
+   </video>
 
 makecode program link: `https://makecode.microbit.org/S23470-56019-18472-86312 <https://makecode.microbit.org/S23470-56019-18472-86312/>`_
 
@@ -89,9 +97,11 @@ Effect: Four WS2812 lights are installed at the bottom of the car. The color and
 
 Effect demonstration:
 
-.. figure:: ./img/RGB呼吸灯G.gif
-   :align: center
-   :width: 80%
+.. raw:: html
+
+   <video controls style="width: 80%; display: block; margin: 0 auto;">
+     <source src="./img/RGB呼吸灯G.mp4" type="video/mp4">
+   </video>
 
 makecode program link: `https://makecode.microbit.org/S42098-98692-58148-98413 <https://makecode.microbit.org/S42098-98692-58148-98413/>`_
 
@@ -107,9 +117,11 @@ Effect: MicroBit comes with an ambient light sensor, which can be programmed to 
 
 Effect demonstration:
 
-.. figure:: ./img/追光G.gif
-   :align: center
-   :width: 80%
+.. raw:: html
+
+   <video controls style="width: 80%; display: block; margin: 0 auto;">
+     <source src="./img/追光G.mp4" type="video/mp4">
+   </video>
 
 makecode program link: `https://makecode.microbit.org/S14523-36545-26778-18250 <https://makecode.microbit.org/S14523-36545-26778-18250/>`_
 
@@ -126,9 +138,11 @@ Effect: Two infrared sensors are installed on the bottom of the car. The car can
 
 Effect demonstration:
 
-.. figure:: ./img/巡线G.gif
-   :align: center
-   :width: 80%
+.. raw:: html
+
+   <video controls style="width: 80%; display: block; margin: 0 auto;">
+     <source src="./img/巡线G.mp4" type="video/mp4">
+   </video>
 
 makecode program link: `https://makecode.microbit.org/S82467-65410-61513-88116 <https://makecode.microbit.org/S82467-65410-61513-88116/>`_
 
@@ -145,9 +159,11 @@ Effect: An optional ultrasonic sensor is installed at the front of the car, whic
 
 Effect demonstration:
 
-.. figure:: ./img/超声波测距G.gif
-   :align: center
-   :width: 80%
+.. raw:: html
+
+   <video controls style="width: 80%; display: block; margin: 0 auto;">
+     <source src="./img/超声波测距G.mp4" type="video/mp4">
+   </video>
 
 makecode program link: `https://makecode.microbit.org/S98856-20868-77452-43719 <https://makecode.microbit.org/S98856-20868-77452-43719/>`_
 
@@ -164,9 +180,11 @@ Effect: An ultrasonic sensor can be optionally installed at the front of the car
 
 Effect demonstration:
 
-.. figure:: ./img/超声波避障G.gif
-   :align: center
-   :width: 80%
+.. raw:: html
+
+   <video controls style="width: 80%; display: block; margin: 0 auto;">
+     <source src="./img/超声波避障G.mp4" type="video/mp4">
+   </video>
 
 makecode program link: `https://makecode.microbit.org/S20248-94240-76314-39688 <https://makecode.microbit.org/S20248-94240-76314-39688/>`_
 
@@ -183,9 +201,11 @@ Effect: An ultrasonic sensor can be optionally installed at the front of the car
 
 Effect demonstration:
 
-.. figure:: ./img/超声波跟随G.gif
-   :align: center
-   :width: 80%
+.. raw:: html
+
+   <video controls style="width: 80%; display: block; margin: 0 auto;">
+     <source src="./img/超声波跟随G.mp4" type="video/mp4">
+   </video>
 
 makecode program link: `https://makecode.microbit.org/S30884-31518-90039-02970 <https://makecode.microbit.org/S30884-31518-90039-02970/>`_
 
@@ -202,9 +222,11 @@ Effect: The car has a servo interface. By connecting a servo, the rotation angle
 
 Effect demonstration:
 
-.. figure:: ./img/舵机驱动G.gif
-   :align: center
-   :width: 80%
+.. raw:: html
+
+   <video controls style="width: 80%; display: block; margin: 0 auto;">
+     <source src="./img/舵机驱动G.mp4" type="video/mp4">
+   </video>
 
 makecode program link: `https://makecode.microbit.org/S43067-53664-12051-64290 <https://makecode.microbit.org/S43067-53664-12051-64290/>`_
 
