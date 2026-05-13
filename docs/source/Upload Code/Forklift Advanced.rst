@@ -10,13 +10,8 @@ The accessories are as follows:
    :align: center
    :width: 70%
 
-Installation video:
 
-.. raw:: html
-   
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/vfllj_hsUwg" title="LAFVIN ESP32 Breakout Board" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-12. Integrated Demo_V1
+1.  Integrated Demo_V1
 --------------
 Effect: Based on our previous lessons, the vehicle utilizes various sensors and control methods to create an integrated demonstration program that showcases the vehicle's multiple functions. (Includes customizable music for instruction)
 
