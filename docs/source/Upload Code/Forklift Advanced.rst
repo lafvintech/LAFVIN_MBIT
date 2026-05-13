@@ -22,11 +22,9 @@ Effect: Based on our previous lessons, the vehicle utilizes various sensors and 
 
 Effect demonstration:
 
-.. raw:: html
-
-   <video controls style="width: 85%; display: block; margin: 0 auto;">
-     <source src="./img/集成演示V1G.mp4" type="video/mp4">
-   </video>
+.. figure:: ./img/集成演示V1G.gif
+   :align: center
+   :width: 85%
 
 makecode program link: `https://makecode.microbit.org/S81815-15231-85946-91749 <https://makecode.microbit.org/S81815-15231-85946-91749/>`_
 
@@ -74,11 +72,9 @@ Effect: An optional infrared receiver module is installed at the front of the ca
 
 Effect demonstration:
 
-.. raw:: html
-
-   <video controls style="width: 85%; display: block; margin: 0 auto;">
-     <source src="./img/红外遥控G.mp4" type="video/mp4">
-   </video>
+.. figure:: ./img/红外遥控G.gif
+   :align: center
+   :width: 85%
 
 makecode program link: `https://makecode.microbit.org/S97076-50786-20847-48807 <https://makecode.microbit.org/S97076-50786-20847-48807/>`_
 
