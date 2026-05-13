@@ -81,7 +81,7 @@ Componen List
 
 .. tip:: Micro:Bit motherboard and battery need to be prepared by yourself.
 
-.. image:: /Tutorial/img/组件清单.png
+.. image:: /Tutorial/img/组件清单.jpg
 
 DEMO Video
 -------------------------------
