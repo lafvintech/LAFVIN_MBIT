@@ -8,18 +8,18 @@ Preface
 
 This is a modular Micro:bit smart car designed for maker education, supporting MakeCode programming and meeting the learning needs of all stages from beginner to competition.
 
-.. figure:: ./Tutorial/img/小车主图.png
+.. figure:: ./Tutorial/img/小车主图.jpg
    :align: center
    :width: 70%
 
 The hardware interfaces :   
 -------------------------------
 
-.. figure:: ./Tutorial/img/小车顶层功能划分图.png
+.. figure:: ./Tutorial/img/小车顶层功能划分图.jpg
    :align: center
    :width: 70%
 
-.. figure:: ./Tutorial/img/小车底层功能划分图.png
+.. figure:: ./Tutorial/img/小车底层功能划分图.jpg
    :align: center
    :width: 70%
 
