@@ -54,9 +54,9 @@ Componen List
    * - Qty
      - Item
    * - x1
-     - MicroBit vehicle body (excluding motherboard)
+     - PCBA Car Chassis (excluding motherboard)
    * - x1
-     - Directional wheel
+     - fixed caster
    * - x2
      - Vehicle wheel
    * - x2
@@ -74,9 +74,9 @@ Componen List
    * - x1
      - Metal bearing
    * - x1
-     - Screw kit
+     - Screw Pack
    * - x1
-     - Line guide map
+     - Patrol Route Map
 
 
 .. tip:: Micro:Bit motherboard and battery need to be prepared by yourself.
@@ -90,4 +90,4 @@ Car effect demonstration:
 
 .. raw:: html
    
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/vfllj_hsUwg" title="LAFVIN ESP32 Breakout Board" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe width="1349" height="759" src="https://www.youtube.com/embed/eTImQBHJAHw" title="LAFVIN MicroBit Smart Car" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
