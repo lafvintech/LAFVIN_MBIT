@@ -25,12 +25,6 @@ Screenshot of makecode graphical interface:
 --------------
 Effect: The car can play pre-set music.
 
-Effect demonstration:
-
-.. figure:: ./img/音乐小车G.gif
-   :align: center
-   :width: 80%
-
 makecode program link: `https://makecode.microbit.org/S93528-06251-15177-28056 <https://makecode.microbit.org/S93528-06251-15177-28056/>`_
 
 Screenshot of makecode graphical interface:
@@ -39,7 +33,7 @@ Screenshot of makecode graphical interface:
    :align: center
    :width: 80%
 
-3. Seven-Color Searchlight
+1. Seven-Color Searchlight
 --------------
 Effect: The car is equipped with two colorful spotlights on the left and right sides, and the color and flashing pattern of the lights can be controlled by programming.
 
