@@ -6,7 +6,7 @@ Forklift Advanced
 First, we should install the forklift accessories.
 Click :ref:`here <car_assembly_assembly>` to jump to the Assembly section in Car_Assembly.
 
-.. figure:: ./Tutorial/img/小车主图.jpg
+.. figure:: ./img/铲车.jpg
    :align: center
    :width: 90%
 
