@@ -15,11 +15,11 @@ This is a modular Micro:bit smart car designed for maker education, supporting M
 The hardware interfaces :   
 -------------------------------
 
-.. figure:: ./Tutorial/img/小车顶层功能划分图.jpg
+.. figure:: ./Tutorial/img/顶层.png
    :align: center
    :width: 70%
 
-.. figure:: ./Tutorial/img/小车底层功能划分图.jpg
+.. figure:: ./Tutorial/img/底层.png
    :align: center
    :width: 70%
 
