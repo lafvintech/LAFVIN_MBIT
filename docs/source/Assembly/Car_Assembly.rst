@@ -29,7 +29,7 @@ Forklift Assembly
    .. image:: /Tutorial/img/装轴承.png
 
 
-   .. image:: /Tutorial/img/装舵机.png
+   .. image:: /Tutorial/img/安装舵机.jpg
 
 
    .. image:: /Tutorial/img/定舵机.png 
@@ -47,7 +47,7 @@ Forklift Assembly
    .. image:: /Tutorial/img/定铲车.png
 
 
-   .. image:: /Tutorial/img/接入舵机.png
+   .. image:: /Tutorial/img/接入舵机.jpg
 
 
 
