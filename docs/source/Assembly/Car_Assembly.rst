@@ -3,6 +3,8 @@
 Car_Assembly
 ==================== 
 
+.. _car_assembly_assembly:
+
 Assembly
 -------------------------------
 
