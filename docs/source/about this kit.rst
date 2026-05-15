@@ -17,11 +17,11 @@ The hardware interfaces :
 
 .. figure:: ./Tutorial/img/顶层.png
    :align: center
-   :width: 70%
+   :width: 90%
 
 .. figure:: ./Tutorial/img/底层.png
    :align: center
-   :width: 70%
+   :width: 90%
 
 Product Parameters :
 -------------------------------
