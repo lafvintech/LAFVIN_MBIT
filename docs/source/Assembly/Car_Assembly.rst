@@ -23,9 +23,6 @@ Basic model Assembly
 
 
 
-.. _car_assembly_assembly:
-
-
 Forklift Assembly
 -------------------------------
 
