@@ -20,7 +20,7 @@ Illustrated version
 
    .. image:: /Tutorial/img/安装轮胎.jpg
 
-   .. image:: /Tutorial/img/插上主板.jpg
+   .. image:: /Tutorial/img/插入主板.jpg
 
 
 
