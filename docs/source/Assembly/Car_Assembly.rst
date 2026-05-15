@@ -25,24 +25,25 @@ Basic model Assembly
 
 .. _car_assembly_assembly:
 
+
 Forklift Assembly
 -------------------------------
 
-   .. image:: /Tutorial/img/安装轴承.jpg
+   .. image:: /Tutorial/img/安装轴承.png
 
    .. image:: /Tutorial/img/安装舵机.png
 
-   .. image:: /Tutorial/img/固定舵机.jpg   
+   .. image:: /Tutorial/img/固定舵机.png 
 
-   .. image:: /Tutorial/img/安装摆臂.jpg
+   .. image:: /Tutorial/img/安装摆臂.png
 
-   .. image:: /Tutorial/img/固定摆臂.jpg
+   .. image:: /Tutorial/img/固定摆臂.png
 
-   .. image:: /Tutorial/img/固定铲子.jpg
+   .. image:: /Tutorial/img/固定铲子.png
 
-   .. image:: /Tutorial/img/固定铲车.jpg
+   .. image:: /Tutorial/img/固定铲车.png
 
-   .. image:: /Tutorial/img/接入舵机.jpg
+   .. image:: /Tutorial/img/接入舵机.png
 
 
 POWER
