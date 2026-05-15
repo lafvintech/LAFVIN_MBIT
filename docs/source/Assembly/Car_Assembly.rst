@@ -10,7 +10,7 @@ Illustrated version
 
    .. image:: /Tutorial/img/安装十字轴.jpg
 
-   .. image:: /Tutorial/img/安装定向轮.jpg
+   .. image:: /Tutorial/img/安装定向轮.png
 
    .. image:: /Tutorial/img/粘贴点胶.jpg   
 
