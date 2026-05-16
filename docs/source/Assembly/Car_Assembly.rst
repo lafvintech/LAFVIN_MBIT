@@ -23,6 +23,8 @@ Basic model Assembly
 
 
 
+.. _forklift_assembly:
+
 Forklift Assembly
 -------------------------------
 
@@ -50,6 +52,9 @@ Forklift Assembly
    .. image:: /Tutorial/img/接入舵机.jpg
 
 
+.. tip:: Different forms are used in different scenarios. For example, the forklift form is suitable for situations requiring servo motor control, while the ultrasonic form requires removing the forklift assembly and replacing it with an ultrasonic module.
+
+   .. image:: /Tutorial/img/超声波形态.jpg
 
 POWER
 -------------------------------

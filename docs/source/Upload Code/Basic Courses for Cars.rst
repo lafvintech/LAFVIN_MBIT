@@ -137,6 +137,10 @@ Screenshot of makecode graphical interface:
 --------------
 Effect: An optional ultrasonic sensor is installed at the front of the car, which can be programmed to measure the distance to obstacles in front and display the result on MicroBit's LED screen.
 
+.. tip::  Before using the ultrasonic function, you should switch to ultrasonic mode.
+
+   .. image:: /Tutorial/img/安装超声波.jpg
+
 Effect demonstration:
 
 .. figure:: ./img/超声波测距G.gif
@@ -210,4 +214,4 @@ Screenshot of makecode graphical interface:
    :width: 80%
 
 
-.. tip:: The above courses are also applicable to advanced forklifts, but due to limitations in forklift installation space, weight, and power supply, adjustments will be necessary. Alternatively, you can combine them with other sensors and modules to achieve richer demonstrations. Now, feel free to use your creativity to create your own cool effects.
+.. tip:: Due to limitations in installation space, weight, and power supply for the basic/ultrasonic/forklift form factors, adjustments may be necessary. Alternatively, you can combine them with other sensors and modules to achieve richer demonstration effects. Now, unleash your creativity and create your own cool effects.
