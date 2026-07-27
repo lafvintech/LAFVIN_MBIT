@@ -7,6 +7,7 @@ LAFVIN Micro:bit Smart Car Kit
    about this kit
    Assembly/Car_Assembly
    Appendix/How to download The Code
+   Basic Knowledge
    Upload Code/Programming Examples
    pinout
    Frequently Asked Questions
