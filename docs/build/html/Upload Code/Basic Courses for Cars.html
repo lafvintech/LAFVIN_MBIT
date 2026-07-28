@@ -1,0 +1,365 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basic Courses for Cars &mdash; LAFVIN-MicroBit-SmartCar  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=888ff710"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Forklift Advanced" href="Forklift%20Advanced.html" />
+    <link rel="prev" title="Programming Examples" href="Programming%20Examples.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+    <a href="https://www.lafvintech.com/" class="logo-link">
+        <img src="https://lafvintech.com/cdn/shop/files/logo_V2_300x@2x.png?v=1642487152" class="logo" alt="Logo"/>
+    </a>
+    
+    
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../about%20this%20kit.html">About_this_kit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Assembly/Car_Assembly.html">Car_Assembly</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Appendix/How%20to%20download%20The%20Code.html">How to download The Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Basic%20Knowledge.html">Basic Knowledge</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="Programming%20Examples.html">Programming Examples</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Basic Courses for Cars</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#motor-control">1. Motor Control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#music-car">2. Music Car</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#seven-color-searchlight">1. Seven-Color Searchlight</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rgb-running-light">4. RGB Running Light</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rgb-breathing-light">5. RGB Breathing Light</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#light-tracking">6. Light Tracking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#line-tracking">7. Line Tracking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ultrasonic-ranging">8. Ultrasonic Ranging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ultrasonic-obstacle-avoidance">9. Ultrasonic Obstacle Avoidance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ultrasonic-following">10. Ultrasonic Following</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#servo-drive">11. Servo Drive</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Forklift%20Advanced.html">Forklift Advanced</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pinout.html">Pinout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Frequently%20Asked%20Questions.html">Frequently Asked Questions</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">LAFVIN-MicroBit-SmartCar</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="Programming%20Examples.html">Programming Examples</a></li>
+      <li class="breadcrumb-item active">Basic Courses for Cars</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/Upload Code/Basic Courses for Cars.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="basic-courses-for-cars">
+<h1>Basic Courses for Cars<a class="headerlink" href="#basic-courses-for-cars" title="Link to this heading"></a></h1>
+<section id="motor-control">
+<h2>1. Motor Control<a class="headerlink" href="#motor-control" title="Link to this heading"></a></h2>
+<p>Effects: It can control the car to move forward, backward, turn left, turn right, rotate left and right, stop, etc., and the speed of the car can be set.</p>
+<p>Effect demonstration:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/电机控制G.gif"><img alt="../_images/%E7%94%B5%E6%9C%BA%E6%8E%A7%E5%88%B6G.gif" src="../_images/%E7%94%B5%E6%9C%BA%E6%8E%A7%E5%88%B6G.gif" style="width: 80%;" /></a>
+</figure>
+<p>makecode program link: <a class="reference external" href="https://makecode.microbit.org/S95796-94350-74983-15795/">https://makecode.microbit.org/S95796-94350-74983-15795</a></p>
+<p>Screenshot of makecode graphical interface:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/电机控制C.png"><img alt="../_images/%E7%94%B5%E6%9C%BA%E6%8E%A7%E5%88%B6C.png" src="../_images/%E7%94%B5%E6%9C%BA%E6%8E%A7%E5%88%B6C.png" style="width: 80%;" /></a>
+</figure>
+<p><strong>Code analysis:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">start</span></code> shows an icon once when the micro:bit starts.</p></li>
+<li><p>The blocks inside <code class="docutils literal notranslate"><span class="pre">forever</span></code> run from top to bottom and then start again.</p></li>
+<li><p>The car moves forward for 1 second, rotates left for 1 second, rotates right for 1 second, and moves backward for 1 second. Each movement uses speed 100.</p></li>
+<li><p>Finally, the car stops for 1 second. Then the whole sequence repeats.</p></li>
+</ul>
+</section>
+<section id="music-car">
+<h2>2. Music Car<a class="headerlink" href="#music-car" title="Link to this heading"></a></h2>
+<p>Effect: The car can play pre-set music.</p>
+<p>makecode program link: <a class="reference external" href="https://makecode.microbit.org/S93528-06251-15177-28056/">https://makecode.microbit.org/S93528-06251-15177-28056</a></p>
+<p>Screenshot of makecode graphical interface:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/音乐小车C.png"><img alt="../_images/%E9%9F%B3%E4%B9%90%E5%B0%8F%E8%BD%A6C.png" src="../_images/%E9%9F%B3%E4%B9%90%E5%B0%8F%E8%BD%A6C.png" style="width: 80%;" /></a>
+</figure>
+<p><strong>Code analysis:</strong></p>
+<ul class="simple">
+<li><p>The blocks inside <code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">start</span></code> run once when the micro:bit starts.</p></li>
+<li><p>First, the LED screen shows an icon.</p></li>
+<li><p>Next, the car plays the built-in <code class="docutils literal notranslate"><span class="pre">dadadum</span></code> melody once.</p></li>
+</ul>
+</section>
+<section id="seven-color-searchlight">
+<h2>1. Seven-Color Searchlight<a class="headerlink" href="#seven-color-searchlight" title="Link to this heading"></a></h2>
+<p>Effect: The car is equipped with two colorful spotlights on the left and right sides, and the color and flashing pattern of the lights can be controlled by programming.</p>
+<p>Effect demonstration:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/七彩探照灯G.gif"><img alt="../_images/%E4%B8%83%E5%BD%A9%E6%8E%A2%E7%85%A7%E7%81%AFG.gif" src="../_images/%E4%B8%83%E5%BD%A9%E6%8E%A2%E7%85%A7%E7%81%AFG.gif" style="width: 80%;" /></a>
+</figure>
+<p>makecode program link: <a class="reference external" href="https://makecode.microbit.org/S48161-29282-53225-53062/">https://makecode.microbit.org/S48161-29282-53225-53062</a></p>
+<p>Screenshot of makecode graphical interface:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/七彩探照灯C.png"><img alt="../_images/%E4%B8%83%E5%BD%A9%E6%8E%A2%E7%85%A7%E7%81%AFC.png" src="../_images/%E4%B8%83%E5%BD%A9%E6%8E%A2%E7%85%A7%E7%81%AFC.png" style="width: 80%;" /></a>
+</figure>
+<p><strong>Code analysis:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">start</span></code> shows an icon once.</p></li>
+<li><p>Inside <code class="docutils literal notranslate"><span class="pre">forever</span></code>, the two searchlights change in this order: red, green, blue, white, cyan, pinkish, yellow, and off.</p></li>
+<li><p>A <code class="docutils literal notranslate"><span class="pre">pause</span> <span class="pre">500</span> <span class="pre">ms</span></code> block follows every color change, so each setting stays for half a second.</p></li>
+<li><p>After the lights turn off for half a second, the color sequence starts again.</p></li>
+</ul>
+</section>
+<section id="rgb-running-light">
+<h2>4. RGB Running Light<a class="headerlink" href="#rgb-running-light" title="Link to this heading"></a></h2>
+<p>Effect: Four WS2812 lights are installed at the bottom of the car. The color and flashing mode of the lights can be controlled by programming to realize the sequential color change of the marquee.</p>
+<p>Effect demonstration:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/RGB跑马灯G.gif"><img alt="../_images/RGB%E8%B7%91%E9%A9%AC%E7%81%AFG.gif" src="../_images/RGB%E8%B7%91%E9%A9%AC%E7%81%AFG.gif" style="width: 80%;" /></a>
+</figure>
+<p>makecode program link: <a class="reference external" href="https://makecode.microbit.org/S23470-56019-18472-86312/">https://makecode.microbit.org/S23470-56019-18472-86312</a></p>
+<p>Screenshot of makecode graphical interface:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/RGB跑马灯C1.png"><img alt="../_images/RGB%E8%B7%91%E9%A9%AC%E7%81%AFC1.png" src="../_images/RGB%E8%B7%91%E9%A9%AC%E7%81%AFC1.png" style="width: 100%;" /></a>
+</figure>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/RGB跑马灯C2.png"><img alt="../_images/RGB%E8%B7%91%E9%A9%AC%E7%81%AFC2.png" src="../_images/RGB%E8%B7%91%E9%A9%AC%E7%81%AFC2.png" style="width: 100%;" /></a>
+</figure>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/RGB跑马灯C3.png"><img alt="../_images/RGB%E8%B7%91%E9%A9%AC%E7%81%AFC3.png" src="../_images/RGB%E8%B7%91%E9%A9%AC%E7%81%AFC3.png" style="width: 100%;" /></a>
+</figure>
+<p><strong>Code analysis:</strong></p>
+<ul class="simple">
+<li><p>The four RGB lights are numbered 0, 1, 2, and 3.</p></li>
+<li><p>Inside <code class="docutils literal notranslate"><span class="pre">forever</span></code>, the program changes one numbered light at a time. It uses red, orange, yellow, and green first, followed by blue, indigo, violet, purple, and white as shown in the screenshots.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">RGB</span> <span class="pre">Lights</span> <span class="pre">show</span></code> makes each new color setting appear on the real lights.</p></li>
+<li><p>After every <code class="docutils literal notranslate"><span class="pre">show</span></code> block, the program waits 500 milliseconds before changing the next light.</p></li>
+<li><p>When the last step is finished, the running-light sequence repeats.</p></li>
+</ul>
+</section>
+<section id="rgb-breathing-light">
+<h2>5. RGB Breathing Light<a class="headerlink" href="#rgb-breathing-light" title="Link to this heading"></a></h2>
+<p>Effect: Four WS2812 lights are installed at the bottom of the car. The color and flashing mode of the lights can be controlled by programming to achieve a breathing light effect.</p>
+<p>Effect demonstration:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/RGB呼吸灯G.gif"><img alt="../_images/RGB%E5%91%BC%E5%90%B8%E7%81%AFG.gif" src="../_images/RGB%E5%91%BC%E5%90%B8%E7%81%AFG.gif" style="width: 80%;" /></a>
+</figure>
+<p>makecode program link: <a class="reference external" href="https://makecode.microbit.org/S42098-98692-58148-98413/">https://makecode.microbit.org/S42098-98692-58148-98413</a></p>
+<p>Screenshot of makecode graphical interface:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/RGB呼吸灯C.png"><img alt="../_images/RGB%E5%91%BC%E5%90%B8%E7%81%AFC.png" src="../_images/RGB%E5%91%BC%E5%90%B8%E7%81%AFC.png" style="width: 80%;" /></a>
+</figure>
+<p><strong>Code analysis:</strong></p>
+<ul class="simple">
+<li><p>At the start, the program shows an icon, sets the variable <code class="docutils literal notranslate"><span class="pre">a</span></code> to 0, and clears the RGB lights.</p></li>
+<li><p>The first <code class="docutils literal notranslate"><span class="pre">for</span></code> loop changes <code class="docutils literal notranslate"><span class="pre">a</span></code> from 0 to 255. It uses <code class="docutils literal notranslate"><span class="pre">a</span></code> as the brightness, so the white lights gradually become brighter.</p></li>
+<li><p>The second <code class="docutils literal notranslate"><span class="pre">for</span></code> loop also changes <code class="docutils literal notranslate"><span class="pre">a</span></code> from 0 to 255, but it sets the brightness to <code class="docutils literal notranslate"><span class="pre">255</span> <span class="pre">-</span> <span class="pre">a</span></code>. This makes the white lights gradually become dimmer.</p></li>
+<li><p>Both loops are inside <code class="docutils literal notranslate"><span class="pre">forever</span></code>, so the brighten-and-dim breathing effect repeats.</p></li>
+</ul>
+</section>
+<section id="light-tracking">
+<h2>6. Light Tracking<a class="headerlink" href="#light-tracking" title="Link to this heading"></a></h2>
+<p>Effect: MicroBit comes with an ambient light sensor, which can be programmed to control the car to adjust its speed according to the intensity of light, thus achieving a light-chasing effect.</p>
+<p>Effect demonstration:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/追光G.gif"><img alt="../_images/%E8%BF%BD%E5%85%89G.gif" src="../_images/%E8%BF%BD%E5%85%89G.gif" style="width: 80%;" /></a>
+</figure>
+<p>makecode program link: <a class="reference external" href="https://makecode.microbit.org/S14523-36545-26778-18250/">https://makecode.microbit.org/S14523-36545-26778-18250</a></p>
+<p>Screenshot of makecode graphical interface:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/追光C.png"><img alt="../_images/%E8%BF%BD%E5%85%89C.png" src="../_images/%E8%BF%BD%E5%85%89C.png" style="width: 80%;" /></a>
+</figure>
+<p><strong>Code analysis:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">light</span> <span class="pre">level</span></code> is the brightness value measured by the micro:bit.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">forever</span></code> loop keeps checking this value.</p></li>
+<li><p>If the light level is 70 or more, the car moves forward. Its speed is set to the current light-level value.</p></li>
+<li><p>If the light level is below 70, the car stops.</p></li>
+</ul>
+</section>
+<section id="line-tracking">
+<h2>7. Line Tracking<a class="headerlink" href="#line-tracking" title="Link to this heading"></a></h2>
+<p>Effect: Two infrared sensors are installed on the bottom of the car. The car can be programmed to adjust its direction of travel according to the black lines on the ground, thus achieving the effect of tracking.</p>
+<p>Effect demonstration:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/巡线G.gif"><img alt="../_images/%E5%B7%A1%E7%BA%BFG.gif" src="../_images/%E5%B7%A1%E7%BA%BFG.gif" style="width: 80%;" /></a>
+</figure>
+<p>makecode program link: <a class="reference external" href="https://makecode.microbit.org/S82467-65410-61513-88116/">https://makecode.microbit.org/S82467-65410-61513-88116</a></p>
+<p>Screenshot of makecode graphical interface:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/巡线C.png"><img alt="../_images/%E5%B7%A1%E7%BA%BFC.png" src="../_images/%E5%B7%A1%E7%BA%BFC.png" style="width: 80%;" /></a>
+</figure>
+<p><strong>Code analysis:</strong></p>
+<ul class="simple">
+<li><p>The <code class="docutils literal notranslate"><span class="pre">forever</span></code> loop keeps reading the left and right line sensors.</p></li>
+<li><p>If both sensors detect white, the car moves forward at speed 45.</p></li>
+<li><p>If the left sensor detects white and the right sensor detects black, the car rotates right at speed 55.</p></li>
+<li><p>If the left sensor detects black and the right sensor detects white, the car rotates left at speed 55.</p></li>
+<li><p>For any other sensor result, the car stops.</p></li>
+</ul>
+</section>
+<section id="ultrasonic-ranging">
+<h2>8. Ultrasonic Ranging<a class="headerlink" href="#ultrasonic-ranging" title="Link to this heading"></a></h2>
+<p>Effect: An optional ultrasonic sensor is installed at the front of the car, which can be programmed to measure the distance to obstacles in front and display the result on MicroBit’s LED screen.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Before using the ultrasonic function, you should switch to ultrasonic mode.</p>
+<img alt="../_images/%E5%AE%89%E8%A3%85%E8%B6%85%E5%A3%B0%E6%B3%A2.jpg" src="../_images/%E5%AE%89%E8%A3%85%E8%B6%85%E5%A3%B0%E6%B3%A2.jpg" />
+</div>
+<p>Effect demonstration:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/超声波测距G.gif"><img alt="../_images/%E8%B6%85%E5%A3%B0%E6%B3%A2%E6%B5%8B%E8%B7%9DG.gif" src="../_images/%E8%B6%85%E5%A3%B0%E6%B3%A2%E6%B5%8B%E8%B7%9DG.gif" style="width: 80%;" /></a>
+</figure>
+<p>makecode program link: <a class="reference external" href="https://makecode.microbit.org/S98856-20868-77452-43719/">https://makecode.microbit.org/S98856-20868-77452-43719</a></p>
+<p>Screenshot of makecode graphical interface:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/超声波测距C.png"><img alt="../_images/%E8%B6%85%E5%A3%B0%E6%B3%A2%E6%B5%8B%E8%B7%9DC.png" src="../_images/%E8%B6%85%E5%A3%B0%E6%B3%A2%E6%B5%8B%E8%B7%9DC.png" style="width: 80%;" /></a>
+</figure>
+<p><strong>Code analysis:</strong></p>
+<ul class="simple">
+<li><p>The ultrasonic block returns the measured distance in centimeters.</p></li>
+<li><p>The block is inside <code class="docutils literal notranslate"><span class="pre">forever</span></code>, so the program measures again and again.</p></li>
+<li><p>Each measured distance is shown as a number on the micro:bit LED screen.</p></li>
+</ul>
+</section>
+<section id="ultrasonic-obstacle-avoidance">
+<h2>9. Ultrasonic Obstacle Avoidance<a class="headerlink" href="#ultrasonic-obstacle-avoidance" title="Link to this heading"></a></h2>
+<p>Effect: An ultrasonic sensor can be optionally installed at the front of the car. The car can be programmed to measure the distance to obstacles in front and adjust its direction of travel according to the distance to achieve obstacle avoidance.</p>
+<p>Effect demonstration:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/超声波避障G.gif"><img alt="../_images/%E8%B6%85%E5%A3%B0%E6%B3%A2%E9%81%BF%E9%9A%9CG.gif" src="../_images/%E8%B6%85%E5%A3%B0%E6%B3%A2%E9%81%BF%E9%9A%9CG.gif" style="width: 80%;" /></a>
+</figure>
+<p>makecode program link: <a class="reference external" href="https://makecode.microbit.org/S20248-94240-76314-39688/">https://makecode.microbit.org/S20248-94240-76314-39688</a></p>
+<p>Screenshot of makecode graphical interface:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/超声波避障C.png"><img alt="../_images/%E8%B6%85%E5%A3%B0%E6%B3%A2%E9%81%BF%E9%9A%9CC.png" src="../_images/%E8%B6%85%E5%A3%B0%E6%B3%A2%E9%81%BF%E9%9A%9CC.png" style="width: 80%;" /></a>
+</figure>
+<p><strong>Code analysis:</strong></p>
+<ul class="simple">
+<li><p>The <code class="docutils literal notranslate"><span class="pre">forever</span></code> loop keeps measuring the distance in front of the car.</p></li>
+<li><p>If the distance is 13 cm or less, the car moves backward at speed 80 for 200 milliseconds. It then rotates right at speed 80 for 300 milliseconds.</p></li>
+<li><p>If the distance is greater than 13 cm, the car moves forward at speed 80.</p></li>
+<li><p>The test then repeats, allowing the car to react to a new distance reading.</p></li>
+</ul>
+</section>
+<section id="ultrasonic-following">
+<h2>10. Ultrasonic Following<a class="headerlink" href="#ultrasonic-following" title="Link to this heading"></a></h2>
+<p>Effect: An ultrasonic sensor can be optionally installed at the front of the car. It can be programmed to measure the distance to obstacles in front of it and adjust the driving speed according to the distance to achieve a following effect.</p>
+<p>Effect demonstration:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/超声波跟随G.gif"><img alt="../_images/%E8%B6%85%E5%A3%B0%E6%B3%A2%E8%B7%9F%E9%9A%8FG.gif" src="../_images/%E8%B6%85%E5%A3%B0%E6%B3%A2%E8%B7%9F%E9%9A%8FG.gif" style="width: 80%;" /></a>
+</figure>
+<p>makecode program link: <a class="reference external" href="https://makecode.microbit.org/S30884-31518-90039-02970/">https://makecode.microbit.org/S30884-31518-90039-02970</a></p>
+<p>Screenshot of makecode graphical interface:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/超声波跟随C.png"><img alt="../_images/%E8%B6%85%E5%A3%B0%E6%B3%A2%E8%B7%9F%E9%9A%8FC.png" src="../_images/%E8%B6%85%E5%A3%B0%E6%B3%A2%E8%B7%9F%E9%9A%8FC.png" style="width: 80%;" /></a>
+</figure>
+<p><strong>Code analysis:</strong></p>
+<ul class="simple">
+<li><p>The program stores each ultrasonic distance reading in the variable <code class="docutils literal notranslate"><span class="pre">value</span></code>.</p></li>
+<li><p>If <code class="docutils literal notranslate"><span class="pre">value</span></code> is greater than 0 and less than 10, the car moves forward at speed 100 for 500 milliseconds.</p></li>
+<li><p>For every other value, the car stops.</p></li>
+<li><p>These blocks are inside <code class="docutils literal notranslate"><span class="pre">forever</span></code>, so the distance is checked repeatedly.</p></li>
+</ul>
+</section>
+<section id="servo-drive">
+<h2>11. Servo Drive<a class="headerlink" href="#servo-drive" title="Link to this heading"></a></h2>
+<p>Effect: The car has a servo interface. By connecting a servo, the rotation angle of the servo can be controlled through programming to achieve some special actions.</p>
+<p>Effect demonstration:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/舵机驱动G.gif"><img alt="../_images/%E8%88%B5%E6%9C%BA%E9%A9%B1%E5%8A%A8G.gif" src="../_images/%E8%88%B5%E6%9C%BA%E9%A9%B1%E5%8A%A8G.gif" style="width: 80%;" /></a>
+</figure>
+<p>makecode program link: <a class="reference external" href="https://makecode.microbit.org/S43067-53664-12051-64290/">https://makecode.microbit.org/S43067-53664-12051-64290</a></p>
+<p>Screenshot of makecode graphical interface:</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/舵机驱动C.png"><img alt="../_images/%E8%88%B5%E6%9C%BA%E9%A9%B1%E5%8A%A8C.png" src="../_images/%E8%88%B5%E6%9C%BA%E9%A9%B1%E5%8A%A8C.png" style="width: 80%;" /></a>
+</figure>
+<p><strong>Code analysis:</strong></p>
+<ul class="simple">
+<li><p>Pressing button A sets servo S1 to 0 degrees and shows <code class="docutils literal notranslate"><span class="pre">0</span></code> on the LED screen.</p></li>
+<li><p>Pressing button B sets servo S1 to 180 degrees and shows <code class="docutils literal notranslate"><span class="pre">180</span></code> on the LED screen.</p></li>
+<li><p>Pressing A and B together repeats the same swing 4 times: S1 goes to 0 degrees, waits 500 milliseconds, goes to 180 degrees, and waits another 500 milliseconds.</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Due to limitations in installation space, weight, and power supply for the basic/ultrasonic/forklift form factors, adjustments may be necessary. Alternatively, you can combine them with other sensors and modules to achieve richer demonstration effects. Now, unleash your creativity and create your own cool effects.</p>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Programming%20Examples.html" class="btn btn-neutral float-left" title="Programming Examples" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Forklift%20Advanced.html" class="btn btn-neutral float-right" title="Forklift Advanced" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2026, Lafvin.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
