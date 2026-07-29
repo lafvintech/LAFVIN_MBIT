@@ -6,8 +6,6 @@ Meet the Car Blocks
 The **LA_MBitCar** blocks help your micro:bit control the smart car.
 You can make the car move, light up, play music, and read sensors.
 
-The pictures below were created in the official MakeCode editor.
-The outlined field is where you click, and the open menu shows every choice.
 
 Before You Start
 ----------------
@@ -15,8 +13,7 @@ Before You Start
 * Find an **outlined field** with a down arrow.
 * Click it to open the menu shown under the block.
 * Click a **white number** to change its value.
-* Test one new block at a time.
-* Start motor tests with the wheels lifted off the table.
+
 
 1. Make the Car Move
 --------------------
