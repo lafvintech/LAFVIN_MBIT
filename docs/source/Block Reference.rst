@@ -32,13 +32,9 @@ Choose a direction:
 * ``Rotate Left`` or ``Rotate Right`` spins the car.
 * ``Stop`` stops both wheels.
 
-Speed can be set from ``0`` to ``255``. Start near ``50`` and increase it
-after the car moves in the correct direction.
+Speed can be set from ``0`` to ``255``.
 
-.. tip::
 
-   If the car does not drive straight, use the block with separate
-   ``Lmotor`` and ``Rmotor`` speeds. Change one side a little at a time.
 
 2. Change the Front Lights
 --------------------------
@@ -53,8 +49,7 @@ after the car moves in the correct direction.
 Choose ``Red``, ``Green``, ``Blue``, ``White``, ``Cyan``, ``Pinkish``,
 ``Yellow``, or ``Off``.
 
-There is also a block with separate red, green, and blue numbers. Use it later
-when you want to mix your own color.
+
 
 3. Change the Lights Under the Car
 ----------------------------------
@@ -101,12 +96,8 @@ If you cannot hear anything, check the audio switch on the car board.
 Choose ``S1``, ``S2``, or ``S3`` to match the socket used by the servo.
 The angle can be from ``0`` to ``180`` degrees.
 
-.. warning::
 
-   Start at ``90`` degrees. Stop if the servo buzzes, shakes, or pushes
-   against the car.
-
-6. Read the Line Sensors
+6. ad the Line Sensors
 ------------------------
 
 .. figure:: ./block_reference/img/line-direction.png
@@ -169,15 +160,6 @@ Next, add an ``On IR button`` event:
 
 Point the remote toward the receiver when you test it.
 
-What Should I Try First?
-------------------------
-
-#. Make the car move slowly, then stop.
-#. Try one front-light color.
-#. Play one melody.
-#. Move the servo to 90 degrees.
-#. Show a sensor value on the micro:bit.
-#. Finally, use the remote to control one action.
 
 Continue to :doc:`Programming Examples <Upload Code/Programming Examples>` when
 you are ready to combine several blocks.
