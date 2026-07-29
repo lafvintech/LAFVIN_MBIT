@@ -1,11 +1,16 @@
 .. _block_reference:
 
-Meet the Car Blocks
-===================
+LAFVIN Extension Blocks
+=======================
 
 The **LA_MBitCar** blocks help your micro:bit control the smart car.
 You can make the car move, light up, play music, and read sensors.
 
+.. important::
+
+   These blocks are **not included in a new MakeCode project**. They appear
+   only after you add the LAFVIN car extension. For blocks that are already
+   built into MakeCode, see :doc:`MakeCode Built-in Blocks`.
 
 Before You Start
 ----------------
@@ -84,7 +89,7 @@ Choose a melody, and the car plays it once.
 If you cannot hear anything, check the audio switch on the car board.
 
 5. Control a Servo
----------------
+------------------
 
 .. figure:: ./block_reference/img/servo.png
    :align: center
@@ -97,7 +102,7 @@ Choose ``S1``, ``S2``, or ``S3`` to match the socket used by the servo.
 The angle can be from ``0`` to ``180`` degrees.
 
 
-6. ad the Line Sensors
+6. Read the Line Sensors
 ------------------------
 
 .. figure:: ./block_reference/img/line-direction.png

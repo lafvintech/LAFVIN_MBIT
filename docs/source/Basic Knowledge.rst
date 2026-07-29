@@ -121,43 +121,16 @@ For example, a line-following program can work like this:
 blocks fit together like puzzle pieces. The shape of a block helps show where
 it belongs.
 
-Common block groups and tools include:
+The example programs use blocks from two places:
 
-.. list-table::
-   :header-rows: 1
-   :widths: 25 75
+* :doc:`Official Blocks Used in the Examples <MakeCode Built-in Blocks>` are
+  already available in a new micro:bit project.
+* :doc:`LAFVIN Extension Blocks <Block Reference>` appear after the car
+  extension is added.
 
-   * - Block group
-     - What it is used for
-   * - Basic
-     - Show numbers, pictures, and text on the LED display
-   * - Input
-     - Read buttons, pins, light level, and other inputs
-   * - Music
-     - Play tones and melodies
-   * - Loops
-     - Repeat instructions
-   * - Logic
-     - Make choices using ``if`` and comparisons
-   * - Variables
-     - Remember information that may change
-   * - Extensions
-     - Add special block groups for extra hardware, such as this car
-
-Two blocks are especially important:
-
-``on start``
-   Runs once when the micro:bit starts or is reset. Use it to prepare the car,
-   set starting values, or show a welcome icon.
-
-``forever``
-   Repeats the blocks inside it again and again while the micro:bit has power.
-   Use it when the car must keep checking a sensor.
-
-**Mini example:** Put ``show icon`` inside ``on start``. The micro:bit draws
-the icon once when the program begins, and it stays there until other code
-changes the display. Put it inside ``forever`` and the micro:bit keeps drawing
-it repeatedly, even if it looks unchanged.
+Those two pages show the exact blocks and choices. This chapter focuses on the
+ideas behind them, such as inputs, decisions, loops, variables, sensors, and
+outputs.
 
 4. Downloading: Sending the Program to the Robot
 ------------------------------------------------
