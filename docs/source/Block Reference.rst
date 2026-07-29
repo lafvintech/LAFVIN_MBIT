@@ -1,341 +1,186 @@
 .. _block_reference:
 
-Block Reference
-===============
+Meet the Car Blocks
+===================
 
-This chapter explains the blocks added by version 1.0.1 of the
-**LA_MBitCar** MakeCode extension. Use it to understand what each block does,
-what its options mean, and where it fits in a program.
+The **LA_MBitCar** blocks help your micro:bit control the smart car.
+You can make the car move, light up, play music, and read sensors.
 
-The block images have intentionally been left as placeholders. They should be
-captured directly from MakeCode after importing the LAFVIN extension, so the
-labels, drop-down menus, colors, and block shapes match the current extension
-exactly.
+The pictures below were created in the official MakeCode editor.
+The outlined field is where you click, and the open menu shows every choice.
 
-How to Read a Block
--------------------
+Before You Start
+----------------
 
-White number fields
-   Click the number and enter a new value. The valid range is described under
-   the corresponding block.
+* Find an **outlined field** with a down arrow.
+* Click it to open the menu shown under the block.
+* Click a **white number** to change its value.
+* Test one new block at a time.
+* Start motor tests with the wheels lifted off the table.
 
-Drop-down fields
-   Click the arrow to choose one of the options supplied by the extension.
+1. Make the Car Move
+--------------------
 
-Command blocks
-   Perform an action, such as moving a motor or changing a light.
+.. figure:: ./block_reference/img/car-control.png
+   :align: center
+   :width: 50%
+   :alt: Car control block with its direction menu open
 
-Reporter blocks
-   Supply a value to another block. They have rounded ends. The ultrasonic
-   block, for example, reports a distance.
+   Click ``Forward`` to open all seven direction choices.
 
-Boolean blocks
-   Report either ``true`` or ``false``. Their pointed shape fits into an
-   ``if`` condition. The line-sensor block is a Boolean block.
+Choose a direction:
 
-Event blocks
-   Run the blocks placed inside them when a selected event occurs.
+* ``Forward`` or ``Backward`` moves the car straight.
+* ``Left`` or ``Right`` makes a turn.
+* ``Rotate Left`` or ``Rotate Right`` spins the car.
+* ``Stop`` stops both wheels.
 
-1. Car Control
---------------
-
-The extension provides three car-control blocks.
-
-Car_Ctrl [direction]
-~~~~~~~~~~~~~~~~~~~~
-
-Moves the car using the extension's maximum speed setting. This block is
-convenient for a quick test, but the speed-adjustable block gives safer and
-more predictable control.
-
-Car_Ctrl [direction] speed [0..255]
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Moves the car using one speed value for both motors.
-
-``direction``
-   Choose ``Forward``, ``Backward``, ``Left``, ``Right``, ``Rotate Left``,
-   ``Rotate Right``, or ``Stop``.
-
-``speed``
-   Accepts a value from ``0`` to ``255``. ``0`` gives no drive and ``255`` is
-   the maximum block value.
-
-Car_Ctrl [direction] Lmotor [0..255] Rmotor [0..255]
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Sets the left and right motor speeds separately. Use it to correct a car that
-drifts to one side, or to create a curved path by running one wheel more
-slowly than the other.
-
-.. BLOCK IMAGE PLACEHOLDER
-   Suggested file: block_reference/img/car-control-options.png
-   Capture from MakeCode:
-   - all three Car_Ctrl block variants
-   - the direction menu expanded
-   - the complete Forward, Backward, Left, Right, Rotate Left,
-     Rotate Right, and Stop option list
-   After adding the file, replace this comment with:
-   .. image:: ./block_reference/img/car-control-options.png
-      :align: center
-      :width: 85%
-      :alt: Car control blocks and direction options
-
-How the direction options move the wheels:
-
-* ``Forward``: both wheels move forward.
-* ``Backward``: both wheels move backward.
-* ``Left``: the left wheel stops and the right wheel moves forward.
-* ``Right``: the right wheel stops and the left wheel moves forward.
-* ``Rotate Left``: the left wheel moves backward and the right wheel moves
-  forward.
-* ``Rotate Right``: the left wheel moves forward and the right wheel moves
-  backward.
-* ``Stop``: both motors stop.
+Speed can be set from ``0`` to ``255``. Start near ``50`` and increase it
+after the car moves in the correct direction.
 
 .. tip::
 
-   Start with a low speed and lift the driving wheels off the table during the
-   first test.
+   If the car does not drive straight, use the block with separate
+   ``Lmotor`` and ``Rmotor`` speeds. Change one side a little at a time.
 
-2. Front Searchlights
----------------------
+2. Change the Front Lights
+--------------------------
 
-The two RGB searchlights at the front of the car are controlled together.
+.. figure:: ./block_reference/img/searchlights.png
+   :align: center
+   :width: 44%
+   :alt: Searchlight block with its color menu open
 
-Searchlights Colors [color]
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   Click ``Off`` to open all eight front-light choices.
 
-Selects one preset color. The available options are ``Off``, ``Red``,
-``Green``, ``Blue``, ``White``, ``Cyan``, ``Pinkish``, and ``Yellow``.
+Choose ``Red``, ``Green``, ``Blue``, ``White``, ``Cyan``, ``Pinkish``,
+``Yellow``, or ``Off``.
 
-Searchlights Red [0..255] Green [0..255] Blue [0..255]
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+There is also a block with separate red, green, and blue numbers. Use it later
+when you want to mix your own color.
 
-Mixes a custom color. Each channel accepts a value from ``0`` to ``255``:
+3. Change the Lights Under the Car
+----------------------------------
 
-* ``255, 0, 0`` produces red.
-* ``0, 255, 0`` produces green.
-* ``0, 0, 255`` produces blue.
-* ``255, 255, 0`` mixes yellow.
-* ``0, 255, 255`` mixes cyan.
-* ``255, 255, 255`` mixes white.
+.. figure:: ./block_reference/img/rgb-lights-basic.png
+   :align: center
+   :width: 68%
+   :alt: RGB light block with its color menu open
 
-.. BLOCK IMAGE PLACEHOLDER
-   Suggested file: block_reference/img/searchlight-options.png
-   Capture from MakeCode:
-   - the preset-color block
-   - the custom RGB block
-   - the complete preset color menu expanded
-   After adding the file, replace this comment with:
-   .. image:: ./block_reference/img/searchlight-options.png
-      :align: center
-      :width: 80%
-      :alt: Searchlight blocks and color options
+   Click the color field to open all ten color choices.
 
-3. Bottom RGB Lights
---------------------
+The four lights under the car are numbered ``0``, ``1``, ``2``, and ``3``.
+Choose a number to change one light.
 
-RGB Lights
-~~~~~~~~~~
+Remember the two steps:
 
-This reporter represents the strip of four WS2812 RGB LEDs under the car. The
-LED indexes are ``0``, ``1``, ``2``, and ``3``.
+#. Set the pixel color.
+#. Use ``show``.
 
-Insert ``RGB Lights`` into blocks from the **Neopixel** category:
+4. Play Music
+-------------
 
-* Use ``set pixel color at`` to prepare a color for one numbered LED.
-* Use ``set brightness`` to change the brightness of the whole strip.
-* Use ``show`` to send the prepared color values to the real LEDs.
-* Use ``clear`` followed by ``show`` to turn all four LEDs off.
+.. figure:: ./block_reference/img/music.png
+   :align: center
+   :width: 32%
+   :alt: Music block with its melody menu open
 
-.. note::
+   Click ``dadadum`` to see every built-in melody.
 
-   Setting a pixel color does not always update the physical LEDs
-   immediately. Add ``show`` after the changes that should become visible.
+Choose a melody, and the car plays it once.
 
-.. BLOCK IMAGE PLACEHOLDER
-   Suggested file: block_reference/img/rgb-lights.png
-   Capture from MakeCode:
-   - the RGB Lights reporter by itself
-   - the reporter inserted into set pixel color at
-   - the reporter inserted into show
-   After adding the file, replace this comment with:
-   .. image:: ./block_reference/img/rgb-lights.png
-      :align: center
-      :width: 85%
-      :alt: RGB Lights reporter used with Neopixel blocks
+If you cannot hear anything, check the audio switch on the car board.
 
-4. Music
---------
+5. Move a Servo
+---------------
 
-Music [melody]
-~~~~~~~~~~~~~~
+.. figure:: ./block_reference/img/servo.png
+   :align: center
+   :width: 52%
+   :alt: Servo block with its socket menu open
 
-Plays one selected MakeCode built-in melody once.
+   Click ``S1`` to choose the servo socket.
 
-The menu contains ``dadadum``, ``entertainer``, ``prelude``, ``ode``,
-``nyan``, ``ringtone``, ``funk``, ``blues``, ``birthday``, ``wedding``,
-``funereal``, ``punchline``, ``baddy``, ``chase``, ``ba_ding``,
-``wawawawaa``, ``jump_up``, ``jump_down``, ``power_up``, and
-``power_down``.
-
-If the program runs but no sound is produced, check the audio switch on the
-car board.
-
-.. BLOCK IMAGE PLACEHOLDER
-   Suggested file: block_reference/img/music-options.png
-   Capture the Music block with the complete melody menu expanded.
-   After adding the file, replace this comment with:
-   .. image:: ./block_reference/img/music-options.png
-      :align: center
-      :width: 70%
-      :alt: Music block and melody options
-
-5. Servo
---------
-
-Servo num [S1|S2|S3] Angle [0..180]
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Moves a connected servo toward the requested angle.
-
-``num``
-   Selects servo socket ``S1``, ``S2``, or ``S3``.
-
-``Angle``
-   Accepts a target angle from ``0`` to ``180`` degrees.
+Choose ``S1``, ``S2``, or ``S3`` to match the socket used by the servo.
+The angle can be from ``0`` to ``180`` degrees.
 
 .. warning::
 
-   The safe movement range depends on the assembly. Stop if the servo buzzes,
-   shakes, or pushes against a physical limit. Switch off the car and choose
-   a smaller angle range before trying again.
+   Start at ``90`` degrees. Stop if the servo buzzes, shakes, or pushes
+   against the car.
 
-.. BLOCK IMAGE PLACEHOLDER
-   Suggested file: block_reference/img/servo-options.png
-   Capture the Servo block with the S1, S2, and S3 menu expanded.
-   After adding the file, replace this comment with:
-   .. image:: ./block_reference/img/servo-options.png
-      :align: center
-      :width: 70%
-      :alt: Servo block and socket options
+6. Read the Line Sensors
+------------------------
 
-6. Line Sensors
----------------
+.. figure:: ./block_reference/img/line-direction.png
+   :align: center
+   :width: 72%
+   :alt: Choose the left or right line sensor
 
-Line_Sensor direct [position] Detection [surface]
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   First click ``LeftState`` to choose the left or right sensor.
 
-Reports ``true`` when the selected sensor detects the selected surface state.
+.. figure:: ./block_reference/img/line-surface.png
+   :align: center
+   :width: 72%
+   :alt: Choose a white or black surface
 
-``direct``
-   Selects ``LeftState`` or ``RightState``.
+   Then click ``White`` to choose a white or black surface.
 
-``Detection``
-   Selects ``White`` or ``Black``.
+The answer is either **true** or **false**, so this block fits inside an
+``if`` block. A line-following program checks both sensors again and again.
 
-Because this is a Boolean block, place it inside ``if``, ``else if``, ``and``,
-``or``, or another Logic block. A line-following program normally reads both
-sensors repeatedly inside ``forever``.
+7. Measure Distance
+-------------------
 
-.. BLOCK IMAGE PLACEHOLDER
-   Suggested file: block_reference/img/line-sensor-options.png
-   Capture the Line_Sensor block twice:
-   - with the position menu expanded
-   - with the White and Black detection menu expanded
-   After adding the file, replace this comment with:
-   .. image:: ./block_reference/img/line-sensor-options.png
-      :align: center
-      :width: 80%
-      :alt: Line sensor block and detection options
+.. figure:: ./block_reference/img/ultrasonic.png
+   :align: center
+   :width: 52%
+   :alt: Ultrasonic distance block
 
-.. tip::
+   This block reports the distance in centimeters.
 
-   Test the returned values on the actual track before driving quickly.
-   Strong sunlight, floor color, sensor height, and potentiometer adjustment
-   can change the result.
+Put it inside ``show number`` to see the distance on the micro:bit display.
+You can also compare the distance with a number to help the car avoid an
+obstacle.
 
-7. Ultrasonic Distance
-----------------------
+A result of ``0`` usually means that the sensor did not receive a clear echo.
 
-ultrasonic return distance (cm)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+8. Use the Remote Control
+-------------------------
 
-Sends an ultrasonic trigger pulse on P14, reads the echo on P15, and reports
-the calculated distance in centimeters.
+.. figure:: ./block_reference/img/ir-button.png
+   :align: center
+   :width: 46%
+   :alt: Infrared remote button choices
 
-The reporter can be:
+   Click ``OK`` to see every button on the remote.
 
-* placed inside ``show number``;
-* saved in a variable; or
-* compared with a distance threshold inside an ``if`` condition.
+.. figure:: ./block_reference/img/ir-action.png
+   :align: center
+   :width: 48%
+   :alt: Infrared button action choices
 
-A result of ``0`` normally means that no usable echo was received. Check the
-module and its connection, and exclude ``0`` before applying an obstacle
-threshold.
+   Click ``pressed`` to choose ``pressed`` or ``released``.
 
-.. BLOCK IMAGE PLACEHOLDER
-   Suggested file: block_reference/img/ultrasonic-distance.png
-   Capture the ultrasonic reporter by itself and inserted into show number.
-   After adding the file, replace this comment with:
-   .. image:: ./block_reference/img/ultrasonic-distance.png
-      :align: center
-      :width: 75%
-      :alt: Ultrasonic distance reporter
+Put ``Connect IR receiver at pin P8`` inside ``on start``.
 
-.. important::
+Next, add an ``On IR button`` event:
 
-   Install the ultrasonic module in the ultrasonic form described in the
-   assembly chapter. The forklift and ultrasonic accessories share mounting
-   space and are not installed there at the same time.
+#. Choose a remote button.
+#. Choose ``pressed`` or ``released``.
+#. Put a car, light, music, or servo block inside the event.
 
-8. Infrared Remote Control
---------------------------
+Point the remote toward the receiver when you test it.
 
-Connect IR receiver at pin [pin]
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+What Should I Try First?
+------------------------
 
-Prepares the infrared receiver. For this car, select ``P8`` and place the
-block inside ``on start`` before using the infrared events.
+#. Make the car move slowly, then stop.
+#. Try one front-light color.
+#. Play one melody.
+#. Move the servo to 90 degrees.
+#. Show a sensor value on the micro:bit.
+#. Finally, use the remote to control one action.
 
-On IR button [button] [pressed|released]
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Runs the enclosed commands when the selected remote button changes to the
-chosen state.
-
-``button``
-   Selects ``any``, ``Up``, ``Down``, ``LEFT``, ``RIGHT``, ``OK``, the
-   number buttons, ``STAR``, or ``GRID``.
-
-``action``
-   Selects ``pressed`` or ``released``.
-
-IR button code [button]
-~~~~~~~~~~~~~~~~~~~~~~~
-
-Reports the numeric NEC command code for the selected button. Most beginner
-programs can use the event block directly and do not need this reporter.
-
-.. BLOCK IMAGE PLACEHOLDER
-   Suggested file: block_reference/img/infrared-options.png
-   Capture from MakeCode:
-   - Connect IR receiver with P8 selected
-   - On IR button with the complete button menu expanded
-   - the pressed and released menu
-   - IR button code
-   After adding the file, replace this comment with:
-   .. image:: ./block_reference/img/infrared-options.png
-      :align: center
-      :width: 85%
-      :alt: Infrared setup, event, and button code blocks
-
-Point the remote toward the receiver. Strong sunlight, a long distance, or an
-obstacle between them can make the signal unreliable.
-
-Next Step
----------
-
-Continue to :doc:`Programming Examples <Upload Code/Programming Examples>` to
-see complete programs built with these blocks.
+Continue to :doc:`Programming Examples <Upload Code/Programming Examples>` when
+you are ready to combine several blocks.
