@@ -25,7 +25,6 @@ The hardware interfaces :
 
 Product Parameters :
 -------------------------------
-Please follow the following safety precautions when using or storing this product:
 
 1. Power supply voltage: 3.5V~5V DC (3 AAA dry cell batteries or 3.6V~3.7V lithium battery)
 2. Infrared line-following sensor (high and low levels) ×2
