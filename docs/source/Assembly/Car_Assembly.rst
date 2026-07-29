@@ -28,6 +28,9 @@ Basic model Assembly
 Forklift Assembly
 -------------------------------
 
+.. tip:: The demonstration here only uses a blue screwdriver, but when fixing small screws, it is actually recommended to use a purple screwdriver.
+
+
    .. image:: /Tutorial/img/装轴承.png
 
 
