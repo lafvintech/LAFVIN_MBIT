@@ -83,7 +83,7 @@ Choose a melody, and the car plays it once.
 
 If you cannot hear anything, check the audio switch on the car board.
 
-5. Move a Servo
+5. Control a Servo
 ---------------
 
 .. figure:: ./block_reference/img/servo.png
