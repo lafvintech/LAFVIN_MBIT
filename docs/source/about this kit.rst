@@ -39,8 +39,7 @@ Product Parameters :
 11. N20 metal geared motor ×2
 12. Maximum motor speed: 300 rpm
 13. Motor drive method: PWM motor drive
-14. Bracket and protective cover with extended M3 screw holes × 6
-15. Programming method: makecode
+14. Programming method: makecode
 
 
 Componen List
@@ -55,7 +54,7 @@ Componen List
    * - x1
      - PCBA Car Chassis (excluding motherboard)
    * - x1
-     - fixed caster
+     - Fixed wheel
    * - x2
      - Vehicle wheel
    * - x2
@@ -78,7 +77,7 @@ Componen List
      - Patrol Route Map
 
 
-.. tip:: Micro:Bit motherboard and battery need to be prepared by yourself.
+.. tip:: Micro:Bit motherboard and battery need to be prepared by yourself.For your convenience, some components have been pre-installed, and spare screws and parts have been provided.
 
 .. image:: /Tutorial/img/组件清单.jpg
 
