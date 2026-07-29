@@ -14,6 +14,13 @@ Code/Programming Examples>`.
    installing an extension. Blocks that directly control the car are listed
    separately in :doc:`LAFVIN Extension Blocks <Block Reference>`.
 
+Before You Start
+----------------
+
+* Click a field with a **down arrow** to open the choices shown below the block.
+* The picture inside ``show icon`` also opens a picture menu.
+* Click a **white number** to type a value. A white number is not a dropdown.
+
 1. Basic
 --------
 
@@ -44,13 +51,16 @@ updating something.
 ``show icon``
 ~~~~~~~~~~~~~
 
-.. figure:: ./block_reference/official/show-icon.png
+.. figure:: ./block_reference/official/show-icon-options.png
    :align: center
-   :width: 38%
-   :alt: MakeCode show icon block
+   :width: 54%
+   :alt: MakeCode show icon block with its picture menu open
 
-``show icon`` draws a picture on the micro:bit's 5 by 5 LED display. Click the
-picture or down arrow to choose another built-in icon.
+   Click the picture to open the built-in icon menu.
+
+``show icon`` draws the selected 5 by 5 picture on the micro:bit LED display.
+The menu contains hearts, faces, animals, objects, music symbols, arrows, and
+simple shapes. The highlighted picture is the one that the block will show.
 
 ``show number``
 ~~~~~~~~~~~~~~~
@@ -92,13 +102,19 @@ not stop the rest of the program.
 ``on button pressed``
 ~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: ./block_reference/official/button-pressed.png
+.. figure:: ./block_reference/official/button-pressed-options.png
    :align: center
-   :width: 44%
-   :alt: MakeCode on button pressed block
+   :width: 50%
+   :alt: MakeCode on button pressed block with its button menu open
 
-This event block runs the blocks inside it after a button is pressed. Use its
-dropdown to choose button ``A``, button ``B``, or ``A+B``.
+   Click ``A`` to choose which button starts the event.
+
+This event block runs the blocks inside it after the selected button is
+pressed:
+
+* ``A`` listens for the left button.
+* ``B`` listens for the right button.
+* ``A+B`` listens for both buttons pressed together.
 
 ``light level``
 ~~~~~~~~~~~~~~~
@@ -129,14 +145,17 @@ number to choose the number of repetitions.
 ``for index from ... to ...``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: ./block_reference/official/for-index.png
+.. figure:: ./block_reference/official/for-index-options.png
    :align: center
-   :width: 52%
-   :alt: MakeCode for index loop block
+   :width: 62%
+   :alt: MakeCode for index loop with its variable menu open
+
+   Click ``index`` to view or rename the loop variable.
 
 This loop counts from a starting number to an ending number. The variable
 ``index`` holds the current count and changes once on every pass. Both end
-numbers are included.
+numbers are included. ``Rename variable...`` changes the variable name but
+does not change how the loop counts.
 
 4. Logic
 --------
@@ -156,25 +175,31 @@ add or remove branches.
 Comparison
 ~~~~~~~~~~
 
-.. figure:: ./block_reference/official/comparison.png
+.. figure:: ./block_reference/official/comparison-options.png
    :align: center
-   :width: 40%
-   :alt: MakeCode comparison block
+   :width: 38%
+   :alt: MakeCode comparison block with its operator menu open
 
-A comparison checks two values and reports ``true`` or ``false``. Use the
-middle dropdown to choose equal to, not equal to, less than, less than or
-equal to, greater than, or greater than or equal to.
+   Click the middle symbol to choose how two values are compared.
+
+A comparison reports ``true`` or ``false``:
+
+* ``=`` means equal to, and ``≠`` means not equal to.
+* ``<`` and ``≤`` mean less than and less than or equal to.
+* ``>`` and ``≥`` mean greater than and greater than or equal to.
 
 ``and``
 ~~~~~~~
 
-.. figure:: ./block_reference/official/and.png
+.. figure:: ./block_reference/official/and-options.png
    :align: center
-   :width: 56%
-   :alt: MakeCode and logic block
+   :width: 60%
+   :alt: MakeCode and block with its and or menu open
 
-``and`` reports true only when both conditions are true. Change the middle
-dropdown to ``or`` when only one of the two conditions needs to be true.
+   Click ``and`` to choose how two conditions are joined.
+
+* ``and`` reports true only when both conditions are true.
+* ``or`` reports true when either condition is true.
 
 5. Variables and Math
 ---------------------
@@ -182,24 +207,31 @@ dropdown to ``or`` when only one of the two conditions needs to be true.
 ``set variable to``
 ~~~~~~~~~~~~~~~~~~~
 
-.. figure:: ./block_reference/official/set-variable.png
+.. figure:: ./block_reference/official/set-variable-options.png
    :align: center
-   :width: 42%
-   :alt: MakeCode set variable block
+   :width: 54%
+   :alt: MakeCode set variable block with its variable menu open
+
+   Click the variable name to choose one of the variables in the project.
 
 ``set variable to`` stores a value in the selected variable. A new set
-operation replaces the value that was stored before it.
+operation replaces the value that was stored before it. ``value`` and
+``index`` in the picture are sample variable names; the menu changes when you
+create or rename variables.
 
 ``change variable by``
 ~~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: ./block_reference/official/change-variable.png
+.. figure:: ./block_reference/official/change-variable-options.png
    :align: center
-   :width: 46%
-   :alt: MakeCode change variable block
+   :width: 56%
+   :alt: MakeCode change variable block with its variable menu open
+
+   Click the variable name to choose which stored value will change.
 
 ``change variable by`` adds an amount to the current value. Use a negative
-amount, such as ``-1``, to subtract.
+amount, such as ``-1``, to subtract. Its variable menu works in the same way
+as the menu in ``set variable to``.
 
 Variable value
 ~~~~~~~~~~~~~~
@@ -210,19 +242,22 @@ Variable value
    :alt: MakeCode variable value block
 
 The rounded variable block reports the value currently stored in that
-variable. Use its dropdown to choose a different variable.
+variable. It has no dropdown arrow: drag the variable name you need from the
+Variables category.
 
 Subtraction
 ~~~~~~~~~~~
 
-.. figure:: ./block_reference/official/subtraction.png
+.. figure:: ./block_reference/official/subtraction-options.png
    :align: center
-   :width: 36%
-   :alt: MakeCode subtraction block
+   :width: 38%
+   :alt: MakeCode Math block with its operation menu open
 
-This Math block subtracts the right-hand number from the left-hand number and
-reports the result. Its middle dropdown can select another arithmetic
-operation.
+   Click the middle symbol to choose a Math operation.
+
+The choices are addition ``+``, subtraction ``-``, multiplication ``×``,
+division ``÷``, and powers ``^``. The block calculates the two inputs and
+reports the result.
 
 6. Music
 --------
@@ -230,14 +265,35 @@ operation.
 ``play tone ... for ... beat``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: ./block_reference/official/play-tone.png
+.. figure:: ./block_reference/official/play-tone-notes.png
    :align: center
-   :width: 78%
-   :alt: MakeCode play tone block
+   :width: 82%
+   :alt: MakeCode play tone block with its note menu open
 
-This block plays one musical note. Choose the pitch, beat length, and playback
-mode with its three fields. ``until done`` waits for the note to finish before
-the next block runs.
+   Click ``Middle C`` to choose the musical note.
+
+.. figure:: ./block_reference/official/play-tone-beats.png
+   :align: center
+   :width: 82%
+   :alt: MakeCode play tone block with its beat length menu open
+
+   Click ``1/2 beat`` to choose how long the note plays.
+
+.. figure:: ./block_reference/official/play-tone-mode.png
+   :align: center
+   :width: 82%
+   :alt: MakeCode play tone block with its playback mode menu open
+
+   Click ``until done`` to choose what the program does while music plays.
+
+This block plays one musical note:
+
+* The first field chooses the pitch.
+* The beat menu chooses the note length.
+* ``until done`` waits before the next block runs.
+* ``in background`` lets the next block run immediately.
+* ``looping in background`` repeats the sound until another music block stops
+  or replaces it.
 
 Continue with :doc:`LAFVIN Extension Blocks <Block Reference>` for the
 car-specific blocks, or open :doc:`Programming Examples <Upload
