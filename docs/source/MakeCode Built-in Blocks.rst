@@ -170,7 +170,9 @@ does not change how the loop counts.
 
 ``if`` checks a true-or-false condition. The first open space runs when the
 condition is true; ``else`` runs when it is false. The plus and minus buttons
-add or remove branches.
+add or remove branches. An added ``else if`` branch checks another condition
+only when the conditions above it were false. Use ``else if`` when a program
+must choose between three or more possible actions.
 
 Comparison
 ~~~~~~~~~~

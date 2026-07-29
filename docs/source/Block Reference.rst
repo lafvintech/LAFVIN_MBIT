@@ -39,6 +39,17 @@ Choose a direction:
 
 Speed can be set from ``0`` to ``255``.
 
+Stop the car without a speed
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. figure:: ./block_reference/img/car-stop.png
+   :align: center
+   :width: 30%
+   :alt: Car control Stop block without a speed input
+
+This shorter ``Car_Ctrl Stop`` block stops the car. It has no speed input
+because stopping always sets both motors to zero.
+
 
 
 2. Change the Front Lights
@@ -59,6 +70,28 @@ Choose ``Red``, ``Green``, ``Blue``, ``White``, ``Cyan``, ``Pinkish``,
 3. Change the Lights Under the Car
 ----------------------------------
 
+.. important::
+
+   The blocks in this section appear in the **Neopixel** category. The LAFVIN
+   extension installs that category automatically because the four lights
+   under the car use NeoPixel LEDs. They are not included in a new MakeCode
+   project before the LAFVIN extension is added.
+
+Select the car's four RGB lights
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. figure:: ./block_reference/img/rgb-lights-device.png
+   :align: center
+   :width: 22%
+   :alt: RGB Lights value block
+
+The red ``RGB Lights`` value block represents the strip of four lights under
+the car. Its rounded shape fits into the red socket of each NeoPixel action
+block below.
+
+Set one light's color
+~~~~~~~~~~~~~~~~~~~~~
+
 .. figure:: ./block_reference/img/rgb-lights-basic.png
    :align: center
    :width: 68%
@@ -67,12 +100,57 @@ Choose ``Red``, ``Green``, ``Blue``, ``White``, ``Cyan``, ``Pinkish``,
    Click the color field to open all ten color choices.
 
 The four lights under the car are numbered ``0``, ``1``, ``2``, and ``3``.
-Choose a number to change one light.
+Choose a number to change one light. The color menu contains ``red``,
+``orange``, ``yellow``, ``green``, ``blue``, ``indigo``, ``violet``,
+``purple``, ``white``, and ``black``.
 
-Remember the two steps:
+This block changes a stored color. Use ``show`` to send that change to the
+real lights.
 
-#. Set the pixel color.
-#. Use ``show``.
+Show the stored colors
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. figure:: ./block_reference/img/neopixel-show.png
+   :align: center
+   :width: 34%
+   :alt: RGB Lights show block
+
+``show`` sends all stored pixel colors to the four lights. Use it after one
+or more ``set pixel color`` blocks.
+
+Show one color on all four lights
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. figure:: ./block_reference/img/neopixel-show-color.png
+   :align: center
+   :width: 54%
+   :alt: RGB Lights show color block
+
+``show color`` changes all four lights at once and displays the selected
+color immediately. Its color field provides the same ten choices shown in
+the ``set pixel color`` menu.
+
+Change the brightness
+~~~~~~~~~~~~~~~~~~~~~
+
+.. figure:: ./block_reference/img/neopixel-brightness.png
+   :align: center
+   :width: 54%
+   :alt: RGB Lights set brightness block
+
+``set brightness`` controls how bright the RGB lights appear. Use a value
+from ``0`` for off to ``255`` for maximum brightness.
+
+Clear the stored colors
+~~~~~~~~~~~~~~~~~~~~~~~
+
+.. figure:: ./block_reference/img/neopixel-clear.png
+   :align: center
+   :width: 34%
+   :alt: RGB Lights clear block
+
+``clear`` changes every stored pixel color to black. Use ``show`` afterward
+when the cleared result must be sent to lights that are already on.
 
 4. Play Music
 -------------
@@ -141,6 +219,21 @@ A result of ``0`` usually means that the sensor did not receive a clear echo.
 8. Use the Remote Control
 -------------------------
 
+Connect the receiver
+~~~~~~~~~~~~~~~~~~~~
+
+.. figure:: ./block_reference/img/ir-connect.png
+   :align: center
+   :width: 48%
+   :alt: Connect IR receiver at pin P8 block
+
+Put ``Connect IR receiver at pin P8`` inside ``on start`` so the micro:bit
+begins listening for remote-control signals. The receiver on this car is
+connected to pin ``P8``.
+
+Choose a remote button
+~~~~~~~~~~~~~~~~~~~~~~
+
 .. figure:: ./block_reference/img/ir-button.png
    :align: center
    :width: 46%
@@ -155,9 +248,7 @@ A result of ``0`` usually means that the sensor did not receive a clear echo.
 
    Click ``pressed`` to choose ``pressed`` or ``released``.
 
-Put ``Connect IR receiver at pin P8`` inside ``on start``.
-
-Next, add an ``On IR button`` event:
+Add an ``On IR button`` event:
 
 #. Choose a remote button.
 #. Choose ``pressed`` or ``released``.
