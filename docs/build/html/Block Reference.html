@@ -1,0 +1,362 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LAFVIN Extension Blocks &mdash; LAFVIN-MicroBit-SmartCar  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=888ff710"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Programming Examples" href="Upload%20Code/Programming%20Examples.html" />
+    <link rel="prev" title="Official MakeCode Blocks" href="MakeCode%20Built-in%20Blocks.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+    <a href="https://www.lafvintech.com/" class="logo-link">
+        <img src="https://lafvintech.com/cdn/shop/files/logo_V2_300x@2x.png?v=1642487152" class="logo" alt="Logo"/>
+    </a>
+    
+    
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">GETTING STARTED</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="about%20this%20kit.html">About This Kit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Assembly/Car_Assembly.html">Car Assembly</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Appendix/How%20to%20download%20The%20Code.html">Download Code and Add the Extension</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">BLOCK PROGRAMMING</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Basic%20Knowledge.html">Basic Knowledge</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MakeCode%20Built-in%20Blocks.html">Official MakeCode Blocks</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">LAFVIN Extension Blocks</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#before-you-start">Before You Start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#make-the-car-move">1. Make the Car Move</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#stop-the-car-without-a-speed">Stop the car without a speed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#change-the-front-lights">2. Change the Front Lights</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#change-the-lights-under-the-car">3. Change the Lights Under the Car</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#select-the-car-s-four-rgb-lights">Select the car’s four RGB lights</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#set-one-light-s-color">Set one light’s color</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#show-the-stored-colors">Show the stored colors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#show-one-color-on-all-four-lights">Show one color on all four lights</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#change-the-brightness">Change the brightness</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#clear-the-stored-colors">Clear the stored colors</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#play-music">4. Play Music</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#control-a-servo">5. Control a Servo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#read-the-line-sensors">6. Read the Line Sensors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#measure-distance">7. Measure Distance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#use-the-remote-control">8. Use the Remote Control</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#connect-the-receiver">Connect the receiver</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#choose-a-remote-button">Choose a remote button</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">PROGRAMMING EXAMPLES</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Upload%20Code/Programming%20Examples.html">Programming Examples</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">HARDWARE AND HELP</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pinout.html">Pinout</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Frequently%20Asked%20Questions.html">Frequently Asked Questions</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">LAFVIN-MicroBit-SmartCar</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">LAFVIN Extension Blocks</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Block Reference.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="lafvin-extension-blocks">
+<span id="block-reference"></span><h1>LAFVIN Extension Blocks<a class="headerlink" href="#lafvin-extension-blocks" title="Link to this heading"></a></h1>
+<p>The <strong>LA_MBitCar</strong> blocks help your micro:bit control the smart car.
+You can make the car move, light up, play music, and read sensors.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>These blocks are <strong>not included in a new MakeCode project</strong>. They appear
+only after you add the LAFVIN car extension. For blocks that are already
+built into MakeCode, see <a class="reference internal" href="MakeCode%20Built-in%20Blocks.html"><span class="doc">Official MakeCode Blocks</span></a>.</p>
+</div>
+<section id="before-you-start">
+<h2>Before You Start<a class="headerlink" href="#before-you-start" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Find an <strong>outlined field</strong> with a down arrow.</p></li>
+<li><p>Click it to open the menu shown under the block.</p></li>
+<li><p>Click a <strong>white number</strong> to change its value.</p></li>
+</ul>
+</section>
+<section id="make-the-car-move">
+<h2>1. Make the Car Move<a class="headerlink" href="#make-the-car-move" title="Link to this heading"></a></h2>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/car-control.png"><img alt="Car control block with its direction menu open" src="_images/car-control.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-text">Click <code class="docutils literal notranslate"><span class="pre">Forward</span></code> to open all seven direction choices.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Choose a direction:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Forward</span></code> or <code class="docutils literal notranslate"><span class="pre">Backward</span></code> moves the car straight.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Left</span></code> or <code class="docutils literal notranslate"><span class="pre">Right</span></code> makes a turn.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Rotate</span> <span class="pre">Left</span></code> or <code class="docutils literal notranslate"><span class="pre">Rotate</span> <span class="pre">Right</span></code> spins the car.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Stop</span></code> stops both wheels.</p></li>
+</ul>
+<p>Speed can be set from <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">255</span></code>.</p>
+<section id="stop-the-car-without-a-speed">
+<h3>Stop the car without a speed<a class="headerlink" href="#stop-the-car-without-a-speed" title="Link to this heading"></a></h3>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/car-stop.png"><img alt="Car control Stop block without a speed input" src="_images/car-stop.png" style="width: 30%;" /></a>
+</figure>
+<p>This shorter <code class="docutils literal notranslate"><span class="pre">Car_Ctrl</span> <span class="pre">Stop</span></code> block stops the car. It has no speed input
+because stopping always sets both motors to zero.</p>
+</section>
+</section>
+<section id="change-the-front-lights">
+<h2>2. Change the Front Lights<a class="headerlink" href="#change-the-front-lights" title="Link to this heading"></a></h2>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="_images/searchlights.png"><img alt="Searchlight block with its color menu open" src="_images/searchlights.png" style="width: 44%;" /></a>
+<figcaption>
+<p><span class="caption-text">Click <code class="docutils literal notranslate"><span class="pre">Off</span></code> to open all eight front-light choices.</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Choose <code class="docutils literal notranslate"><span class="pre">Red</span></code>, <code class="docutils literal notranslate"><span class="pre">Green</span></code>, <code class="docutils literal notranslate"><span class="pre">Blue</span></code>, <code class="docutils literal notranslate"><span class="pre">White</span></code>, <code class="docutils literal notranslate"><span class="pre">Cyan</span></code>, <code class="docutils literal notranslate"><span class="pre">Pinkish</span></code>,
+<code class="docutils literal notranslate"><span class="pre">Yellow</span></code>, or <code class="docutils literal notranslate"><span class="pre">Off</span></code>.</p>
+</section>
+<section id="change-the-lights-under-the-car">
+<h2>3. Change the Lights Under the Car<a class="headerlink" href="#change-the-lights-under-the-car" title="Link to this heading"></a></h2>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The blocks in this section appear in the <strong>Neopixel</strong> category. The LAFVIN
+extension installs that category automatically because the four lights
+under the car use NeoPixel LEDs. They are not included in a new MakeCode
+project before the LAFVIN extension is added.</p>
+</div>
+<section id="select-the-car-s-four-rgb-lights">
+<h3>Select the car’s four RGB lights<a class="headerlink" href="#select-the-car-s-four-rgb-lights" title="Link to this heading"></a></h3>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/rgb-lights-device.png"><img alt="RGB Lights value block" src="_images/rgb-lights-device.png" style="width: 22%;" /></a>
+</figure>
+<p>The red <code class="docutils literal notranslate"><span class="pre">RGB</span> <span class="pre">Lights</span></code> value block represents the strip of four lights under
+the car. Its rounded shape fits into the red socket of each NeoPixel action
+block below.</p>
+</section>
+<section id="set-one-light-s-color">
+<h3>Set one light’s color<a class="headerlink" href="#set-one-light-s-color" title="Link to this heading"></a></h3>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="_images/rgb-lights-basic.png"><img alt="RGB light block with its color menu open" src="_images/rgb-lights-basic.png" style="width: 68%;" /></a>
+<figcaption>
+<p><span class="caption-text">Click the color field to open all ten color choices.</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>The four lights under the car are numbered <code class="docutils literal notranslate"><span class="pre">0</span></code>, <code class="docutils literal notranslate"><span class="pre">1</span></code>, <code class="docutils literal notranslate"><span class="pre">2</span></code>, and <code class="docutils literal notranslate"><span class="pre">3</span></code>.
+Choose a number to change one light. The color menu contains <code class="docutils literal notranslate"><span class="pre">red</span></code>,
+<code class="docutils literal notranslate"><span class="pre">orange</span></code>, <code class="docutils literal notranslate"><span class="pre">yellow</span></code>, <code class="docutils literal notranslate"><span class="pre">green</span></code>, <code class="docutils literal notranslate"><span class="pre">blue</span></code>, <code class="docutils literal notranslate"><span class="pre">indigo</span></code>, <code class="docutils literal notranslate"><span class="pre">violet</span></code>,
+<code class="docutils literal notranslate"><span class="pre">purple</span></code>, <code class="docutils literal notranslate"><span class="pre">white</span></code>, and <code class="docutils literal notranslate"><span class="pre">black</span></code>.</p>
+<p>This block changes a stored color. Use <code class="docutils literal notranslate"><span class="pre">show</span></code> to send that change to the
+real lights.</p>
+</section>
+<section id="show-the-stored-colors">
+<h3>Show the stored colors<a class="headerlink" href="#show-the-stored-colors" title="Link to this heading"></a></h3>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/neopixel-show.png"><img alt="RGB Lights show block" src="_images/neopixel-show.png" style="width: 34%;" /></a>
+</figure>
+<p><code class="docutils literal notranslate"><span class="pre">show</span></code> sends all stored pixel colors to the four lights. Use it after one
+or more <code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">pixel</span> <span class="pre">color</span></code> blocks.</p>
+</section>
+<section id="show-one-color-on-all-four-lights">
+<h3>Show one color on all four lights<a class="headerlink" href="#show-one-color-on-all-four-lights" title="Link to this heading"></a></h3>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/neopixel-show-color.png"><img alt="RGB Lights show color block" src="_images/neopixel-show-color.png" style="width: 54%;" /></a>
+</figure>
+<p><code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">color</span></code> changes all four lights at once and displays the selected
+color immediately. Its color field provides the same ten choices shown in
+the <code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">pixel</span> <span class="pre">color</span></code> menu.</p>
+</section>
+<section id="change-the-brightness">
+<h3>Change the brightness<a class="headerlink" href="#change-the-brightness" title="Link to this heading"></a></h3>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/neopixel-brightness.png"><img alt="RGB Lights set brightness block" src="_images/neopixel-brightness.png" style="width: 54%;" /></a>
+</figure>
+<p><code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">brightness</span></code> controls how bright the RGB lights appear. Use a value
+from <code class="docutils literal notranslate"><span class="pre">0</span></code> for off to <code class="docutils literal notranslate"><span class="pre">255</span></code> for maximum brightness.</p>
+</section>
+<section id="clear-the-stored-colors">
+<h3>Clear the stored colors<a class="headerlink" href="#clear-the-stored-colors" title="Link to this heading"></a></h3>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/neopixel-clear.png"><img alt="RGB Lights clear block" src="_images/neopixel-clear.png" style="width: 34%;" /></a>
+</figure>
+<p><code class="docutils literal notranslate"><span class="pre">clear</span></code> changes every stored pixel color to black. Use <code class="docutils literal notranslate"><span class="pre">show</span></code> afterward
+when the cleared result must be sent to lights that are already on.</p>
+</section>
+</section>
+<section id="play-music">
+<h2>4. Play Music<a class="headerlink" href="#play-music" title="Link to this heading"></a></h2>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="_images/music.png"><img alt="Music block with its melody menu open" src="_images/music.png" style="width: 32%;" /></a>
+<figcaption>
+<p><span class="caption-text">Click <code class="docutils literal notranslate"><span class="pre">dadadum</span></code> to see every built-in melody.</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Choose a melody, and the car plays it once.</p>
+<p>If you cannot hear anything, check the audio switch on the car board.</p>
+</section>
+<section id="control-a-servo">
+<h2>5. Control a Servo<a class="headerlink" href="#control-a-servo" title="Link to this heading"></a></h2>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="_images/servo.png"><img alt="Servo block with its socket menu open" src="_images/servo.png" style="width: 52%;" /></a>
+<figcaption>
+<p><span class="caption-text">Click <code class="docutils literal notranslate"><span class="pre">S1</span></code> to choose the servo socket.</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Choose <code class="docutils literal notranslate"><span class="pre">S1</span></code>, <code class="docutils literal notranslate"><span class="pre">S2</span></code>, or <code class="docutils literal notranslate"><span class="pre">S3</span></code> to match the socket used by the servo.
+The angle can be from <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">180</span></code> degrees.</p>
+</section>
+<section id="read-the-line-sensors">
+<h2>6. Read the Line Sensors<a class="headerlink" href="#read-the-line-sensors" title="Link to this heading"></a></h2>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="_images/line-direction.png"><img alt="Choose the left or right line sensor" src="_images/line-direction.png" style="width: 72%;" /></a>
+<figcaption>
+<p><span class="caption-text">First click <code class="docutils literal notranslate"><span class="pre">LeftState</span></code> to choose the left or right sensor.</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="_images/line-surface.png"><img alt="Choose a white or black surface" src="_images/line-surface.png" style="width: 72%;" /></a>
+<figcaption>
+<p><span class="caption-text">Then click <code class="docutils literal notranslate"><span class="pre">White</span></code> to choose a white or black surface.</span><a class="headerlink" href="#id7" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>The answer is either <strong>true</strong> or <strong>false</strong>, so this block fits inside an
+<code class="docutils literal notranslate"><span class="pre">if</span></code> block. A line-following program checks both sensors again and again.</p>
+</section>
+<section id="measure-distance">
+<h2>7. Measure Distance<a class="headerlink" href="#measure-distance" title="Link to this heading"></a></h2>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="_images/ultrasonic.png"><img alt="Ultrasonic distance block" src="_images/ultrasonic.png" style="width: 52%;" /></a>
+<figcaption>
+<p><span class="caption-text">This block reports the distance in centimeters.</span><a class="headerlink" href="#id8" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Put it inside <code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">number</span></code> to see the distance on the micro:bit display.
+You can also compare the distance with a number to help the car avoid an
+obstacle.</p>
+<p>A result of <code class="docutils literal notranslate"><span class="pre">0</span></code> usually means that the sensor did not receive a clear echo.</p>
+</section>
+<section id="use-the-remote-control">
+<h2>8. Use the Remote Control<a class="headerlink" href="#use-the-remote-control" title="Link to this heading"></a></h2>
+<section id="connect-the-receiver">
+<h3>Connect the receiver<a class="headerlink" href="#connect-the-receiver" title="Link to this heading"></a></h3>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/ir-connect.png"><img alt="Connect IR receiver at pin P8 block" src="_images/ir-connect.png" style="width: 48%;" /></a>
+</figure>
+<p>Put <code class="docutils literal notranslate"><span class="pre">Connect</span> <span class="pre">IR</span> <span class="pre">receiver</span> <span class="pre">at</span> <span class="pre">pin</span> <span class="pre">P8</span></code> inside <code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">start</span></code> so the micro:bit
+begins listening for remote-control signals. The receiver on this car is
+connected to pin <code class="docutils literal notranslate"><span class="pre">P8</span></code>.</p>
+</section>
+<section id="choose-a-remote-button">
+<h3>Choose a remote button<a class="headerlink" href="#choose-a-remote-button" title="Link to this heading"></a></h3>
+<figure class="align-center" id="id9">
+<a class="reference internal image-reference" href="_images/ir-button.png"><img alt="Infrared remote button choices" src="_images/ir-button.png" style="width: 46%;" /></a>
+<figcaption>
+<p><span class="caption-text">Click <code class="docutils literal notranslate"><span class="pre">OK</span></code> to see every button on the remote.</span><a class="headerlink" href="#id9" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id10">
+<a class="reference internal image-reference" href="_images/ir-action.png"><img alt="Infrared button action choices" src="_images/ir-action.png" style="width: 48%;" /></a>
+<figcaption>
+<p><span class="caption-text">Click <code class="docutils literal notranslate"><span class="pre">pressed</span></code> to choose <code class="docutils literal notranslate"><span class="pre">pressed</span></code> or <code class="docutils literal notranslate"><span class="pre">released</span></code>.</span><a class="headerlink" href="#id10" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Add an <code class="docutils literal notranslate"><span class="pre">On</span> <span class="pre">IR</span> <span class="pre">button</span></code> event:</p>
+<ol class="arabic simple">
+<li><p>Choose a remote button.</p></li>
+<li><p>Choose <code class="docutils literal notranslate"><span class="pre">pressed</span></code> or <code class="docutils literal notranslate"><span class="pre">released</span></code>.</p></li>
+<li><p>Put a car, light, music, or servo block inside the event.</p></li>
+</ol>
+<p>Point the remote toward the receiver when you test it.</p>
+<p>Continue to <a class="reference internal" href="Upload%20Code/Programming%20Examples.html"><span class="doc">Programming Examples</span></a> when
+you are ready to combine several blocks.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="MakeCode%20Built-in%20Blocks.html" class="btn btn-neutral float-left" title="Official MakeCode Blocks" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Upload%20Code/Programming%20Examples.html" class="btn btn-neutral float-right" title="Programming Examples" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2026, Lafvin.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

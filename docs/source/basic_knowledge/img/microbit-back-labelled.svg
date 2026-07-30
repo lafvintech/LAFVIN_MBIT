@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title description">
+  <title id="title">The back of a micro:bit V2 with four useful parts labelled</title>
+  <desc id="description">A simple diagram labels the Micro-USB socket, reset and power button, processor, and edge connector.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#17324d" flood-opacity=".16"/>
+    </filter>
+    <style>
+      .label-title { font: 700 24px Arial, sans-serif; fill: #17324d; }
+      .label-copy { font: 18px Arial, sans-serif; fill: #425466; }
+      .leader { fill: none; stroke: #2f8bc1; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+      .dot { fill: #2f8bc1; }
+      .tiny { font: 700 15px Arial, sans-serif; fill: #dbe3ea; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="700" fill="#f7fafc"/>
+  <text x="600" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#17324d">Back</text>
+  <text x="600" y="77" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#68788a">micro:bit V2 shown</text>
+
+  <g filter="url(#shadow)">
+    <rect x="280" y="110" width="640" height="440" rx="28" fill="#14171c"/>
+  </g>
+
+  <!-- Circuit pattern -->
+  <g opacity=".3" fill="none" stroke="#8091a2" stroke-width="2">
+    <path d="M315 210h120v70h72M885 215h-105v80h-72M315 425h118v-55h74M885 430h-110v-65h-68"/>
+    <path d="M520 160v62h40M680 160v62h-40M520 454v-52h40M680 454v-52h-40"/>
+    <circle cx="335" cy="235" r="5"/><circle cx="865" cy="240" r="5"/>
+    <circle cx="345" cy="405" r="5"/><circle cx="850" cy="408" r="5"/>
+  </g>
+
+  <!-- USB socket -->
+  <g>
+    <path d="M356 110v-22c0-14 11-25 25-25h108c14 0 25 11 25 25v22z" fill="#b9c3cc" stroke="#77838d" stroke-width="5"/>
+    <rect x="380" y="77" width="110" height="30" rx="7" fill="#53606b"/>
+    <rect x="399" y="85" width="72" height="14" rx="4" fill="#20262c"/>
+  </g>
+
+  <!-- Reset button and battery socket for realistic orientation -->
+  <g>
+    <rect x="690" y="82" width="72" height="48" rx="10" fill="#dfe5ea" stroke="#8b98a3" stroke-width="4"/>
+    <circle cx="726" cy="106" r="14" fill="#abb6bf"/>
+    <rect x="797" y="74" width="88" height="60" rx="7" fill="#f0f2f3" stroke="#8b98a3" stroke-width="4"/>
+    <rect x="817" y="88" width="48" height="32" rx="4" fill="#424b53"/>
+  </g>
+
+  <!-- Main processor and nearby chips -->
+  <g>
+    <rect x="512" y="238" width="176" height="150" rx="8" fill="#2f3943" stroke="#9ba8b3" stroke-width="4"/>
+    <text x="600" y="299" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#f1f4f7">PROCESSOR</text>
+    <text x="600" y="333" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#c7d0d8">runs your program</text>
+    <g fill="#aab5bf">
+      <rect x="493" y="252" width="19" height="7"/><rect x="493" y="276" width="19" height="7"/><rect x="493" y="300" width="19" height="7"/><rect x="493" y="324" width="19" height="7"/><rect x="493" y="348" width="19" height="7"/>
+      <rect x="688" y="252" width="19" height="7"/><rect x="688" y="276" width="19" height="7"/><rect x="688" y="300" width="19" height="7"/><rect x="688" y="324" width="19" height="7"/><rect x="688" y="348" width="19" height="7"/>
+    </g>
+    <rect x="366" y="274" width="78" height="60" rx="6" fill="#39444e"/>
+    <rect x="760" y="285" width="82" height="54" rx="6" fill="#39444e"/>
+    <circle cx="407" cy="390" r="18" fill="#39444e"/>
+    <circle cx="802" cy="398" r="15" fill="#39444e"/>
+  </g>
+
+  <text x="600" y="434" text-anchor="middle" class="tiny">BBC micro:bit</text>
+
+  <!-- Gold edge connector -->
+  <g>
+    <rect x="300" y="478" width="600" height="72" fill="#d6aa42"/>
+    <g fill="#f3d77b">
+      <rect x="314" y="478" width="13" height="72"/><rect x="341" y="478" width="13" height="72"/>
+      <rect x="368" y="478" width="13" height="72"/><rect x="395" y="478" width="13" height="72"/>
+      <rect x="422" y="478" width="13" height="72"/><rect x="449" y="478" width="13" height="72"/>
+      <rect x="476" y="478" width="13" height="72"/><rect x="503" y="478" width="13" height="72"/>
+      <rect x="530" y="478" width="13" height="72"/><rect x="557" y="478" width="13" height="72"/>
+      <rect x="584" y="478" width="13" height="72"/><rect x="611" y="478" width="13" height="72"/>
+      <rect x="638" y="478" width="13" height="72"/><rect x="665" y="478" width="13" height="72"/>
+      <rect x="692" y="478" width="13" height="72"/><rect x="719" y="478" width="13" height="72"/>
+      <rect x="746" y="478" width="13" height="72"/><rect x="773" y="478" width="13" height="72"/>
+      <rect x="800" y="478" width="13" height="72"/><rect x="827" y="478" width="13" height="72"/>
+      <rect x="854" y="478" width="13" height="72"/><rect x="881" y="478" width="9" height="72"/>
+    </g>
+    <circle cx="360" cy="524" r="25" fill="#f7fafc" stroke="#b78d28" stroke-width="7"/>
+    <circle cx="480" cy="524" r="25" fill="#f7fafc" stroke="#b78d28" stroke-width="7"/>
+    <circle cx="600" cy="524" r="25" fill="#f7fafc" stroke="#b78d28" stroke-width="7"/>
+    <circle cx="720" cy="524" r="25" fill="#f7fafc" stroke="#b78d28" stroke-width="7"/>
+    <circle cx="840" cy="524" r="25" fill="#f7fafc" stroke="#b78d28" stroke-width="7"/>
+  </g>
+
+  <!-- Callouts -->
+  <g>
+    <rect x="28" y="140" width="225" height="122" rx="16" fill="#fff" stroke="#b9d9ec" stroke-width="3"/>
+    <text x="50" y="176" class="label-title">Micro-USB</text>
+    <text x="50" y="205" class="label-copy">Connect the computer</text>
+    <text x="50" y="234" class="label-copy">and download code</text>
+    <path class="leader" d="M253 200h77l92-91"/>
+    <circle class="dot" cx="422" cy="109" r="7"/>
+
+    <rect x="947" y="140" width="225" height="122" rx="16" fill="#fff" stroke="#b9d9ec" stroke-width="3"/>
+    <text x="969" y="176" class="label-title">Reset / power</text>
+    <text x="969" y="205" class="label-copy">Restart the program</text>
+    <text x="969" y="234" class="label-copy">from the beginning</text>
+    <path class="leader" d="M947 202h-102L726 106"/>
+    <circle class="dot" cx="726" cy="106" r="7"/>
+
+    <rect x="947" y="326" width="225" height="112" rx="16" fill="#fff" stroke="#b9d9ec" stroke-width="3"/>
+    <text x="969" y="362" class="label-title">Processor</text>
+    <text x="969" y="391" class="label-copy">Reads, decides,</text>
+    <text x="969" y="420" class="label-copy">and sends commands</text>
+    <path class="leader" d="M947 382h-128L688 324"/>
+    <circle class="dot" cx="688" cy="324" r="7"/>
+
+    <rect x="421" y="596" width="358" height="78" rx="16" fill="#fff" stroke="#b9d9ec" stroke-width="3"/>
+    <text x="600" y="628" text-anchor="middle" class="label-title">Edge connector</text>
+    <text x="600" y="656" text-anchor="middle" class="label-copy">Carries power and signals</text>
+    <path class="leader" d="M600 596v-57"/>
+    <circle class="dot" cx="600" cy="539" r="7"/>
+  </g>
+</svg>

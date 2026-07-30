@@ -12,6 +12,27 @@ This is a modular Micro:bit smart car designed for maker education, supporting M
    :align: center
    :width: 70%
 
+What You Need to Prepare
+------------------------
+
+Before assembling and programming the car, prepare:
+
+* One **BBC micro:bit V1 or V2 board**.
+* Three fresh **AAA batteries** for the battery box supplied with the kit.
+* A **computer with internet access and a USB port** for using MakeCode and
+  downloading programs.
+* A **Micro-USB data cable** for connecting the micro:bit to the computer. A
+  charge-only cable cannot transfer a program.
+* If you want to use the infrared remote-control example, prepare the
+  **battery required by the remote**. Check the marking inside its battery
+  tray before buying one.
+
+.. note::
+
+   The battery box, infrared remote control, two screwdrivers, sensors, servo,
+   and assembly hardware are supplied with the kit. The micro:bit board and
+   batteries are not included.
+
 The hardware interfaces :   
 -------------------------------
 
@@ -25,7 +46,6 @@ The hardware interfaces :
 
 Product Parameters :
 -------------------------------
-Please follow the following safety precautions when using or storing this product:
 
 1. Power supply voltage: 3.5V~5V DC (3 AAA dry cell batteries or 3.6V~3.7V lithium battery)
 2. Infrared line-following sensor (high and low levels) ×2
@@ -40,8 +60,7 @@ Please follow the following safety precautions when using or storing this produc
 11. N20 metal geared motor ×2
 12. Maximum motor speed: 300 rpm
 13. Motor drive method: PWM motor drive
-14. Bracket and protective cover with extended M3 screw holes × 6
-15. Programming method: makecode
+14. Programming method: makecode
 
 
 Componen List
@@ -56,7 +75,7 @@ Componen List
    * - x1
      - PCBA Car Chassis (excluding motherboard)
    * - x1
-     - fixed caster
+     - Fixed wheel
    * - x2
      - Vehicle wheel
    * - x2
@@ -79,7 +98,9 @@ Componen List
      - Patrol Route Map
 
 
-.. tip:: Micro:Bit motherboard and battery need to be prepared by yourself.
+.. tip:: For your convenience, some components come pre-installed, and spare screws and parts are included.
+
+.. tip:: The two types of screwdrivers are suitable for securing screws in different locations.
 
 .. image:: /Tutorial/img/组件清单.jpg
 

@@ -12,6 +12,27 @@ This is a modular Micro:bit smart car designed for maker education, supporting M
    :align: center
    :width: 70%
 
+What You Need to Prepare
+------------------------
+
+Before assembling and programming the car, prepare:
+
+* One **BBC micro:bit V1 or V2 board**.
+* Three fresh **AAA batteries** for the battery box supplied with the kit.
+* A **computer with internet access and a USB port** for using MakeCode and
+  downloading programs.
+* A **Micro-USB data cable** for connecting the micro:bit to the computer. A
+  charge-only cable cannot transfer a program.
+* If you want to use the infrared remote-control example, prepare the
+  **battery required by the remote**. Check the marking inside its battery
+  tray before buying one.
+
+.. note::
+
+   The battery box, infrared remote control, two screwdrivers, sensors, servo,
+   and assembly hardware are supplied with the kit. The micro:bit board and
+   batteries are not included.
+
 The hardware interfaces :   
 -------------------------------
 
@@ -76,8 +97,6 @@ Componen List
    * - x1
      - Patrol Route Map
 
-
-.. tip:: Micro:Bit motherboard and battery need to be prepared by yourself.
 
 .. tip:: For your convenience, some components come pre-installed, and spare screws and parts are included.
 
