@@ -300,3 +300,10 @@ This block plays one musical note:
 Continue with :doc:`LAFVIN Extension Blocks <Block Reference>` for the
 car-specific blocks, or open :doc:`Programming Examples <Upload
 Code/Programming Examples>` to see complete programs.
+
+.. tip::
+
+   This page introduces only the official blocks used in the supplied
+   programs. MakeCode has many more blocks to explore. Open another category,
+   drag out a block, and try it in a small test program to discover what it
+   can do.

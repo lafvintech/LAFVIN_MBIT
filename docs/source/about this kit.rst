@@ -6,7 +6,7 @@ About_this_kit
 Preface
 -------------------------------
 
-This is a modular Micro:bit smart car designed for maker education, supporting MakeCode programming and meeting the learning needs of all stages from beginner to competition.
+This is a modular micro:bit Smart Car designed for maker education, supporting MakeCode programming and meeting the learning needs of all stages from beginner to competition.
 
 .. figure:: ./Tutorial/img/小车主图.jpg
    :align: center
@@ -29,9 +29,9 @@ Before assembling and programming the car, prepare:
 
 .. note::
 
-   The battery box, infrared remote control, two screwdrivers, sensors, servo,
-   and assembly hardware are supplied with the kit. The micro:bit board and
-   batteries are not included.
+   The battery box, infrared remote control, two screwdrivers, HC-SR04
+   ultrasonic module, SG90 servo, and assembly hardware are supplied with the
+   kit. The micro:bit and batteries are not included.
 
 The hardware interfaces :   
 -------------------------------
@@ -48,16 +48,16 @@ Product Parameters :
 -------------------------------
 
 1. Power supply voltage: 3.5V~5V DC (3 AAA dry cell batteries or 3.6V~3.7V lithium battery)
-2. Infrared line-following sensor (high and low levels) ×2
-3. Buzzer x1
+2. Line-following sensors ×2
+3. Passive buzzer ×1
 4. Infrared receiver (NEC encoding) ×1
-5. RGB spotlights x2
-6. WS2812 (RGB Ambient Light) ×4
-7. HC-SR04 Ultrasonic Interface (5V) × 1
-8. I2C interface (5V) ×1
-9. Servo-specific interfaces ×3 (S1 S2 S3)
-10. P0 P1 P2 Expansion Interface
-11. N20 metal geared motor ×2
+5. Colored searchlights ×2
+6. WS2812 RGB lights ×4
+7. HC-SR04 and I2C interface (5V) × 1
+8. Servo interface ×3 (S1, S2, S3)
+9. GPIO interface (P0, P1, P2)
+10. Golden-finger expansion interface
+11. N20 motors ×2
 12. Maximum motor speed: 300 rpm
 13. Motor drive method: PWM motor drive
 14. Programming method: makecode
@@ -73,7 +73,7 @@ Componen List
    * - Qty
      - Item
    * - x1
-     - PCBA Car Chassis (excluding motherboard)
+     - Smart Car board (micro:bit not included)
    * - x1
      - Fixed wheel
    * - x2
@@ -89,7 +89,7 @@ Componen List
    * - x1
      - Servo mounting plate
    * - x1
-     - SG90 servo bag
+     - SG90 servo
    * - x1
      - Metal bearing
    * - x1
@@ -117,4 +117,4 @@ Car effect demonstration:
 
 .. raw:: html
    
-   <iframe width="674" height="379" src="https://www.youtube.com/embed/eTImQBHJAHw" title="LAFVIN MicroBit Smart Car" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   <iframe width="674" height="379" src="https://www.youtube.com/embed/eTImQBHJAHw" title="LAFVIN micro:bit Smart Car" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

@@ -1,60 +1,72 @@
-.. __Frequently Asked Questions: 
- 
+.. _frequently_asked_questions:
+
 Frequently Asked Questions
-====================
+==========================
 
-.. admonition:: Q. Why does the code not seem to work as well as expected after attaching the shovel?
-   :class: note
+Compatibility and Power
+-----------------------
 
-   **A.** Installing the shovel will take up space for the ultrasonic and I2C interfaces, making it impossible to use ultrasonic and I2C related functions, and it will also increase the weight. You will need to adjust the speed parameters in the code to adapt to the new load conditions.
-
-----
-
-.. admonition:: Q. Are the codes for MicroBit V1.5 and V2 versions compatible?
+.. admonition:: Q. Can I use the course programs and Integrated Demo_V1 with micro:bit V1.5 and V2?
    :class: tip
 
-   **A.** It's generally compatible, but there may be some differences in performance. Please refer to Micro:bit's official documentation for details.
+   **A.** Most course programs work with both micro:bit V1.5 and V2, although
+   their performance can differ. Integrated Demo_V1 can also be used with V2.
+   Some V2 programs need more power, so if the Smart Car board does not run
+   reliably, use fresh batteries or reduce the number of active modules.
+   Refer to the official micro:bit documentation for board-version details.
 
-----
+Car Attachments and Sensors
+---------------------------
 
-.. admonition:: Q. What should I do if the makecode program link used in the course is broken?
-   :class: warning
-
-   **A.** The link may have expired. We suggest you search for the makecode program for the relevant course again, or contact our customer service to get the latest link.
-
-----
-
-.. admonition:: Q. Can't the Integrated Demo_V1 be used for version V2?
-   :class: danger
-
-   **A.** Yes, it's possible. However, the V2 motherboard is more powerful, which means it requires more power. If the car cannot run properly when using the integrated program, it is recommended to replace it with a larger capacity battery or adjust the functional modules in the program to reduce the power demand.
-
-----
-
-.. admonition:: Q. Why is the line-following function unstable?
+.. admonition:: Q. Why can't I use the HC-SR04 ultrasonic module or I2C functions after I install the shovel?
    :class: note
 
-   **A.** The sensitivity of the line-following sensor needs to be adjusted using the blue potentiometer on the vehicle to suit different environments. It is recommended to make appropriate adjustments in different environments to obtain a more stable line-following effect.
+   **A.** The shovel occupies the **HC-SR04 and I2C interface**. Remove the
+   shovel before using the HC-SR04 ultrasonic module or I2C functions.
 
-----
+.. admonition:: Q. Why does the car move slowly or unreliably after I install the shovel?
+   :class: note
 
-.. admonition:: Q. What causes inaccurate ultrasonic ranging?
-   :class: tip
+   **A.** The shovel adds weight to the car. Adjust the N20-motor speed values
+   in the program until the car moves reliably with the new load.
 
-   **A.** Ultrasonic ranging is significantly affected by environmental factors, typically with an error of 1-3 cm, and it requires high voltage. Please ensure the battery is fully charged. Furthermore, the accuracy of measurement data may vary depending on the version of the MicroBit motherboard used, but the same result can be achieved through code debugging.
+.. admonition:: Q. Why is line following unstable?
+   :class: note
 
+   **A.** Turn the blue potentiometer on the Smart Car board to adjust the
+   sensitivity of the line-following sensors. Set it again when the surface or
+   lighting changes.
 
-----
+.. admonition:: Q. Why is the HC-SR04 ultrasonic distance not accurate?
+   :class: note
 
-.. admonition:: Q. Is the extension library not working properly?
+   **A.** Ultrasonic readings are affected by the surface, angle, and
+   surroundings, and can vary by about 1–2 cm. Use fresh batteries, test with
+   the micro:bit version you are using, then adjust the distance values in the
+   program if necessary.
+
+MakeCode and Downloading
+------------------------
+
+.. admonition:: Q. What should I do if a MakeCode link in the course does not open?
    :class: warning
 
-   **A.** You may not have installed the extension library correctly, or the version of the extension library you installed before is too old. You can click "JavaScript", there is a file explorer on the left, open it and find the LAFVIN_MBIT extension library, and click the refresh icon to refresh it.
+   **A.** The shared link may have expired. Search again for the MakeCode
+   program for that course, or contact customer service for the latest link.
 
+.. admonition:: Q. Why is the LAFVIN extension not working properly?
+   :class: warning
 
-----
+   **A.** Check that the extension was added correctly and is up to date. In
+   MakeCode, click **JavaScript**, open the Explorer on the left, find the
+   ``LAFVIN_MBIT`` extension, then click its refresh icon.
 
-.. admonition:: Q. There's no response after uploading the code, or it seems like the previous code is still being retained?
+.. admonition:: Q. Why is there no response after I upload code, or why does the previous program still run?
    :class: danger
 
-   **A.** Re-upload + Replug + Brief Reboot + Reset.
+   **A.** Try these steps in order:
+
+   #. Upload the program again.
+   #. Unplug and reconnect the Micro-USB cable.
+   #. Wait briefly for the micro:bit to restart.
+   #. Press the micro:bit reset button if the previous program still runs.

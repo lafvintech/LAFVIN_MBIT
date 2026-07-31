@@ -3,9 +3,9 @@
 Basic Courses for Cars
 ========================   
 
-1. Motor Control
---------------
-Effects: It can control the car to move forward, backward, turn left, turn right, rotate left and right, stop, etc., and the speed of the car can be set.
+1. N20 Motor Control
+--------------------
+Effect: The two N20 motors move the car forward, backward, turn left, turn right, rotate left and right, or stop. You can set the car's speed.
 
 Effect demonstration:
 
@@ -28,9 +28,9 @@ Screenshot of makecode graphical interface:
 * The car moves forward for 1 second, rotates left for 1 second, rotates right for 1 second, and moves backward for 1 second. Each movement uses speed 100.
 * Finally, the car stops for 1 second. Then the whole sequence repeats.
 
-2. Music Car
---------------
-Effect: The car can play pre-set music.
+2. Passive Buzzer Music
+-----------------------
+Effect: The passive buzzer on the Smart Car board can play a built-in melody.
 
 makecode program link: `https://makecode.microbit.org/S93528-06251-15177-28056 <https://makecode.microbit.org/S93528-06251-15177-28056/>`_
 
@@ -43,12 +43,12 @@ Screenshot of makecode graphical interface:
 **Code analysis:**
 
 * The blocks inside ``on start`` run once when the micro:bit starts.
-* First, the LED screen shows an icon.
+* First, the micro:bit LED display shows an icon.
 * Next, the car plays the built-in ``dadadum`` melody once.
 
-1. Seven-Color Searchlight
---------------
-Effect: The car is equipped with two colorful spotlights on the left and right sides, and the color and flashing pattern of the lights can be controlled by programming.
+3. Colored Searchlights
+-----------------------
+Effect: The two colored searchlights on the left and right sides can show different colors and flashing patterns.
 
 Effect demonstration:
 
@@ -68,13 +68,13 @@ Screenshot of makecode graphical interface:
 **Code analysis:**
 
 * ``on start`` shows an icon once.
-* Inside ``forever``, the two searchlights change in this order: red, green, blue, white, cyan, pinkish, yellow, and off.
+* Inside ``forever``, the two colored searchlights change in this order: red, green, blue, white, cyan, pinkish, yellow, and off.
 * A ``pause 500 ms`` block follows every color change, so each setting stays for half a second.
 * After the lights turn off for half a second, the color sequence starts again.
 
-4. RGB Running Light
---------------
-Effect: Four WS2812 lights are installed at the bottom of the car. The color and flashing mode of the lights can be controlled by programming to realize the sequential color change of the marquee.
+4. WS2812 RGB Running Lights
+----------------------------
+Effect: The four WS2812 RGB lights on the bottom of the Smart Car board can show a running-light pattern.
 
 Effect demonstration:
 
@@ -99,15 +99,15 @@ Screenshot of makecode graphical interface:
 
 **Code analysis:**
 
-* The four RGB lights are numbered 0, 1, 2, and 3.
+* The four WS2812 RGB lights are numbered 0, 1, 2, and 3.
 * Inside ``forever``, the program changes one numbered light at a time. It uses red, orange, yellow, and green first, followed by blue, indigo, violet, purple, and white as shown in the screenshots.
-* ``RGB Lights show`` makes each new color setting appear on the real lights.
+* ``RGB Lights show`` makes each new color setting appear on the real WS2812 RGB lights.
 * After every ``show`` block, the program waits 500 milliseconds before changing the next light.
 * When the last step is finished, the running-light sequence repeats.
 
-5. RGB Breathing Light
---------------
-Effect: Four WS2812 lights are installed at the bottom of the car. The color and flashing mode of the lights can be controlled by programming to achieve a breathing light effect.
+5. WS2812 RGB Breathing Lights
+------------------------------
+Effect: The four WS2812 RGB lights on the bottom of the Smart Car board can show a breathing-light pattern.
 
 Effect demonstration:
 
@@ -125,14 +125,14 @@ Screenshot of makecode graphical interface:
 
 **Code analysis:**
 
-* At the start, the program shows an icon, sets the variable ``a`` to 0, and clears the RGB lights.
+* At the start, the program shows an icon, sets the variable ``a`` to 0, and clears the WS2812 RGB lights.
 * The first ``for`` loop changes ``a`` from 0 to 255. It uses ``a`` as the brightness, so the white lights gradually become brighter.
 * The second ``for`` loop also changes ``a`` from 0 to 255, but it sets the brightness to ``255 - a``. This makes the white lights gradually become dimmer.
 * Both loops are inside ``forever``, so the brighten-and-dim breathing effect repeats.
 
 6. Light Tracking
---------------
-Effect: MicroBit comes with an ambient light sensor, which can be programmed to control the car to adjust its speed according to the intensity of light, thus achieving a light-chasing effect.
+-----------------
+Effect: The micro:bit light sensor can control the N20-motor speed according to light level, creating a light-tracking effect.
 
 Effect demonstration:
 
@@ -157,8 +157,8 @@ Screenshot of makecode graphical interface:
 * If the light level is below 70, the car stops.
 
 7. Line Tracking
---------------
-Effect: Two infrared sensors are installed on the bottom of the car. The car can be programmed to adjust its direction of travel according to the black lines on the ground, thus achieving the effect of tracking.
+----------------
+Effect: The two line-following sensors on the bottom of the Smart Car board detect the black line on the ground, so the program can adjust the car's direction.
 
 Effect demonstration:
 
@@ -177,17 +177,17 @@ Screenshot of makecode graphical interface:
 
 **Code analysis:**
 
-* The ``forever`` loop keeps reading the left and right line sensors.
+* The ``forever`` loop keeps reading the left and right line-following sensors.
 * If both sensors detect white, the car moves forward at speed 45.
 * If the left sensor detects white and the right sensor detects black, the car rotates right at speed 55.
 * If the left sensor detects black and the right sensor detects white, the car rotates left at speed 55.
 * For any other sensor result, the car stops.
 
-8. Ultrasonic Ranging
---------------
-Effect: An optional ultrasonic sensor is installed at the front of the car, which can be programmed to measure the distance to obstacles in front and display the result on MicroBit's LED screen.
+8. HC-SR04 Ultrasonic Ranging
+-----------------------------
+Effect: The optional HC-SR04 ultrasonic module at the front of the Smart Car board measures the distance to obstacles and displays the result on the micro:bit LED display.
 
-.. tip::  Before using the ultrasonic function, you should switch to ultrasonic mode.
+.. tip::  Before using the HC-SR04 ultrasonic module, switch to ultrasonic mode.
 
    .. image:: /Tutorial/img/安装超声波.jpg
 
@@ -208,13 +208,13 @@ Screenshot of makecode graphical interface:
 
 **Code analysis:**
 
-* The ultrasonic block returns the measured distance in centimeters.
+* The HC-SR04 ultrasonic-module block returns the measured distance in centimeters.
 * The block is inside ``forever``, so the program measures again and again.
-* Each measured distance is shown as a number on the micro:bit LED screen.
+* Each measured distance is shown as a number on the micro:bit LED display.
 
-9. Ultrasonic Obstacle Avoidance
---------------
-Effect: An ultrasonic sensor can be optionally installed at the front of the car. The car can be programmed to measure the distance to obstacles in front and adjust its direction of travel according to the distance to achieve obstacle avoidance.
+9. HC-SR04 Ultrasonic Obstacle Avoidance
+-----------------------------------------
+Effect: The optional HC-SR04 ultrasonic module at the front of the Smart Car board measures the distance to obstacles, allowing the N20 motors to turn the car away.
 
 Effect demonstration:
 
@@ -238,9 +238,9 @@ Screenshot of makecode graphical interface:
 * If the distance is greater than 13 cm, the car moves forward at speed 80.
 * The test then repeats, allowing the car to react to a new distance reading.
 
-10. Ultrasonic Following
---------------
-Effect: An ultrasonic sensor can be optionally installed at the front of the car. It can be programmed to measure the distance to obstacles in front of it and adjust the driving speed according to the distance to achieve a following effect.
+10. HC-SR04 Ultrasonic Following
+---------------------------------
+Effect: The optional HC-SR04 ultrasonic module measures the distance to an object in front of the Smart Car board, allowing the N20 motors to create a following effect.
 
 Effect demonstration:
 
@@ -259,14 +259,14 @@ Screenshot of makecode graphical interface:
 
 **Code analysis:**
 
-* The program stores each ultrasonic distance reading in the variable ``value``.
+* The program stores each HC-SR04 ultrasonic-module distance reading in the variable ``value``.
 * If ``value`` is greater than 0 and less than 10, the car moves forward at speed 100 for 500 milliseconds.
 * For every other value, the car stops.
 * These blocks are inside ``forever``, so the distance is checked repeatedly.
 
-11. Servo Drive
---------------
-Effect: The car has a servo interface. By connecting a servo, the rotation angle of the servo can be controlled through programming to achieve some special actions.
+11. SG90 Servo Drive
+--------------------
+Effect: Connect the SG90 servo to the servo interface to control its rotation angle through programming.
 
 Effect demonstration:
 
@@ -286,9 +286,9 @@ Screenshot of makecode graphical interface:
 
 **Code analysis:**
 
-* Pressing button A sets servo S1 to 0 degrees and shows ``0`` on the LED screen.
-* Pressing button B sets servo S1 to 180 degrees and shows ``180`` on the LED screen.
-* Pressing A and B together repeats the same swing 4 times: S1 goes to 0 degrees, waits 500 milliseconds, goes to 180 degrees, and waits another 500 milliseconds.
+* Pressing button A sets the SG90 servo at S1 to 0 degrees and shows ``0`` on the micro:bit LED display.
+* Pressing button B sets the SG90 servo at S1 to 180 degrees and shows ``180`` on the micro:bit LED display.
+* Pressing A and B together repeats the same SG90-servo swing 4 times: S1 goes to 0 degrees, waits 500 milliseconds, goes to 180 degrees, and waits another 500 milliseconds.
 
 
-.. tip:: Due to limitations in installation space, weight, and power supply for the basic/ultrasonic/forklift form factors, adjustments may be necessary. Alternatively, you can combine them with other sensors and modules to achieve richer demonstration effects. Now, unleash your creativity and create your own cool effects.
+.. tip:: Because the basic, HC-SR04 ultrasonic, and forklift forms have different installation space, weight, and power needs, adjust the program when you change forms. You can also add compatible modules through the labelled interfaces.

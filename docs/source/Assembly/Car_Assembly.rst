@@ -55,7 +55,7 @@ Forklift Assembly
    .. image:: /Tutorial/img/接入舵机.jpg
 
 
-.. tip:: Different forms are used in different scenarios. For example, the forklift form is suitable for situations requiring servo motor control, while the ultrasonic form requires removing the forklift assembly and replacing it with an ultrasonic module.
+.. tip:: Different forms are used in different scenarios. For example, the forklift form uses the SG90 servo, while the HC-SR04 ultrasonic form requires removing the forklift assembly and installing the HC-SR04 ultrasonic module.
 
    .. image:: /Tutorial/img/超声波形态.jpg
 
@@ -64,4 +64,4 @@ POWER
 
 Power supply voltage: 3.5V~5V DC (3 AAA dry cell batteries or 3.6V~3.7V lithium battery)
 
-The Micro-USB cable is only used for powering the motherboard and is insufficient to power the entire vehicle and its peripherals.
+The Micro-USB cable powers the micro:bit while you download code. It does not provide enough power for the Smart Car board, N20 motors, and other connected parts.

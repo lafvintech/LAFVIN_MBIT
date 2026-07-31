@@ -48,46 +48,46 @@ Stop the car without a speed
    :alt: Car control Stop block without a speed input
 
 This shorter ``Car_Ctrl Stop`` block stops the car. It has no speed input
-because stopping always sets both motors to zero.
+because stopping always sets both N20 motors to zero.
 
 
 
-2. Change the Front Lights
---------------------------
+2. Change the Colored Searchlights
+----------------------------------
 
 .. figure:: ./block_reference/img/searchlights.png
    :align: center
    :width: 44%
    :alt: Searchlight block with its color menu open
 
-   Click ``Off`` to open all eight front-light choices.
+   Click ``Off`` to open all eight colored-searchlight choices.
 
 Choose ``Red``, ``Green``, ``Blue``, ``White``, ``Cyan``, ``Pinkish``,
 ``Yellow``, or ``Off``.
 
 
 
-3. Change the Lights Under the Car
-----------------------------------
+3. Change the WS2812 RGB Lights
+-------------------------------
 
 .. important::
 
    The blocks in this section appear in the **Neopixel** category. The LAFVIN
-   extension installs that category automatically because the four lights
-   under the car use NeoPixel LEDs. They are not included in a new MakeCode
-   project before the LAFVIN extension is added.
+   extension installs that category automatically because the four **WS2812
+   RGB lights** under the Smart Car board use NeoPixel LEDs. They are not
+   included in a new MakeCode project before the LAFVIN extension is added.
 
-Select the car's four RGB lights
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Select the four WS2812 RGB lights
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: ./block_reference/img/rgb-lights-device.png
    :align: center
    :width: 22%
    :alt: RGB Lights value block
 
-The red ``RGB Lights`` value block represents the strip of four lights under
-the car. Its rounded shape fits into the red socket of each NeoPixel action
-block below.
+The red ``RGB Lights`` value block represents the four WS2812 RGB lights under
+the Smart Car board. Its rounded shape fits into the red socket of each
+NeoPixel action block below.
 
 Set one light's color
 ~~~~~~~~~~~~~~~~~~~~~
@@ -99,7 +99,8 @@ Set one light's color
 
    Click the color field to open all ten color choices.
 
-The four lights under the car are numbered ``0``, ``1``, ``2``, and ``3``.
+The four WS2812 RGB lights under the Smart Car board are numbered ``0``, ``1``,
+``2``, and ``3``.
 Choose a number to change one light. The color menu contains ``red``,
 ``orange``, ``yellow``, ``green``, ``blue``, ``indigo``, ``violet``,
 ``purple``, ``white``, and ``black``.
@@ -115,7 +116,7 @@ Show the stored colors
    :width: 34%
    :alt: RGB Lights show block
 
-``show`` sends all stored pixel colors to the four lights. Use it after one
+``show`` sends all stored pixel colors to the four WS2812 RGB lights. Use it after one
 or more ``set pixel color`` blocks.
 
 Show one color on all four lights
@@ -126,7 +127,7 @@ Show one color on all four lights
    :width: 54%
    :alt: RGB Lights show color block
 
-``show color`` changes all four lights at once and displays the selected
+``show color`` changes all four WS2812 RGB lights at once and displays the selected
 color immediately. Its color field provides the same ten choices shown in
 the ``set pixel color`` menu.
 
@@ -138,7 +139,7 @@ Change the brightness
    :width: 54%
    :alt: RGB Lights set brightness block
 
-``set brightness`` controls how bright the RGB lights appear. Use a value
+``set brightness`` controls how bright the WS2812 RGB lights appear. Use a value
 from ``0`` for off to ``255`` for maximum brightness.
 
 Clear the stored colors
@@ -150,7 +151,7 @@ Clear the stored colors
    :alt: RGB Lights clear block
 
 ``clear`` changes every stored pixel color to black. Use ``show`` afterward
-when the cleared result must be sent to lights that are already on.
+when the cleared result must be sent to WS2812 RGB lights that are already on.
 
 4. Play Music
 -------------
@@ -164,31 +165,33 @@ when the cleared result must be sent to lights that are already on.
 
 Choose a melody, and the car plays it once.
 
-If you cannot hear anything, check the audio switch on the car board.
+If you cannot hear anything, check the audio switch on the Smart Car board and
+make sure the passive buzzer is enabled.
 
-5. Control a Servo
-------------------
+5. Control the SG90 Servo
+-------------------------
 
 .. figure:: ./block_reference/img/servo.png
    :align: center
    :width: 52%
    :alt: Servo block with its socket menu open
 
-   Click ``S1`` to choose the servo socket.
+   Click ``S1`` to choose a position on the servo interface.
 
-Choose ``S1``, ``S2``, or ``S3`` to match the socket used by the servo.
+Choose ``S1``, ``S2``, or ``S3`` to match the servo-interface position used by
+the SG90 servo.
 The angle can be from ``0`` to ``180`` degrees.
 
 
-6. Read the Line Sensors
-------------------------
+6. Read the Line-following Sensors
+----------------------------------
 
 .. figure:: ./block_reference/img/line-direction.png
    :align: center
    :width: 72%
-   :alt: Choose the left or right line sensor
+   :alt: Choose the left or right line-following sensor
 
-   First click ``LeftState`` to choose the left or right sensor.
+   First click ``LeftState`` to choose the left or right line-following sensor.
 
 .. figure:: ./block_reference/img/line-surface.png
    :align: center
@@ -200,8 +203,8 @@ The angle can be from ``0`` to ``180`` degrees.
 The answer is either **true** or **false**, so this block fits inside an
 ``if`` block. A line-following program checks both sensors again and again.
 
-7. Measure Distance
--------------------
+7. Measure Distance with the HC-SR04 Ultrasonic Module
+-------------------------------------------------------
 
 .. figure:: ./block_reference/img/ultrasonic.png
    :align: center
@@ -210,17 +213,19 @@ The answer is either **true** or **false**, so this block fits inside an
 
    This block reports the distance in centimeters.
 
-Put it inside ``show number`` to see the distance on the micro:bit display.
+Put it inside ``show number`` to see the HC-SR04 ultrasonic-module distance on
+the micro:bit display.
 You can also compare the distance with a number to help the car avoid an
 obstacle.
 
-A result of ``0`` usually means that the sensor did not receive a clear echo.
+A result of ``0`` usually means that the HC-SR04 ultrasonic module did not
+receive a clear echo.
 
 8. Use the Remote Control
 -------------------------
 
-Connect the receiver
-~~~~~~~~~~~~~~~~~~~~
+Connect the infrared receiver
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: ./block_reference/img/ir-connect.png
    :align: center
@@ -228,8 +233,8 @@ Connect the receiver
    :alt: Connect IR receiver at pin P8 block
 
 Put ``Connect IR receiver at pin P8`` inside ``on start`` so the micro:bit
-begins listening for remote-control signals. The receiver on this car is
-connected to pin ``P8``.
+begins listening for remote-control signals. The infrared receiver on this
+Smart Car board is connected to pin ``P8``.
 
 Choose a remote button
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -254,7 +259,7 @@ Add an ``On IR button`` event:
 #. Choose ``pressed`` or ``released``.
 #. Put a car, light, music, or servo block inside the event.
 
-Point the remote toward the receiver when you test it.
+Point the infrared remote control toward the infrared receiver when you test it.
 
 
 Continue to :doc:`Programming Examples <Upload Code/Programming Examples>` when

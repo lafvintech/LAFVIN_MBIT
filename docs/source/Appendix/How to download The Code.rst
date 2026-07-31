@@ -3,7 +3,7 @@
 How to download The Code
 =======================
 
-Drag and drop the .hex file directly onto the MicroBit motherboard.
+Drag and drop the .hex file onto the micro:bit drive.
 -------------------------------
 
 Connect your micro:bit drive to your computer via USB, click the computer icon, and drag and drop the prepared .hex file directly into the micro:bit drive.

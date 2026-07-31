@@ -6,7 +6,7 @@ Pinout
 .. role:: red
    :class: red
 
-:red:`MicroBit pin definition diagram`
+:red:`micro:bit pin definition diagram`
 -------------------------------
 
    .. image:: /Tutorial/img/引脚定义.png
@@ -23,6 +23,6 @@ Pinout
    }
    </style>
 
-Different versions of Microbit motherboards have some differences.
+Different micro:bit versions have some pin-layout differences.
 
-For detailed information, please refer to `the Micro:bit official website hardware introduction <https://tech.microbit.org/hardware/schematic/>`_ page and `the micro:bit developer community <https://tech.microbit.org/>`_ page.
+For detailed information, please refer to `the micro:bit official hardware introduction <https://tech.microbit.org/hardware/schematic/>`_ and `the micro:bit developer community <https://tech.microbit.org/>`_.
