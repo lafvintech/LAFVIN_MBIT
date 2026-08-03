@@ -37,18 +37,44 @@ Choose a direction:
 * ``Rotate Left`` or ``Rotate Right`` spins the car.
 * ``Stop`` stops both wheels.
 
-Speed can be set from ``0`` to ``255``.
+Speed can be set from ``0`` to ``255``. This is the motor's **PWM duty-cycle
+setting**, not the car's real travelling speed: ``0`` is 0% duty cycle and
+``255`` is approximately 100% duty cycle. The same setting can still produce
+different real speeds on different surfaces or with a different battery level
+or load.
 
-Stop the car without a speed
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Control the car at the default speed
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: ./block_reference/img/car-stop.png
+.. figure:: ./block_reference/img/car-default-speed-options.svg
    :align: center
-   :width: 30%
-   :alt: Car control Stop block without a speed input
+   :width: 50%
+   :alt: Car control block without a speed input, with its direction menu open
 
-This shorter ``Car_Ctrl Stop`` block stops the car. It has no speed input
-because stopping always sets both N20 motors to zero.
+   Click ``Stop`` to open all seven direction choices.
+
+This ``Car_Ctrl`` block has no speed input. It controls Forward, Backward,
+Left, Right, Rotate Left, and Rotate Right at the extension's default motor
+speed. Choose ``Stop`` to stop the car. Use the ``Car_Ctrl ... speed`` block
+above when you need to choose a specific speed.
+
+Set the left and right motor speeds separately
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+``Car_Ctrl <direction> Lmotor <left speed> Rmotor <right speed>`` is the
+third car-control block in the extension. Its direction menu has the same
+seven choices shown above. Set each N20-motor speed from ``0`` to ``255``.
+Use it when the car needs different left and right speeds, for example to
+correct a gentle drift. For ``Left`` and ``Right``, the extension stops the
+inside motor; for ``Stop``, both motor speeds are ignored and the car stops.
+
+.. figure:: ./block_reference/img/car-dual-speed-options.svg
+   :align: center
+   :width: 72%
+   :alt: Car control block with separate Lmotor and Rmotor speeds and its direction menu open
+
+   Click ``Forward`` to choose a direction. The two white numbers set the
+   left and right N20-motor speeds separately.
 
 
 
@@ -65,17 +91,25 @@ because stopping always sets both N20 motors to zero.
 Choose ``Red``, ``Green``, ``Blue``, ``White``, ``Cyan``, ``Pinkish``,
 ``Yellow``, or ``Off``.
 
+The two colored searchlights are controlled together: one block sets both
+lights to the same color. They cannot be set to different colors separately.
+
+Set a custom searchlight color
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+``Searchlights Red <red> Green <green> Blue <blue>`` is the second
+searchlight block in the extension. Enter a value from ``0`` to ``255`` for
+each color channel. A larger value makes that color brighter. This block lets
+you mix one color for both searchlights that is not in the preset color menu
+above.
 
 
-3. Change the WS2812 RGB Lights
--------------------------------
 
-.. important::
+3. NeoPixel Blocks for the WS2812 RGB Lights
+--------------------------------------------
 
-   The blocks in this section appear in the **Neopixel** category. The LAFVIN
-   extension installs that category automatically because the four **WS2812
-   RGB lights** under the Smart Car board use NeoPixel LEDs. They are not
-   included in a new MakeCode project before the LAFVIN extension is added.
+The programming examples use the following NeoPixel blocks to control the
+four WS2812 RGB lights under the Smart Car board.
 
 Select the four WS2812 RGB lights
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -103,7 +137,8 @@ The four WS2812 RGB lights under the Smart Car board are numbered ``0``, ``1``,
 ``2``, and ``3``.
 Choose a number to change one light. The color menu contains ``red``,
 ``orange``, ``yellow``, ``green``, ``blue``, ``indigo``, ``violet``,
-``purple``, ``white``, and ``black``.
+``purple``, ``white``, and ``black``. Choose ``black`` when you want that
+light to be off.
 
 This block changes a stored color. Use ``show`` to send that change to the
 real lights.
@@ -198,10 +233,27 @@ The angle can be from ``0`` to ``180`` degrees.
    :width: 72%
    :alt: Choose a white or black surface
 
-   Then click ``White`` to choose a white or black surface.
+   Then click ``White`` to choose whether to check for a white or black
+   surface.
 
-The answer is either **true** or **false**, so this block fits inside an
-``if`` block. A line-following program checks both sensors again and again.
+The two line-following sensors face the ground on the bottom of the Smart Car
+board. When the car faces forward, ``LeftState`` means the left sensor and
+``RightState`` means the right sensor.
+
+Read the block as a question. For example, ``Line_Sensor direct LeftState
+Detection White`` asks: “Is the left sensor over the white ground now?” The
+answer is **true** for yes and **false** for no. If you choose ``Black``, the
+same block asks whether that sensor is over the black line instead.
+
+In the line-tracking example, the program checks both sensors again and again:
+
+* Left white and right white: drive forward.
+* Left white and right black: turn right to find the line again.
+* Left black and right white: turn left to find the line again.
+* Both black: stop.
+
+Put these yes/no blocks inside ``if`` blocks so the Smart Car can choose its
+next movement from what the two sensors see.
 
 7. Measure Distance with the HC-SR04 Ultrasonic Module
 -------------------------------------------------------
@@ -260,7 +312,6 @@ Add an ``On IR button`` event:
 #. Put a car, light, music, or servo block inside the event.
 
 Point the infrared remote control toward the infrared receiver when you test it.
-
 
 Continue to :doc:`Programming Examples <Upload Code/Programming Examples>` when
 you are ready to combine several blocks.

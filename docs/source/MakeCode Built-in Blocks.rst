@@ -174,22 +174,6 @@ add or remove branches. An added ``else if`` branch checks another condition
 only when the conditions above it were false. Use ``else if`` when a program
 must choose between three or more possible actions.
 
-Comparison
-~~~~~~~~~~
-
-.. figure:: ./block_reference/official/comparison-options.png
-   :align: center
-   :width: 38%
-   :alt: MakeCode comparison block with its operator menu open
-
-   Click the middle symbol to choose how two values are compared.
-
-A comparison reports ``true`` or ``false``:
-
-* ``=`` means equal to, and ``≠`` means not equal to.
-* ``<`` and ``≤`` mean less than and less than or equal to.
-* ``>`` and ``≥`` mean greater than and greater than or equal to.
-
 ``and``
 ~~~~~~~
 
@@ -203,65 +187,7 @@ A comparison reports ``true`` or ``false``:
 * ``and`` reports true only when both conditions are true.
 * ``or`` reports true when either condition is true.
 
-5. Variables and Math
----------------------
-
-``set variable to``
-~~~~~~~~~~~~~~~~~~~
-
-.. figure:: ./block_reference/official/set-variable-options.png
-   :align: center
-   :width: 54%
-   :alt: MakeCode set variable block with its variable menu open
-
-   Click the variable name to choose one of the variables in the project.
-
-``set variable to`` stores a value in the selected variable. A new set
-operation replaces the value that was stored before it. ``value`` and
-``index`` in the picture are sample variable names; the menu changes when you
-create or rename variables.
-
-``change variable by``
-~~~~~~~~~~~~~~~~~~~~~~
-
-.. figure:: ./block_reference/official/change-variable-options.png
-   :align: center
-   :width: 56%
-   :alt: MakeCode change variable block with its variable menu open
-
-   Click the variable name to choose which stored value will change.
-
-``change variable by`` adds an amount to the current value. Use a negative
-amount, such as ``-1``, to subtract. Its variable menu works in the same way
-as the menu in ``set variable to``.
-
-Variable value
-~~~~~~~~~~~~~~
-
-.. figure:: ./block_reference/official/variable-value.png
-   :align: center
-   :width: 28%
-   :alt: MakeCode variable value block
-
-The rounded variable block reports the value currently stored in that
-variable. It has no dropdown arrow: drag the variable name you need from the
-Variables category.
-
-Subtraction
-~~~~~~~~~~~
-
-.. figure:: ./block_reference/official/subtraction-options.png
-   :align: center
-   :width: 38%
-   :alt: MakeCode Math block with its operation menu open
-
-   Click the middle symbol to choose a Math operation.
-
-The choices are addition ``+``, subtraction ``-``, multiplication ``×``,
-division ``÷``, and powers ``^``. The block calculates the two inputs and
-reports the result.
-
-6. Music
+5. Music
 --------
 
 ``play tone ... for ... beat``

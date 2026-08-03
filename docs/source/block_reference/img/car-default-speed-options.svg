@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="590" viewBox="0 0 660 590" role="img" aria-labelledby="title description">
+  <title id="title">Car control block at the default speed with the direction menu open</title>
+  <desc id="description">A purple LAFVIN Car_Ctrl block without a speed field. Its Stop dropdown is open and shows Forward, Backward, Left, Right, Stop, Rotate Left, and Rotate Right.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#1b125a" flood-opacity=".22"/></filter>
+    <style>
+      .block { font: 700 45px Arial, sans-serif; fill: #fff; }
+      .menu { font: 700 31px Arial, sans-serif; fill: #fff; }
+    </style>
+  </defs>
+  <rect width="660" height="590" fill="#fff"/>
+  <path d="M44 38h526c10 0 18 8 18 18v93c0 10-8 18-18 18H166c-10 0-17 6-24 14l-17 20c-8 9-22 9-30 0l-17-20c-7-8-14-14-24-14H44c-10 0-18-8-18-18V56c0-10 8-18 18-18z" fill="#2908df"/>
+  <text x="51" y="121" class="block">Car_Ctrl</text>
+  <rect x="344" y="61" width="210" height="88" rx="15" fill="#2908df" stroke="#fff" stroke-width="4"/>
+  <text x="374" y="118" class="block">Stop</text>
+  <path d="M507 91l15 0-7.5 9z" fill="#fff"/>
+  <g filter="url(#shadow)">
+    <rect x="193" y="195" width="284" height="350" rx="4" fill="#b7b0f0"/>
+    <rect x="193" y="395" width="284" height="50" fill="#a79fe7"/>
+  </g>
+  <text x="220" y="236" class="menu">Forward</text>
+  <text x="220" y="286" class="menu">Backward</text>
+  <text x="220" y="336" class="menu">Left</text>
+  <text x="220" y="386" class="menu">Right</text>
+  <text x="215" y="436" class="menu">✓</text><text x="258" y="436" class="menu">Stop</text>
+  <text x="220" y="486" class="menu">Rotate Left</text>
+  <text x="220" y="536" class="menu">Rotate Right</text>
+</svg>

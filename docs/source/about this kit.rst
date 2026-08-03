@@ -100,8 +100,6 @@ Componen List
 
 .. tip:: For your convenience, some components come pre-installed, and spare screws and parts are included.
 
-.. tip:: The two types of screwdrivers are suitable for securing screws in different locations.
-
 .. image:: /Tutorial/img/组件清单.jpg
 
 

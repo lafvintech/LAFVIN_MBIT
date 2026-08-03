@@ -1,0 +1,262 @@
+/*
+ * LAFVIN documentation reading style.
+ * This stylesheet is project-authored and uses only system fonts and local CSS.
+ */
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("fonts/roboto-latin-700-normal.woff2") format("woff2");
+}
+
+:root {
+  --lafvin-blue: #176fa9;
+  --lafvin-blue-dark: #174e76;
+  --lafvin-blue-light: #eaf5fb;
+  --lafvin-ink: #243746;
+  --lafvin-muted: #5b6d7c;
+  --lafvin-border: #d7e1e8;
+  --lafvin-sidebar: #263640;
+}
+
+body,
+.wy-body-for-nav {
+  color: var(--lafvin-ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
+    Arial, sans-serif;
+}
+
+.wy-nav-content {
+  max-width: 1040px;
+}
+
+.rst-content {
+  color: var(--lafvin-ink);
+  font-size: 16px;
+  line-height: 1.78;
+}
+
+.rst-content p,
+.rst-content ul,
+.rst-content ol,
+.rst-content dl,
+.rst-content table.docutils {
+  margin-bottom: 1.15em;
+}
+
+.rst-content li {
+  margin-bottom: 0.38em;
+}
+
+.rst-content h1,
+.rst-content h2,
+.rst-content h3,
+.rst-content h4,
+.rst-content h5,
+.rst-content h6 {
+  color: var(--lafvin-ink);
+  font-family: SimHei, "Microsoft YaHei", "Noto Sans SC", "Segoe UI",
+    Arial, sans-serif;
+  font-weight: 700;
+  line-height: 1.32;
+}
+
+.rst-content h1 {
+  font-family: Roboto, "Segoe UI", Arial, sans-serif !important;
+  font-weight: 700 !important;
+  color: var(--lafvin-blue-dark);
+  font-size: 2.15em;
+  margin: 0 0 1.15em;
+  padding-bottom: 0.35em;
+  border-bottom: 3px solid var(--lafvin-blue);
+}
+
+.rst-content h2 {
+  color: var(--lafvin-blue-dark);
+  font-size: 1.58em;
+  margin-top: 2em;
+  padding-bottom: 0.28em;
+  border-bottom: 1px solid var(--lafvin-border);
+}
+
+.rst-content h3 {
+  color: #285675;
+  font-size: 1.23em;
+  margin-top: 1.6em;
+}
+
+.rst-content h4,
+.rst-content h5,
+.rst-content h6 {
+  font-size: 1.04em;
+  margin-top: 1.35em;
+}
+
+.rst-content a,
+.wy-menu-vertical a:hover,
+.wy-menu-vertical a:focus {
+  color: var(--lafvin-blue);
+}
+
+.rst-content a:hover,
+.rst-content a:focus {
+  color: #0d557f;
+  text-decoration: underline;
+}
+
+.rst-content strong,
+.rst-content b {
+  color: #163f5d;
+  font-weight: 700;
+}
+
+.rst-content code.literal,
+.rst-content tt.literal,
+.rst-content code {
+  color: #174e76;
+  background: #f1f6f9;
+  border: 1px solid #d7e4eb;
+  border-radius: 3px;
+  font-family: "Cascadia Mono", Consolas, "Liberation Mono", monospace;
+  font-size: 0.88em;
+  padding: 0.08em 0.32em;
+}
+
+.rst-content .highlight,
+.rst-content pre.literal-block,
+.rst-content div[class^="highlight"] {
+  border: 1px solid var(--lafvin-border);
+  border-radius: 5px;
+}
+
+.rst-content pre,
+.rst-content .highlight pre {
+  line-height: 1.55;
+  padding: 0.95em 1.1em;
+}
+
+.rst-content .admonition,
+.rst-content .note,
+.rst-content .tip,
+.rst-content .important,
+.rst-content .warning {
+  background: #f7fbfd;
+  border: 1px solid #cde1ed;
+  border-left: 4px solid var(--lafvin-blue);
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.rst-content .admonition-title {
+  color: var(--lafvin-blue-dark);
+  font-weight: 700;
+}
+
+.rst-content .admonition-title::before {
+  color: var(--lafvin-blue);
+}
+
+.rst-content .figure,
+.rst-content figure {
+  margin: 1.55em auto;
+}
+
+.rst-content p.caption,
+.rst-content figcaption {
+  color: var(--lafvin-muted);
+  font-size: 0.92em;
+  font-style: normal;
+  line-height: 1.55;
+  margin-top: 0.45em;
+}
+
+.rst-content table.docutils {
+  border: 1px solid var(--lafvin-border);
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.rst-content table.docutils thead th,
+.rst-content table.docutils th {
+  color: #fff;
+  background: var(--lafvin-blue-dark);
+  font-weight: 700;
+}
+
+.rst-content table.docutils td,
+.rst-content table.docutils th {
+  padding: 0.62em 0.75em;
+  vertical-align: top;
+}
+
+.rst-content table.docutils tr:nth-child(even) td {
+  background: #f5f9fb;
+}
+
+.wy-nav-side {
+  background: var(--lafvin-sidebar);
+}
+
+.wy-side-nav-search {
+  background: var(--lafvin-blue);
+}
+
+.wy-side-nav-search input[type="text"] {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+.wy-menu-vertical header,
+.wy-menu-vertical p.caption {
+  color: #64b9e8;
+  font-size: 0.76em;
+  font-weight: 700;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+}
+
+.wy-menu-vertical a {
+  color: #f4f8fa;
+  font-size: 0.92em;
+  line-height: 1.4;
+}
+
+.wy-menu-vertical li.current > a,
+.wy-menu-vertical li.toctree-l1.current > a {
+  color: var(--lafvin-ink);
+  background: #f7fbfd;
+  border-right: 3px solid var(--lafvin-blue);
+  font-weight: 700;
+}
+
+.wy-menu-vertical li.current a:hover,
+.wy-menu-vertical li.current a:focus {
+  background: #eaf5fb;
+}
+
+.wy-breadcrumbs {
+  color: var(--lafvin-muted);
+  font-size: 0.9em;
+}
+
+.wy-breadcrumbs a {
+  color: var(--lafvin-blue);
+}
+
+@media screen and (max-width: 768px) {
+  .rst-content {
+    font-size: 15.5px;
+    line-height: 1.72;
+  }
+
+  .rst-content h1 {
+    font-size: 1.85em;
+  }
+
+  .rst-content h2 {
+    font-size: 1.42em;
+  }
+}

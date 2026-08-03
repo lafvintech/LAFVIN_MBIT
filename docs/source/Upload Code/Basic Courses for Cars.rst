@@ -48,7 +48,9 @@ Screenshot of makecode graphical interface:
 
 3. Colored Searchlights
 -----------------------
-Effect: The two colored searchlights on the left and right sides can show different colors and flashing patterns.
+Effect: The two colored searchlights on the left and right sides always show
+the same color together. Changing that shared color repeatedly creates a
+flashing pattern.
 
 Effect demonstration:
 
@@ -68,7 +70,8 @@ Screenshot of makecode graphical interface:
 **Code analysis:**
 
 * ``on start`` shows an icon once.
-* Inside ``forever``, the two colored searchlights change in this order: red, green, blue, white, cyan, pinkish, yellow, and off.
+* Inside ``forever``, both colored searchlights change together in this order:
+  red, green, blue, white, cyan, pinkish, yellow, and off.
 * A ``pause 500 ms`` block follows every color change, so each setting stays for half a second.
 * After the lights turn off for half a second, the color sequence starts again.
 

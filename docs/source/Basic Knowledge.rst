@@ -162,7 +162,8 @@ brightness to produce different colors.
 
 The car has two different groups of colorful lights:
 
-* Two **colored searchlights** at the front can show different colors.
+* Two **colored searchlights** at the front always show the same selected
+  color together; they cannot be controlled separately.
 * Four **WS2812 RGB lights** on the bottom can be controlled one at a time. This is
   how the program creates running-light and breathing-light patterns.
 
@@ -420,6 +421,11 @@ program reached that point.
 
    Program
       A complete set of code that a computer can run.
+
+   PWM (Pulse Width Modulation)
+      A way to control a motor by switching its power on and off very quickly.
+      A higher setting keeps the power on for more of each cycle, giving the
+      motor more average power.
 
    Reset
       To make the micro:bit stop the current run and start its program again.

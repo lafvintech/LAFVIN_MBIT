@@ -1,123 +1,179 @@
-.. __How to download The Code:
+.. _how-to-download-code:
 
-How to download The Code
-=======================
+How to Download Code to the micro:bit
+=====================================
 
-Drag and drop the .hex file onto the micro:bit drive.
--------------------------------
+There are two ways to put a program on the micro:bit:
 
-Connect your micro:bit drive to your computer via USB, click the computer icon, and drag and drop the prepared .hex file directly into the micro:bit drive.
-Download `code files <https://github.com/lafvintech/LAFVIN_MBIT/archive/refs/heads/HexFile.zip>`_
+* Copy a prepared ``.hex`` file when you want to run one of the supplied
+  examples right away.
+* Use MakeCode when you want to create a new program or change an example.
 
+Option 1: Copy a Prepared .hex File
+-----------------------------------
+
+A ``.hex`` file is a program file that the micro:bit can run. When you connect
+the micro:bit to a computer with a **data USB cable**, it appears in File
+Explorer as a drive named **MICROBIT**.
+
+1. Connect the micro:bit to the computer. Check that the **MICROBIT** drive
+   appears. If it does not appear, try another USB cable; some cables provide
+   power only and cannot transfer files.
+2. Download the `code files <https://github.com/lafvintech/LAFVIN_MBIT/archive/refs/heads/HexFile.zip>`_,
+   unzip the download, and find the ``.hex`` file for the example you want.
+3. Drag the ``.hex`` file onto the **MICROBIT** drive, or copy and paste it
+   there.
+4. Wait for the file transfer to finish before unplugging the USB cable. The
+   micro:bit restarts and begins running the new program automatically.
 
 .. figure:: ./img/查看磁盘.png
    :align: center
    :width: 85%
+   :alt: The MICROBIT drive in File Explorer
+
+   Find the drive named ``MICROBIT`` in File Explorer.
 
 .. figure:: ./img/复制hex文件.png
    :align: center
    :width: 85%
+   :alt: A hex file ready to copy to the MICROBIT drive
 
 .. figure:: ./img/拖拽进磁盘.png
    :align: center
    :width: 85%
+   :alt: Dragging a hex file to the MICROBIT drive
 
 
+Option 2: Create or Edit Code in MakeCode
+------------------------------------------
 
-Download online via MakeCode
---------------
+`MakeCode for micro:bit <https://makecode.microbit.org/>`_ is the block
+programming website used in this guide. It is the right choice when you want to
+write your own program or change a supplied example.
 
+Open MakeCode
+~~~~~~~~~~~~~
 
-What is MakeCode?
-^^^^^^^^
+You can open MakeCode in either of these ways:
 
-MakeCode is a free graphical programming platform developed by Microsoft. It teaches programming basics to children and beginners by dragging and dropping blocks. It is mainly used in conjunction with educational hardware such as micro:bit and Circuit Playground. It supports real-time simulation and JavaScript/Python code conversion and is widely used in maker education in primary and secondary schools.
-
-How to use MakeCode
-^^^^^^^^
-1. Connect the micro:bit to your computer via USB, click the computer icon, and then click the URL on the micro:bit drive to access the programming interface.
+* Open `makecode.microbit.org <https://makecode.microbit.org/>`_ in a web
+  browser.
+* Open the MakeCode shortcut shown on the **MICROBIT** drive after connecting
+  the micro:bit.
 
 .. figure:: ./img/查看磁盘.png
    :align: center
    :width: 85%
+   :alt: The MICROBIT drive in File Explorer
 
 .. figure:: ./img/打开网址.png
    :align: center
    :width: 85%
+   :alt: The MakeCode shortcut on the MICROBIT drive
 
-2. Open the MakeCode programming interface for micro:bit: `https://makecode.microbit.org/ <https://makecode.microbit.org/>`_
+Start a project
+~~~~~~~~~~~~~~~
+
+Select **New Project**, give the project a name, and use the colored blocks to
+build the program. The example links in this guide open ready-made projects,
+so you can view or change their blocks without starting from an empty project.
 
 .. figure:: ./img/MakeCode首页.png
    :align: center
    :width: 85%
-
-3. Click "New Project" to create a new project, and you can start programming the car.
+   :alt: MakeCode home page
 
 .. figure:: ./img/新建项目.png
    :align: center
    :width: 85%
+   :alt: New Project button in MakeCode
 
 .. figure:: ./img/项目命名.png
    :align: center
    :width: 85%
+   :alt: Naming a MakeCode project
 
-4. The interface allows you to switch between different programming languages, and the blocks you've already written will be converted into the corresponding programming language.
+Add the LAFVIN extension
+~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: ./img/编程语言切换.png
-   :align: center
-   :width: 85%
+Add the extension before using LAFVIN car blocks in a **new** MakeCode project.
 
-5. After writing the code, click the "Download" button to download the .hex file, and then drag and drop it into the micro:bit drive.If device pairing has been performed, online downloading is also possible.
-   
-.. figure:: ./img/点击下载.png
-   :align: center
-   :width: 85%
+1. Click **Extensions** at the bottom of the block-category list.
+2. Paste this address into the search box and search:
 
-Import makecode graphical library
-^^^^^^^^
+   ``https://github.com/lafvintech/LAFVIN_MBIT.git``
 
-If you choose to program the car yourself, the blocks that come with MakeCode may not meet your needs, in which case you will need to import extension libraries.
-
-1. Click the "Expand" option in the module area.
-2. In the pop-up window, enter the URL of the extension library to be imported in.
-   To import the LAFVIN Micro:bit Smart Car Kit Library, please enter the following URL: `https://github.com/lafvintech/LAFVIN_MBIT.git <https://github.com/lafvintech/LAFVIN_MBIT.git>`_
-3. Click to expand the library: LAFVIN, and you can use the blocks in this library to program the car.
+3. Select the **LAFVIN** extension card and wait for MakeCode to return to the
+   workspace.
+4. The **LA_MBitCar** and **Neopixel** categories then appear in the
+   block-category list.
 
 .. figure:: ./img/导入拓展.png
    :align: center
    :width: 100%
+   :alt: Extensions button in MakeCode
 
 .. figure:: ./img/搜索拓展.png
    :align: center
    :width: 100%
+   :alt: Pasting the LAFVIN extension address into the search box
 
 .. figure:: ./img/添加拓展.png
    :align: center
    :width: 100%
+   :alt: Selecting the LAFVIN extension card
 
 .. figure:: ./img/导入成功.png
    :align: center
    :width: 100%
+   :alt: LAFVIN extension installed in MakeCode
 
 .. figure:: ./img/查看拓展.png
    :align: center
    :width: 100%
+   :alt: LA MBitCar and Neopixel categories in MakeCode
 
 .. figure:: ./img/查看NEO.png
    :align: center
    :width: 100%
+   :alt: LAFVIN blocks in the LA MBitCar category
 
-If you find any errors in the imported extensions, you can do the following:
+Download your MakeCode program
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+When your blocks are ready, click **Download**. MakeCode creates a ``.hex``
+file. Copy that file to the **MICROBIT** drive using the same steps in Option 1.
+
+If you have paired the micro:bit with MakeCode, follow the on-screen prompt to
+send the program directly instead. In either method, wait until the transfer
+has finished before unplugging the USB cable.
+
+.. figure:: ./img/点击下载.png
+   :align: center
+   :width: 85%
+   :alt: Download button in MakeCode
+
+
+If the extension does not appear
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Refresh the MakeCode page and open the project again. This makes MakeCode check
+the current extension files from GitHub. If the extension still does not load,
+check that the computer is connected to the internet and that the address above
+was copied completely.
 
 .. figure:: ./img/刷新1.png
    :align: center
    :width: 100%
+   :alt: Refreshing a MakeCode project with the LAFVIN extension
 
 .. figure:: ./img/刷新2.png
    :align: center
    :width: 100%
+   :alt: The refreshed LAFVIN extension version in MakeCode
 
-Refresh the page to match the version in the GitHub repository and then reopen your browser.
+.. tip::
 
-.. tip:: If you use the programming example links or Hex files we provide, the extensions will be added automatically.
-
+   A supplied MakeCode example link already includes the LAFVIN extension. A
+   supplied ``.hex`` file is ready to copy to the micro:bit and does not need
+   an extension installed first.
